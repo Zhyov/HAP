@@ -1,5 +1,4 @@
 import random, os
-from playsound import playsound
 sL = ['Aa', 'Bb', 'Cc', 'Dd', 'Ee', 'Ff', 'Gg', 'Hh', 'Ii', 'Jj', 'Kk', 'Ll', 'Mm', 'Nn', 'Ññ', 'Oo', 'Pp', 'Qq', 'Rr', 'Ss', 'Tt', 'Uu', 'Vv', 'Ww', 'Xx', 'Yy', 'Zz']
 sP = ['æ (a)', 'b', 'k, s', 'd', 'ɛ (e)', 'f', 'g', '(silent)', 'i', 'x (kh, h)', 'k', 'l', 'm', 'n', 'ɲ (ñ, ny)', 'o', 'p', 'k', 'ɾ (r), r (rr)', 's', 't', 'u', 'v', 'u, w', 'ks (x)', 'i (short), ʂ (sh)', 'θ (th), s (depends on accent)']
 sN = ['a', 'be, be larga', 'ce', 'de', 'e', 'efe', 'ge', 'hache', 'i', 'jota', 'ka', 'ele', 'eme', 'ene', 'eñe', 'o', 'pe', 'qü or cu', 'erre', 'ese', 'te', 'u', 've, uve, ve corta', 'doble v' , 'equis', 'i griega', 'zeta, seta (depends on accent)']
@@ -28,18 +27,20 @@ jDYP = ['', '', '', '', '', '', 'gja (gya)', 'gjɯ (gyu)', 'gjo (gyo)', '', '', 
 jHHYL = ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'ぴゃ', 'ぴゅ', 'ぴょ', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']
 jKHYL = ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'ピャ', 'ピュ', 'ピョ', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']
 jHYP = ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'pja (pya)', 'pjɯ (pyu)', 'pjo (pyo)', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']
-sSound = 'D:\\Code\\HMLP\\file\\old_compact\\audio\\spanish\\'
-rSound = 'D:\\Code\\HMLP\\file\\old_compact\\audio\\audio\\russian\\'
-gSound = 'D:\\Code\\HMLP\\file\\old_compact\\audio\\audio\\greek\\'
-jSound = 'D:\\Code\\HMLP\\file\\old_compact\\audio\\audio\\japanese\\'
-soundEnd = '.wav'
-# elif check.lower() == 'audio':
-#     os.system('cls')
-#     print('Playing audio...')
-#     playsound(sSound + str(int(i) + 1) + soundEnd)
-#     os.system('cls')
+hL = ['א', 'ב', 'ג', 'ד', 'ה', 'ו', 'ז', 'ח', 'ט', 'י', 'ך/כ', 'ל', 'ם/מ', 'ן/נ', 'ס', 'ע', 'ף/פ', 'ץ/צ', 'ק', 'ר', 'ש', 'ת']
+hDL = ['', 'בּ', 'גּ', 'דּ', '', '', '', '', '', '', 'ךּ/כּ', '', '', '', '', '', 'ףּ/פּ', '', '', '', '', 'תּ']
+hSHL = ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'שׁ', '']
+hSL = ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'שׂ', '']
+hP = ['ʔ (a)', 'v', 'ɣ (gh)', 'ð (th vibration)', 'h', 'v', 'z', 'χ (ch, kh, h)', 't', 'j (y)', 'χ (ch, kh, h)', 'l', 'm', 'n', 's', 'ɑ̯/ʕ (weird a | For more info, search: Voiced pharyngeal fricative)', 'f', 'ts', 'k', 'ʁ (french r)', 'ʃ (sh), s (For more info, check the "Shin" and "Sin" bellow)', 'θ (th no vibration)']
+hDP = ['', 'b', 'g', 'd', '', '', '', '', '', '', 'k', '', '', '', '', '', 'p', '', '', '', '', 't']
+hSHP = ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'ʃ (sh)', '']
+hSP = ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 's', '']
+hN = ['אָלֶף', 'בֵית', 'גִימֵל', 'דָלֶת', 'הֵא', 'וָו', 'זַיִן', 'חֵית', 'טֵית', 'יוֹד', 'כַף סוֹפִית/כַף', 'לָמֶד', 'מֵם סוֹפִית/מֵם', 'נוּן סוֹפִית/נוּן', 'סָמֶךְ', 'עַיִן', 'פֵא סוֹפִית, פֵה סוֹפִית/פֵא, פֵה', 'צָדִי סוֹפִית/צָדִי', 'קוֹף', 'רֵישׁ', 'שִׂין ,שִׁין (For more info, check the "Shin" and "Sin" bellow)', 'תָו']
+hDN = ['', 'בֵּית', 'גִּימֵל', 'דָּלֶת', '', '', '', '', '', '', 'כַּף סוֹפִית/כַּף', '', '', '', '', '', 'פֵּא סוֹפִית, פֵּה סוֹפִית/פֵּא, פֵּה', '', '', '', '', 'תָּו']
+hSHN = ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'שִׁין', '']
+hSN = ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'שִׂין', '']
 
-print('### Welcome to HMLP v0.1! ###')
+print('### Welcome to HMLP v0.2! ###')
 def sM(i, e):
     print('Letter: ' + e)
     print('Name: ' + sN[i])
@@ -108,7 +109,7 @@ def sE():
     check = input('>> ')
     if check.lower() == 'back':
         os.system('cls')
-        start()
+        c()
     else:
         for i, e in enumerate(sL):
             if int(check) == int(i) + 1:
@@ -131,7 +132,7 @@ def rE():
     check = input('>> ')
     if check.lower() == 'back':
         os.system('cls')
-        start()
+        c()
     else:
         for i, e in enumerate(rL):
             if int(check) == int(i) + 1:
@@ -183,7 +184,7 @@ def gE():
     check = input('>> ')
     if check.lower() == 'back':
         os.system('cls')
-        start()
+        c()
     else:
         for i, e in enumerate(gL):
             if int(check) == int(i) + 1:
@@ -725,7 +726,7 @@ def jKE():
                 os.system('cls')
                 jKM(i, e, check)
 def j():
-    print(f'\nWhat phonetic alphabet would you like to check?\n- Hiragana\n- Katakana')
+    print(f'\nWhat phonetic alphabet would you like to check?\n- Hiragana\n- Katakana\n- Back')
     check = input('>> ')
     if check.lower() == 'hiragana':
         os.system('cls')
@@ -733,11 +734,103 @@ def j():
     elif check.lower() == 'katakana':
         os.system('cls')
         jKE()
+    elif check.lower() == 'back':
+        os.system('cls')
+        c()
     else:
         os.system('cls')
         print(f'\nSorry, that is not an option. Did you spell it correctly?')
+        j()
+def hM(i, e, c):
+    print('Letter: ' + e)
+    print('Name: ' + hN[i])
+    print('Number in Alphabet: ' + str((i + 1)))
+    print('IPA Pronounciation: ' + hP[i])
+    if e == 'ב':
+        print('Dagesh:\n1 - בּ')
+    elif e == 'ג':
+        print('Dagesh:\n1 - גּ')
+    elif e == 'ד':
+        print('Dagesh:\n1 - דּ')
+    elif e == 'ך/כ':
+        print('Dagesh:\n1 - ךּ/כּ')
+    elif e == 'ף/פ':
+        print('Dagesh:\n1 - ףּ/פּ')
+    elif e == 'ת':
+        print('Dagesh:\n1 - תּ')
+    elif e == 'ש':
+        print('Shin:\n1 - שׁ\nSin:\n2 - שׂ')
+    if e == 'ב' or e == 'ג' or e == 'ד' or e == 'ך/כ' or e == 'ף/פ' or e == 'ת':
+        print(f'\nIf you want to go back, type "Back". If you want to check a letter variation, type the respective number.')
+        check = input('>> ')
+        if check.lower() == 'back':
+            os.system('cls')
+            hE()
+        elif int(check) == 1:
+            for i2, e2 in enumerate(hDL):
+                if int(c) == int(i2) + 1:
+                    os.system('cls')
+                    hM2(i2, e2, i, e, c)
+    elif e == 'ש':
+        print(f'\nIf you want to go back, type "Back". If you want to check a letter variation, type the respective number.')
+        check = input('>> ')
+        if check.lower() == 'back':
+            os.system('cls')
+            hE()
+        elif int(check) == 1:
+            for i2, e2 in enumerate(hSHL):
+                if int(c) == int(i2) + 1:
+                    os.system('cls')
+                    hM3(i2, e2, i, e, c, 'SH')
+        elif int(check) == 2:
+            for i2, e2 in enumerate(hSL):
+                if int(c) == int(i2) + 1:
+                    os.system('cls')
+                    hM3(i2, e2, i, e, c, 'S')
+    else:
+        print(f'\nIf you want to go back, type "Back".')
+        check = input('>> ')
+        if check.lower() == 'back':
+            os.system('cls')
+            hE()
+def hM2(i, e, i2, e2, c):
+    print('Letter: ' + e)
+    print('Name: ' + hDN[i])
+    print('IPA Pronounciation: ' + hDP[i])
+    print(f'\nIf you want to go back, type "Back".')
+    check = input('>> ')
+    if check.lower() == 'back':
+        os.system('cls')
+        hM(i2, e2, c)
+def hM3(i, e, i2, e2, c, w):
+    print('Letter: ' + e)
+    if w == 'SH':
+        print('Name: ' + hSHN[i])
+        print('IPA Pronounciation: ' + hSHP[i])
+    elif w == 'S':
+        print('Name : ' + hSHN[i])
+        print('IPA Pronounciation: ' + hSP[i])
+    print(f'\nIf you want to go back, type "Back".')
+    check = input('>> ')
+    if check.lower() == 'back':
+        os.system('cls')
+        hM(i2, e2, c)
+def hE():
+    print('REMINDER: I still havent added the "Geresh" and the "Vowel points".\n')
+    for i, e in enumerate(hL):
+        print(str((i + 1)) + ' - ' + e)
+    print(f'\nIf you want to go back type "Back". If you want to check a letter, type the respective number.')
+    check = input('>> ')
+    if check.lower() == 'back':
+        os.system('cls')
+        c()
+    else:
+        for i, e in enumerate(hL):
+            if int(check) == int(i) + 1:
+                os.system('cls')
+                hM(i, e, check)
 def c():
-    print(f'\nWhat language would you like to check?\n- Spanish\n- Russian (Cyrillic)\n- Greek\n- Japanese (Hiragana & Katakana)')
+    print(f'\nWhat language would you like to check?\n- Spanish\n- Russian (Cyrillic)\n- Greek\n- Japanese (Hiragana & Katakana)\n- Hebrew\n- Back')
     check = input('>> ')
     if check.lower() == 'spanish':
         os.system('cls')
@@ -751,22 +844,58 @@ def c():
     elif check.lower() == 'japanese':
         os.system('cls')
         j()
+    elif check.lower() == 'hebrew':
+        os.system('cls')
+        hE()
+    elif check.lower() == 'back':
+        os.system('cls')
+        start()
     else:
         os.system('cls')
         print(f'\nSorry, that is not an option. Did you spell it correctly?')
         c()
-
+def p():
+    print(f'\nWhat language would you like to practice?\n- Spanish (WIP)\n- Russian (Cyrillic) (WIP)\n- Greek (WIP)\n- Japanese (Hiragana & Katakana) (WIP)\n- Hebrew (WIP)\n- Back')
+    check = input('>> ')
+    if check.lower() == 'spanish':
+        os.system('cls')
+        print('This feature has still not been added.')
+        start()
+    elif check.lower() == 'russian':
+        os.system('cls')
+        print('This feature has still not been added.')
+        start()
+    elif check.lower() == 'greek':
+        os.system('cls')
+        print('This feature has still not been added.')
+        start()
+    elif check.lower() == 'japanese':
+        os.system('cls')
+        print('This feature has still not been added.')
+        start()
+    elif check.lower() == 'hebrew':
+        os.system('cls')
+        print('This feature has still not been added.')
+        start()
+    elif check.lower() == 'back':
+        os.system('cls')
+        start()
+    else:
+        os.system('cls')
+        print(f'\nSorry, that is not an option. Did you spell it correctly?')
+        p()
 def start():
-    print(f'\nWhat would you like to do?\n- Check\n- Lesson (WIP)\n- Practice (WIP)\n- Exit')
+    print(f'\nWhat would you like to do?\n- Check\n- Practice (WIP)\n- Lesson (WIP)\n- Exit')
     check = input('>> ')
     if check.lower() == 'check':
         os.system('cls')
         c()
-    elif check.lower() == 'lesson':
-        os.system('cls')
-        start()
     elif check.lower() == 'practice':
         os.system('cls')
+        p()
+    elif check.lower() == 'lesson':
+        os.system('cls')
+        print('This feature has still not been added.')
         start()
     elif check.lower() == 'exit':
         exit()
