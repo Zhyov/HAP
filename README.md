@@ -7,3 +7,4 @@ For now the lanugages which you can check its alphabets are:
 * Russian
 * Greek
 * Japanese (not Kanji, only its phonetic alphabets aka Hiragana and Katakana)
+* Hebrew (no "Geresh" and "Volwel points")
