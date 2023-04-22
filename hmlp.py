@@ -1,4 +1,7 @@
 import random, os
+eL = ['Aa', 'Bb', 'Cc', 'Dd', 'Ee', 'Ff', 'Gg', 'Hh', 'Ii', 'Jj', 'Kk', 'Ll', 'Mm', 'Nn', 'Oo', 'Pp', 'Qq', 'Rr', 'Ss', 'Tt', 'Uu', 'Vv', 'Ww', 'Xx', 'Yy', 'Zz']
+eP = ['eɪ (ei)', 'biː (bii)', 'siː (sii)', 'diː (dii)', 'iː (ii)', 'ɛf (ef)', 'dʒiː (ji)', 'eɪtʃ (eich), heɪtʃ (heich)', 'aɪ (ai)', 'dʒeɪ (jei)', 'keɪ (kei)', 'ɛl (el)', 'ɛm (em)', 'ɛn (en)', 'oʊ (ou)', 'piː (pi)', 'kjuː (kyu)', 'ɑːr (aar)', 'ɛs (es)', 'tiː (tii)', 'juː (yuu)', 'viː (vii)', 'dʌbəl.juː (dabel yu)', 'ɛks (eks)', 'waɪ (wai)', 'zɛd (zed)']
+eN = ['a', 'bee', 'cee', 'dee', 'e', 'ef', 'jee', 'aitch, haitch', 'i', 'jay', 'kay', 'el', 'em', 'en', 'o', 'pee', 'cue, kew, kue, que', 'ar', 'ess', 'tee', 'u', 'vee', 'double-u', 'ex', 'wy, wye, why', 'zed']
 sL = ['Aa', 'Bb', 'Cc', 'Dd', 'Ee', 'Ff', 'Gg', 'Hh', 'Ii', 'Jj', 'Kk', 'Ll', 'Mm', 'Nn', 'Ññ', 'Oo', 'Pp', 'Qq', 'Rr', 'Ss', 'Tt', 'Uu', 'Vv', 'Ww', 'Xx', 'Yy', 'Zz']
 sP = ['æ (a)', 'b', 'k, s', 'd', 'ɛ (e)', 'f', 'g', '(silent)', 'i', 'x (kh, h)', 'k', 'l', 'm', 'n', 'ɲ (ñ, ny)', 'o', 'p', 'k', 'ɾ (r), r (rr)', 's', 't', 'u', 'v', 'u, w', 'ks (x)', 'i (short), ʂ (sh)', 'θ (th), s (depends on accent)']
 sN = ['a', 'be, be larga', 'ce', 'de', 'e', 'efe', 'ge', 'hache', 'i', 'jota', 'ka', 'ele', 'eme', 'ene', 'eñe', 'o', 'pe', 'qü or cu', 'erre', 'ese', 'te', 'u', 've, uve, ve corta', 'doble v' , 'equis', 'i griega', 'zeta, seta (depends on accent)']
@@ -39,75 +42,98 @@ hN = ['אָלֶף', 'בֵית', 'גִימֵל', 'דָלֶת', 'הֵא', 'וָו'
 hDN = ['', 'בֵּית', 'גִּימֵל', 'דָּלֶת', '', '', '', '', '', '', 'כַּף סוֹפִית/כַּף', '', '', '', '', '', 'פֵּא סוֹפִית, פֵּה סוֹפִית/פֵּא, פֵּה', '', '', '', '', 'תָּו']
 hSHN = ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'שִׁין', '']
 hSN = ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'שִׂין', '']
+globLang = 'no-language'
 
-print('### Welcome to HMLP v0.2! ###')
+def eM(i, e):
+    print(msg(9, globLang) + e)
+    print(msg(10, globLang) + eN[i])
+    print(msg(11, globLang) + str((i + 1)))
+    print(msg(12, globLang) + eP[i])
+    print(msg(7, globLang))
+    check = input('>> ')
+    if check.lower() == 'back' or check.lower() == 'volver':
+        os.system('cls')
+        eE()
+def eE():
+    for i, e in enumerate(eL):
+        print(str((i + 1)) + ' - ' + e)
+    print(msg(6, globLang))
+    check = input('>> ')
+    if check.lower() == 'back' or check.lower() == 'volver':
+        os.system('cls')
+        c()
+    else:
+        for i, e in enumerate(sL):
+            if int(check) == int(i) + 1:
+                os.system('cls')
+                eM(i, e)
 def sM(i, e):
-    print('Letter: ' + e)
-    print('Name: ' + sN[i])
-    print('Number in Alphabet: ' + str((i + 1)))
-    print('IPA Pronounciation: ' + sP[i])
+    print(msg(9, globLang) + e)
+    print(msg(10, globLang) + sN[i])
+    print(msg(11, globLang) + str((i + 1)))
+    print(msg(12, globLang) + sP[i])
     if e == 'Aa':
-        print('Variations:\n1 - Áá\n2 - Ää')
+        print(msg(20, globLang) + '\n1 - Áá\n2 - Ää')
     elif e == 'Ee':
-        print('Variations:\n1- Éé\n2 - Ëë')
+        print(msg(20, globLang) + '\n1- Éé\n2 - Ëë')
     elif e == 'Ii':
-        print('Variations:\n1 - Íí\n2 - Ïï')
+        print(msg(20, globLang) + '\n1 - Íí\n2 - Ïï')
     elif e == 'Oo':
-        print('Variations:\n1- Óó\n2 - Öö')
+        print(msg(20, globLang) + '\n1- Óó\n2 - Öö')
     elif e == 'Uu':
-        print('Variations:\n1 - Úú\n2 - Üü')
+        print(msg(20, globLang) + '\n1 - Úú\n2 - Üü')
     elif e == 'Cc' or e == 'Hh':
-        print('Variations:\n1 - CHch')
+        print(msg(20, globLang) + '\n1 - CHch')
     elif e == 'Ll':
-        print('Variations:\n1 - LLll')
+        print(msg(20, globLang) + '\n1 - LLll')
     if e == 'Aa' or e == 'Ee' or e == 'Ii' or e == 'Oo' or e == 'Uu':
-        print(f'\nIf you want to go back, type "Back". If you want to check a letter variation, type the respective number. If you want to hear the pronounciation, type "Audio".')
+        print(msg(8, globLang))
         check = input('>> ')
-        if check.lower() == 'back':
+        if check.lower() == 'back' or check.lower() == 'volver':
             os.system('cls')
             sE()
         elif int(check) == 1:
             os.system('cls')
-            print('\nChange: Adds stress to the letter.')
-            print(f'\nIf you want to go back, type "Back".')
+            print(msg(19, globLang))
+            print(msg(7, globLang))
             check = input('>> ')
-            if check.lower() == 'back':
+            if check.lower() == 'back' or check.lower() == 'volver':
                 os.system('cls')
                 sM(i, e)
         elif int(check) == 2:
             os.system('cls')
-            print('\nChange: Only used letter with this is the Üü. If there is a "g" or "q" before a "u" it is not pronounced, but not if it is a "ü".')
-            print(f'\nIf you want to go back, type "Back".')
+            print(msg(18, globLang))
+            print(msg(7, globLang))
             check = input('>> ')
-            if check.lower() == 'back':
+            if check.lower() == 'back' or check.lower() == 'volver':
                 os.system('cls')
                 sM(i, e)
     elif e == 'Ll':
-        print(f'\nIf you want to go back, type "Back". If you want to check a letter variation, type the respective number.')
+        print(msg(8, globLang))
         check = input('>> ')
-        if check.lower() == 'back':
+        if check.lower() == 'back' or check.lower() == 'volver':
             os.system('cls')
             sE()
         elif int(check) == 1:
             os.system('cls')
-            print('\nChange: Makes the "sh" sound.')
-            print(f'\nIf you want to go back, type "Back".')
+            print(msg(17, globLang))
+            print(msg(7, globLang))
             check = input('>> ')
-            if check.lower() == 'back':
+            if check.lower() == 'back' or check.lower() == 'volver':
                 os.system('cls')
                 sM(i, e)
     else:
-        print(f'\nIf you want to go back, type "Back".')
+        print(msg(7, globLang))
         check = input('>> ')
-        if check.lower() == 'back':
+        if check.lower() == 'back' or check.lower() == 'volver':
             os.system('cls')
             sE()
 def sE():
     for i, e in enumerate(sL):
         print(str((i + 1)) + ' - ' + e)
-    print(f'\nIf you want to go back type "Back". If you want to check a letter, type the respective number.')
+    print(msg(6, globLang))
     check = input('>> ')
-    if check.lower() == 'back':
+    if check.lower() == 'back' or check.lower() == 'volver':
         os.system('cls')
         c()
     else:
@@ -116,21 +142,21 @@ def sE():
                 os.system('cls')
                 sM(i, e)
 def rM(i, e):
-    print('Letter: ' + e)
-    print('Name: ' + rN[i])
-    print('Number in Alphabet: ' + str((i + 1)))
-    print('IPA Pronounciation: ' + rP[i])
-    print(f'\nIf you want to go back, type "Back".')
+    print(msg(9, globLang) + e)
+    print(msg(10, globLang) + rN[i])
+    print(msg(11, globLang) + str((i + 1)))
+    print(msg(12, globLang) + rP[i])
+    print(msg(7, globLang))
     check = input('>> ')
-    if check.lower() == 'back':
+    if check.lower() == 'back' or check.lower() == 'volver':
         os.system('cls')
         rE()
 def rE():
     for i, e in enumerate(rL):
         print(str((i + 1)) + ' - ' + e)
-    print(f'\nIf you want to go back type "Back". If you want to check a letter, type the respective number.')
+    print(msg(6, globLang))
     check = input('>> ')
-    if check.lower() == 'back':
+    if check.lower() == 'back' or check.lower() == 'volver':
         os.system('cls')
         c()
     else:
@@ -139,50 +165,50 @@ def rE():
                 os.system('cls')
                 rM(i, e)
 def gM(i, e):
-    print('Letter: ' + e)
-    print('Name: ' + gN[i])
-    print('Number in Alphabet: ' + str((i + 1)))
-    print('IPA Pronounciation: ' + gP[i])
+    print(msg(9, globLang) + e)
+    print(msg(10, globLang) + gN[i])
+    print(msg(11, globLang) + str((i + 1)))
+    print(msg(12, globLang) + gP[i])
     if e == 'Αα':
-        print('Variations:\n1 - Άά')
+        print(msg(20, globLang) + '\n1 - Άά')
     elif e == 'Εε':
-        print('Variations:\n1- Έέ')
+        print(msg(20, globLang) + '\n1- Έέ')
     elif e == 'Ιι':
-        print('Variations:\n1 - Ίί')
+        print(msg(20, globLang) + '\n1 - Ίί')
     elif e == 'Οο':
-        print('Variations:\n1- Όό')
+        print(msg(20, globLang) + '\n1- Όό')
     elif e == 'Ωω':
-        print('Variations:\n1 - Ώώ')
+        print(msg(20, globLang) + '\n1 - Ώώ')
     elif e == 'Ηη':
-        print('Variations:\n1 - Ήή')
+        print(msg(20, globLang) + '\n1 - Ήή')
     elif e == 'Υυ':
-        print('Variations:\n1 - Ύύ')
+        print(msg(20, globLang) + '\n1 - Ύύ')
     if e == 'Αα' or e == 'Εε' or e == 'Ιι' or e == 'Οο' or e == 'Ωω' or e == 'Ηη' or e == 'Υυ':
-        print(f'\nIf you want to go back, type "Back". If you want to check a letter variation, type the respective number.')
+        print(msg(8, globLang))
         check = input('>> ')
-        if check.lower() == 'back':
+        if check.lower() == 'back' or check.lower() == 'volver':
             os.system('cls')
             gE()
         elif int(check) == 1:
             os.system('cls')
-            print('\nChange: Adds stress to the letter.')
-            print(f'\nIf you want to go back, type "Back".')
+            print(msg(19, globLang))
+            print(msg(7, globLang))
             check = input('>> ')
-            if check.lower() == 'back':
+            if check.lower() == 'back' or check.lower() == 'volver':
                 os.system('cls')
                 gM(i, e)
     else:
-        print(f'\nIf you want to go back, type "Back".')
+        print(msg(7, globLang))
         check = input('>> ')
-        if check.lower() == 'back':
+        if check.lower() == 'back' or check.lower() == 'volver':
             os.system('cls')
             gE()
 def gE():
     for i, e in enumerate(gL):
         print(str((i + 1)) + ' - ' + e)
-    print(f'\nIf you want to go back type "Back". If you want to check a letter, type the respective number.')
+    print(msg(6, globLang))
     check = input('>> ')
-    if check.lower() == 'back':
+    if check.lower() == 'back' or check.lower() == 'volver':
         os.system('cls')
         c()
     else:
@@ -191,9 +217,9 @@ def gE():
                 os.system('cls')
                 gM(i, e)
 def jHM(i, e , c):
-    print('Letter: ' + e)
-    print('Number in Alphabet: ' + str((i + 1)))
-    print('IPA Pronounciation: ' + jHP[i])
+    print(msg(9, globLang) + e)
+    print(msg(11, globLang) + str((i + 1)))
+    print(msg(12, globLang) + jHP[i])
     if e == 'か':
         print('Dakuten:\n1 - が')
     elif e == 'き':
@@ -241,9 +267,9 @@ def jHM(i, e , c):
     elif e == 'り':
         print('Youon:\n1 - りゃ\n2 - りゅ\n3 - りょ')
     if e == 'か' or e == 'く' or e == 'け' or e == 'こ' or e == 'さ' or e == 'す' or e == 'せ' or e == 'そ' or e == 'た' or e == 'ち' or e == 'つ' or e == 'て' or e == 'と':
-        print(f'\nIf you want to go back, type "Back". If you want to check a letter variation, type the respective number.')
+        print(msg(8, globLang))
         check = input('>> ')
-        if check.lower() == 'back':
+        if check.lower() == 'back' or check.lower() == 'volver':
             os.system('cls')
             jHE()
         elif int(check) == 1:
@@ -252,9 +278,9 @@ def jHM(i, e , c):
                     os.system('cls')
                     jHM2(i2, e2, i, e, c, 'D')
     elif e == 'つ':
-        print(f'\nIf you want to go back, type "Back". If you want to check a letter variation, type the respective number.')
+        print(msg(8, globLang))
         check = input('>> ')
-        if check.lower() == 'back':
+        if check.lower() == 'back' or check.lower() == 'volver':
             os.system('cls')
             jKE()
         elif int(check) == 1:
@@ -263,16 +289,16 @@ def jHM(i, e , c):
                     os.system('cls')
                     jKM2(i2, e2, i, e, c, 'D')
         elif int(check) == 2:
-            print('\nChange: Makes one letter longer the letter after it.')
-            print(f'\nIf you want to go back, type "Back".')
+            print(msg(15, globLang))
+            print(msg(7, globLang))
             check = input('>> ')
-            if check.lower() == 'back':
+            if check.lower() == 'back' or check.lower() == 'volver':
                 os.system('cls')
                 jKM(i, e, c)
     elif e == 'は' or e == 'ふ' or e == 'へ' or e == 'ほ':
-        print(f'\nIf you want to go back, type "Back". If you want to check a letter variation, type the respective number.')
+        print(msg(8, globLang))
         check = input('>> ')
-        if check.lower() == 'back':
+        if check.lower() == 'back' or check.lower() == 'volver':
             os.system('cls')
             jHE()
         elif int(check) == 1:
@@ -286,9 +312,9 @@ def jHM(i, e , c):
                     os.system('cls')
                     jHM2(i2, e2, i, e, c, 'D')
     elif e == 'ひ':
-        print(f'\nIf you want to go back, type "Back". If you want to check a letter variation, type the respective number.')
+        print(msg(8, globLang))
         check = input('>> ')
-        if check.lower() == 'back':
+        if check.lower() == 'back' or check.lower() == 'volver':
             os.system('cls')
             jHE()
         elif int(check) == 1:
@@ -347,9 +373,9 @@ def jHM(i, e , c):
                     os.system('cls')
                     jHM3(int(i2) + 2, jHYL[i2 + 2], i, e, c, 'H')
     elif e == 'き' or e == 'し':
-        print(f'\nIf you want to go back, type "Back". If you want to check a letter variation, type the respective number.')
+        print(msg(8, globLang))
         check = input('>> ')
-        if check.lower() == 'back':
+        if check.lower() == 'back' or check.lower() == 'volver':
             os.system('cls')
             jHE()
         elif int(check) == 1:
@@ -404,41 +430,41 @@ def jHM(i, e , c):
                     os.system('cls')
                     jHM3(int(i2) + 2, jHYL[i2 + 2], i, e, c, 'N')
     else:
-        print(f'\nIf you want to go back, type "Back".')
+        print(msg(7, globLang))
         check = input('>> ')
-        if check.lower() == 'back':
+        if check.lower() == 'back' or check.lower() == 'volver':
             os.system('cls')
             jHE()
 def jHM2(i, e, i2, e2, c, w):
-    print('Letter: ' + e)
+    print(msg(9, globLang) + e)
     if w == 'D':
-        print('IPA Pronounciation: ' + jDP[i])
+        print(msg(12, globLang) + jDP[i])
     elif w == 'H':
-        print('IPA Pronounciation: ' + jHP2[i])
-    print(f'\nIf you want to go back, type "Back".')
+        print(msg(12, globLang) + jHP2[i])
+    print(msg(7, globLang))
     check = input('>> ')
-    if check.lower() == 'back':
+    if check.lower() == 'back' or check.lower() == 'volver':
         os.system('cls')
         jHM(i2, e2, c)
 def jHM3(i, e, i2, e2, c, w):
-    print('Letter: ' + e)
+    print(msg(9, globLang) + e)
     if w == 'N':
-        print('IPA Pronounciation: ' + jYP[i])
+        print(msg(12, globLang) + jYP[i])
     elif w == 'D':
-        print('IPA Pronounciation: ' + jDYP[i])
+        print(msg(12, globLang) + jDYP[i])
     elif w == 'H':
-        print('IPA Pronounciation: ' + jHYP[i])
-    print(f'\nIf you want to go back, type "Back".')
+        print(msg(12, globLang) + jHYP[i])
+    print(msg(7, globLang))
     check = input('>> ')
-    if check.lower() == 'back':
+    if check.lower() == 'back' or check.lower() == 'volver':
         os.system('cls')
         jHM(i2, e2, c)
 def jHE():
     for i, e in enumerate(jHL):
         print(str((i + 1)) + ' - ' + e)
-    print(f'\nIf you want to go back type "Back". If you want to check a letter, type the respective number.')
+    print(msg(6, globLang))
     check = input('>> ')
-    if check.lower() == 'back':
+    if check.lower() == 'back' or check.lower() == 'volver':
         os.system('cls')
         j()
     else:
@@ -447,9 +473,9 @@ def jHE():
                 os.system('cls')
                 jHM(i, e, check)
 def jKM(i, e , c):
-    print('Letter: ' + e)
-    print('Number in Alphabet: ' + str((i + 1)))
-    print('IPA Pronounciation: ' + jKP[i])
+    print(msg(9, globLang) + e)
+    print(msg(11, globLang) + str((i + 1)))
+    print(msg(12, globLang) + jKP[i])
     if e == 'ア':
         print('Youon:\n1 - ァ')
     elif e == 'イ':
@@ -507,9 +533,9 @@ def jKM(i, e , c):
     elif e == 'リ':
         print('Youon:\n1 - リャ\n2 - リュ\n3 - リョ')
     if e == 'カ' or e == 'ク' or e == 'ケ' or e == 'コ' or e == 'サ' or e == 'ス' or e == 'セ' or e == 'ソ' or e == 'タ' or e == 'チ' or e == 'テ' or e == 'ト':
-        print(f'\nIf you want to go back, type "Back". If you want to check a letter variation, type the respective number.')
+        print(msg(8, globLang))
         check = input('>> ')
-        if check.lower() == 'back':
+        if check.lower() == 'back' or check.lower() == 'volver':
             os.system('cls')
             jKE()
         elif int(check) == 1:
@@ -518,22 +544,22 @@ def jKM(i, e , c):
                     os.system('cls')
                     jKM2(i2, e2, i, e, c, 'D')
     elif e == 'ア' or e == 'イ' or e == 'ウ' or e == 'エ' or e == 'オ':
-        print(f'\nIf you want to go back, type "Back". If you want to check a letter variation, type the respective number.')
+        print(msg(8, globLang))
         check = input('>> ')
-        if check.lower() == 'back':
+        if check.lower() == 'back' or check.lower() == 'volver':
             os.system('cls')
             jKE()
         elif int(check) == 1:
-            print('\nChange: Makes one letter longer the letter before it. (Only if it is the same vocal)')
-            print(f'\nIf you want to go back, type "Back".')
+            print(msg(16, globLang))
+            print(msg(7, globLang))
             check = input('>> ')
-            if check.lower() == 'back':
+            if check.lower() == 'back' or check.lower() == 'volver':
                 os.system('cls')
                 jKM(i, e, c)
     elif e == 'ツ':
-        print(f'\nIf you want to go back, type "Back". If you want to check a letter variation, type the respective number.')
+        print(msg(8, globLang))
         check = input('>> ')
-        if check.lower() == 'back':
+        if check.lower() == 'back' or check.lower() == 'volver':
             os.system('cls')
             jKE()
         elif int(check) == 1:
@@ -542,16 +568,16 @@ def jKM(i, e , c):
                     os.system('cls')
                     jKM2(i2, e2, i, e, c, 'D')
         elif int(check) == 2:
-            print('\nChange: Makes one letter longer the letter after it.')
-            print(f'\nIf you want to go back, type "Back".')
+            print(msg(15, globLang))
+            print(msg(7, globLang))
             check = input('>> ')
-            if check.lower() == 'back':
+            if check.lower() == 'back' or check.lower() == 'volver':
                 os.system('cls')
                 jKM(i, e, c)
     elif e == 'ハ' or e == 'フ' or e == 'ヘ' or e == 'ホ':
-        print(f'\nIf you want to go back, type "Back". If you want to check a letter variation, type the respective number.')
+        print(msg(8, globLang))
         check = input('>> ')
-        if check.lower() == 'back':
+        if check.lower() == 'back' or check.lower() == 'volver':
             os.system('cls')
             jKE()
         elif int(check) == 1:
@@ -565,9 +591,9 @@ def jKM(i, e , c):
                     os.system('cls')
                     jKM2(i2, e2, i, e, c, 'D')
     elif e == 'ヒ':
-        print(f'\nIf you want to go back, type "Back". If you want to check a letter variation, type the respective number.')
+        print(msg(8, globLang))
         check = input('>> ')
-        if check.lower() == 'back':
+        if check.lower() == 'back' or check.lower() == 'volver':
             os.system('cls')
             jKE()
         elif int(check) == 1:
@@ -626,9 +652,9 @@ def jKM(i, e , c):
                     os.system('cls')
                     jKM3(int(i2) + 2, jKYL[i2 + 2], i, e, c, 'H')
     elif e == 'キ' or e == 'シ':
-        print(f'\nIf you want to go back, type "Back". If you want to check a letter variation, type the respective number.')
+        print(msg(8, globLang))
         check = input('>> ')
-        if check.lower() == 'back':
+        if check.lower() == 'back' or check.lower() == 'volver':
             os.system('cls')
             jKE()
         elif int(check) == 1:
@@ -683,41 +709,41 @@ def jKM(i, e , c):
                     os.system('cls')
                     jKM3(int(i2) + 2, jKYL[i2 + 2], i, e, c, 'N')
     else:
-        print(f'\nIf you want to go back, type "Back".')
+        print(msg(7, globLang))
         check = input('>> ')
-        if check.lower() == 'back':
+        if check.lower() == 'back' or check.lower() == 'volver':
             os.system('cls')
             jKE()
 def jKM2(i, e, i2, e2, c, w):
-    print('Letter: ' + e)
+    print(msg(9, globLang) + e)
     if w == 'D':
-        print('IPA Pronounciation: ' + jDP[i])
+        print(msg(12, globLang) + jDP[i])
     elif w == 'H':
-        print('IPA Pronounciation: ' + jHP2[i])
-    print(f'\nIf you want to go back, type "Back".')
+        print(msg(12, globLang) + jHP2[i])
+    print(msg(7, globLang))
     check = input('>> ')
-    if check.lower() == 'back':
+    if check.lower() == 'back' or check.lower() == 'volver':
         os.system('cls')
         jKM(i2, e2, c)
 def jKM3(i, e, i2, e2, c, w):
-    print('Letter: ' + e)
+    print(msg(9, globLang) + e)
     if w == 'N':
-        print('IPA Pronounciation: ' + jYP[i])
+        print(msg(12, globLang) + jYP[i])
     elif w == 'D':
-        print('IPA Pronounciation: ' + jDYP[i])
+        print(msg(12, globLang) + jDYP[i])
     elif w == 'H':
-        print('IPA Pronounciation: ' + jHYP[i])
-    print(f'\nIf you want to go back, type "Back".')
+        print(msg(12, globLang) + jHYP[i])
+    print(msg(7, globLang))
     check = input('>> ')
-    if check.lower() == 'back':
+    if check.lower() == 'back' or check.lower() == 'volver':
         os.system('cls')
         jKM(i2, e2, c)
 def jKE():
     for i, e in enumerate(jKL):
         print(str((i + 1)) + ' - ' + e)
-    print(f'\nIf you want to go back type "Back". If you want to check a letter, type the respective number.')
+    print(msg(6, globLang))
     check = input('>> ')
-    if check.lower() == 'back':
+    if check.lower() == 'back' or check.lower() == 'volver':
         os.system('cls')
         j()
     else:
@@ -726,7 +752,7 @@ def jKE():
                 os.system('cls')
                 jKM(i, e, check)
 def j():
-    print(f'\nWhat phonetic alphabet would you like to check?\n- Hiragana\n- Katakana\n- Back')
+    print(msg(13, globLang))
     check = input('>> ')
     if check.lower() == 'hiragana':
         os.system('cls')
@@ -734,18 +760,18 @@ def j():
     elif check.lower() == 'katakana':
         os.system('cls')
         jKE()
-    elif check.lower() == 'back':
+    elif check.lower() == 'back' or check.lower() == 'volver':
         os.system('cls')
         c()
     else:
         os.system('cls')
-        print(f'\nSorry, that is not an option. Did you spell it correctly?')
+        msg(1, globLang)
         j()
 def hM(i, e, c):
-    print('Letter: ' + e)
-    print('Name: ' + hN[i])
-    print('Number in Alphabet: ' + str((i + 1)))
-    print('IPA Pronounciation: ' + hP[i])
+    print(msg(9, globLang) + e)
+    print(msg(10, globLang) + hN[i])
+    print(msg(11, globLang) + str((i + 1)))
+    print(msg(12, globLang) + hP[i])
     if e == 'ב':
         print('Dagesh:\n1 - בּ')
     elif e == 'ג':
@@ -761,9 +787,9 @@ def hM(i, e, c):
     elif e == 'ש':
         print('Shin:\n1 - שׁ\nSin:\n2 - שׂ')
     if e == 'ב' or e == 'ג' or e == 'ד' or e == 'ך/כ' or e == 'ף/פ' or e == 'ת':
-        print(f'\nIf you want to go back, type "Back". If you want to check a letter variation, type the respective number.')
+        print(msg(8, globLang))
         check = input('>> ')
-        if check.lower() == 'back':
+        if check.lower() == 'back' or check.lower() == 'volver':
             os.system('cls')
             hE()
         elif int(check) == 1:
@@ -772,9 +798,9 @@ def hM(i, e, c):
                     os.system('cls')
                     hM2(i2, e2, i, e, c)
     elif e == 'ש':
-        print(f'\nIf you want to go back, type "Back". If you want to check a letter variation, type the respective number.')
+        print(msg(8, globLang))
         check = input('>> ')
-        if check.lower() == 'back':
+        if check.lower() == 'back' or check.lower() == 'volver':
             os.system('cls')
             hE()
         elif int(check) == 1:
@@ -788,40 +814,40 @@ def hM(i, e, c):
                     os.system('cls')
                     hM3(i2, e2, i, e, c, 'S')
     else:
-        print(f'\nIf you want to go back, type "Back".')
+        print(msg(7, globLang))
         check = input('>> ')
-        if check.lower() == 'back':
+        if check.lower() == 'back' or check.lower() == 'volver':
             os.system('cls')
             hE()
 def hM2(i, e, i2, e2, c):
-    print('Letter: ' + e)
-    print('Name: ' + hDN[i])
-    print('IPA Pronounciation: ' + hDP[i])
-    print(f'\nIf you want to go back, type "Back".')
+    print(msg(9, globLang) + e)
+    print(msg(10, globLang) + hDN[i])
+    print(msg(12, globLang) + hDP[i])
+    print(msg(7, globLang))
     check = input('>> ')
-    if check.lower() == 'back':
+    if check.lower() == 'back' or check.lower() == 'volver':
         os.system('cls')
         hM(i2, e2, c)
 def hM3(i, e, i2, e2, c, w):
-    print('Letter: ' + e)
+    print(msg(9, globLang) + e)
     if w == 'SH':
-        print('Name: ' + hSHN[i])
-        print('IPA Pronounciation: ' + hSHP[i])
+        print(msg(10, globLang) + hSHN[i])
+        print(msg(12, globLang) + hSHP[i])
     elif w == 'S':
-        print('Name : ' + hSHN[i])
-        print('IPA Pronounciation: ' + hSP[i])
-    print(f'\nIf you want to go back, type "Back".')
+        print(msg(10, globLang) + hSHN[i])
+        print(msg(12, globLang) + hSP[i])
+    print(msg(7, globLang))
     check = input('>> ')
-    if check.lower() == 'back':
+    if check.lower() == 'back' or check.lower() == 'volver':
         os.system('cls')
         hM(i2, e2, c)
 def hE():
-    print('REMINDER: I still havent added the "Geresh" and the "Vowel points".\n')
+    print(msg(21, globLang))
     for i, e in enumerate(hL):
         print(str((i + 1)) + ' - ' + e)
-    print(f'\nIf you want to go back type "Back". If you want to check a letter, type the respective number.')
+    print(msg(6, globLang))
     check = input('>> ')
-    if check.lower() == 'back':
+    if check.lower() == 'back' or check.lower() == 'volver':
         os.system('cls')
         c()
     else:
@@ -830,78 +856,213 @@ def hE():
                 os.system('cls')
                 hM(i, e, check)
 def c():
-    print(f'\nWhat language would you like to check?\n- Spanish\n- Russian (Cyrillic)\n- Greek\n- Japanese (Hiragana & Katakana)\n- Hebrew\n- Back')
+    print(msg(5, globLang))
     check = input('>> ')
-    if check.lower() == 'spanish':
+    if check.lower() == 'english' or check.lower() == 'inglés' or check.lower() == 'ingles':
+        os.system('cls')
+        eE()
+    elif check.lower() == 'spanish' or check.lower() == 'español' or check.lower() == 'espanol':
         os.system('cls')
         sE()
-    elif check.lower() == 'russian':
+    elif check.lower() == 'russian' or check.lower() == 'ruso':
         os.system('cls')
         rE()
-    elif check.lower() == 'greek':
+    elif check.lower() == 'greek' or check.lower() == 'griego':
         os.system('cls')
         gE()
-    elif check.lower() == 'japanese':
+    elif check.lower() == 'japanese' or check.lower() == 'japonés' or check.lower() == 'japones':
         os.system('cls')
         j()
-    elif check.lower() == 'hebrew':
+    elif check.lower() == 'hebrew' or check.lower() == 'hebreo':
         os.system('cls')
         hE()
-    elif check.lower() == 'back':
+    elif check.lower() == 'back' or check.lower() == 'volver':
         os.system('cls')
         start()
     else:
         os.system('cls')
-        print(f'\nSorry, that is not an option. Did you spell it correctly?')
+        print(msg(1, globLang))
         c()
 def p():
-    print(f'\nWhat language would you like to practice?\n- Spanish (WIP)\n- Russian (Cyrillic) (WIP)\n- Greek (WIP)\n- Japanese (Hiragana & Katakana) (WIP)\n- Hebrew (WIP)\n- Back')
+    print(msg(14, globLang))
     check = input('>> ')
-    if check.lower() == 'spanish':
+    if check.lower() == 'english' or check.lower() == 'inglés' or check.lower() == 'ingles':
         os.system('cls')
-        print('This feature has still not been added.')
+        print(msg(4, globLang))
         start()
-    elif check.lower() == 'russian':
+    elif check.lower() == 'spanish' or check.lower() == 'español' or check.lower() == 'espanol':
         os.system('cls')
-        print('This feature has still not been added.')
+        print(msg(4, globLang))
         start()
-    elif check.lower() == 'greek':
+    elif check.lower() == 'russian' or check.lower() == 'ruso':
         os.system('cls')
-        print('This feature has still not been added.')
+        print(msg(4, globLang))
         start()
-    elif check.lower() == 'japanese':
+    elif check.lower() == 'greek' or check.lower() == 'griego':
         os.system('cls')
-        print('This feature has still not been added.')
+        print(msg(4, globLang))
         start()
-    elif check.lower() == 'hebrew':
+    elif check.lower() == 'japanese' or check.lower() == 'japonés' or check.lower() == 'japones':
         os.system('cls')
-        print('This feature has still not been added.')
+        print(msg(4, globLang))
         start()
-    elif check.lower() == 'back':
+    elif check.lower() == 'hebrew' or check.lower() == 'hebreo':
+        os.system('cls')
+        print(msg(4, globLang))
+        start()
+    elif check.lower() == 'back'  or check.lower() == 'volver':
         os.system('cls')
         start()
     else:
         os.system('cls')
-        print(f'\nSorry, that is not an option. Did you spell it correctly?')
+        print(msg(1, globLang))
         p()
 def start():
-    print(f'\nWhat would you like to do?\n- Check\n- Practice (WIP)\n- Lesson (WIP)\n- Exit')
+    print(msg(2, globLang))
     check = input('>> ')
-    if check.lower() == 'check':
+    if check.lower() == 'check' or check.lower() == 'comprobar':
         os.system('cls')
         c()
-    elif check.lower() == 'practice':
+    elif check.lower() == 'practice' or check.lower() == 'practicar':
         os.system('cls')
         p()
-    elif check.lower() == 'lesson':
+    elif check.lower() == 'lesson' or check.lower() == 'lección' or check.lower() == 'leccion':
         os.system('cls')
-        print('This feature has still not been added.')
+        print(msg(4, globLang))
         start()
-    elif check.lower() == 'exit':
+    elif check.lower() == 'settings' or check.lower() == 'ajustes':
+        os.system('cls')
+        settings()
+    elif check.lower() == 'exit' or check.lower() == 'salir':
         exit()
     else:
         os.system('cls')
-        print(f'\nSorry, that is not an option. Did you spell it correctly?')
-    os.system('cls')
+        print(msg(1, globLang))
     start()
-start()
+def settings():
+    print(msg(3, globLang))
+    check = input('>> ')
+    if check.lower() == 'language' or check.lower() == 'idioma':
+        os.system('cls')
+        lang(True)
+    elif check.lower() == 'back' or check.lower() == 'volver':
+        os.system('cls')
+        start()
+    else:
+        os.system('cls')
+        print(msg(1, globLang))
+    settings()
+def lang(sm):
+    global globLang
+    if sm == False:
+        print('\nSelect a language / Elegí un idioma:\n1 - en (English)\n2 - es (Español)')
+        check = input('>> ')
+        if check == '1' or check.lower() == 'english' or check.lower() == 'en':
+            globLang = 'en'
+        elif check == '2' or check.lower() == 'español' or check.lower() == 'espanol' or check.lower() == 'es':
+            globLang = 'es'
+    elif sm == True:
+        print('\nSelect a language / Elegí un idioma:\n1 - en (English)\n2 - es (Español)\n- Back / Volver')
+        check = input('>> ')
+        if check == '1' or check.lower() == 'english' or check.lower() == 'en':
+            globLang = 'en'
+        elif check == '2' or check.lower() == 'español' or check.lower() == 'es':
+            globLang = 'es'
+        elif check.lower() == 'back' or check.lower() == 'volver':
+            os.system('cls')
+            settings()
+    os.system('cls')
+    print(msg(0, globLang))
+    start()
+def msg(type, lang):
+    if lang == 'en':
+        if int(type) == 0:
+            return '\n### Welcome to HMLP v0.3! ###'
+        elif int(type) == 1:
+            return '\nSorry, that is not an option. Did you spell it correctly?'
+        elif int(type) == 2:
+            return '\nWhat would you like to do?\n- Check\n- Practice (WIP)\n- Lesson (WIP)\n- Settings\n- Exit'
+        elif int(type) == 3:
+            return '\nWhat would you like to do?\n- Language\n- Back'
+        elif int(type) == 4:
+            return '\nThis feature has still not been added.'
+        elif int(type) == 5:
+            return '\nWhat language would you like to check?\n- English\n- Spanish\n- Russian (Cyrillic)\n- Greek\n- Japanese (Hiragana & Katakana)\n- Hebrew\n- Back'
+        elif int(type) == 6:
+            return '\nIf you want to go back type "Back". If you want to check a letter, type the respective number.'
+        elif int(type) == 7:
+            return '\nIf you want to go back, type "Back".'
+        elif int(type) == 8:
+            return '\nIf you want to go back, type "Back". If you want to check a letter variation, type the respective number.'
+        elif int(type) == 9:
+            return 'Letter: '
+        elif int(type) == 10:
+            return 'Name: '
+        elif int(type) == 11:
+            return 'Number in alphabet: '
+        elif int(type) == 12:
+            return 'IPA pronounciation: '
+        elif int(type) == 13:
+            return '\nWhat phonetic alphabet would you like to check?\n- Hiragana\n- Katakana\n- Back'
+        elif int(type) == 14:
+            return '\nWhat language would you like to practice?\n- English (WIP)\n- Spanish (WIP)\n- Russian (Cyrillic) (WIP)\n- Greek (WIP)\n- Japanese (Hiragana & Katakana) (WIP)\n- Hebrew (WIP)\n- Back'
+        elif int(type) == 15:
+            return '\nChange: Makes one letter longer the letter after it.'
+        elif int(type) == 16:
+            return '\nChange: Makes one letter longer the letter before it. (Only if it is the same vocal)'
+        elif int(type) == 17:
+            return '\nChange: Makes the "sh" sound.'
+        elif int(type) == 18:
+            return '\nChange: Only used letter with this is the Üü. If there is a "g" or "q" before a "u" it is not pronounced, but not if it is a "ü".'
+        elif int(type) == 19:
+            return '\nChange: Adds stress to the letter.'
+        elif int(type) == 20:
+            return 'Variations:'
+        elif int(type) == 21:
+            return '\nREMINDER: I still havent added the "Geresh" and the "Vowel points".\n'
+    elif lang == 'es':
+        if int(type) == 0:
+            return '\n### Bienvenido a HMLP v0.3! ###'
+        elif int(type) == 1:
+            return '\nLo siento, eso no es una opción. ¿Lo has escrito correctamente?'
+        elif int(type) == 2:
+            return '\n¿Qué te gustaría hacer?\n- Comprobar\n- Practicar (WIP)\n- Lección (WIP)\n- Ajustes\n- Salir'
+        elif int(type) == 3:
+            return '\n¿Qué te gustaría hacer?\n- Idioma\n- Volver'
+        elif int(type) == 4:
+            return '\nEsta función aún no se ha añadido.'
+        elif int(type) == 5:
+            return '\n¿Qué idioma desea comprobar?\n- Inglés\n- Español\n- Ruso (Cirílico)\n- Griego\n- Japonés (Hiragana & Katakana)\n- Hebreo\n- Volver'
+        elif int(type) == 6:
+            return '\nSi desea volver atrás, escriba "Volver". Si desea comprobar una letra, escriba el número correspondiente.'
+        elif int(type) == 7:
+            return '\nSi desea volver atrás, escriba "Volver".'
+        elif int(type) == 8:
+            return '\nSi desea volver atrás, escriba "Volver". Si desea comprobar una variación de la letra, escriba el número correspondiente.'
+        elif int(type) == 9:
+            return 'Letra: '
+        elif int(type) == 10:
+            return 'Nombre: '
+        elif int(type) == 11:
+            return 'Número en alfabeto: '
+        elif int(type) == 12:
+            return 'Pronunciación del IPA: '
+        elif int(type) == 13:
+            return '\n¿Qué alfabeto fonético desea consultar?\n- Hiragana\n- Katakana\n- Volver'
+        elif int(type) == 14:
+            return '\n¿Qué idioma te gustaría practicar?\n- Inglés (WIP)\n- Español (WIP)\n- Ruso (Cirílico) (WIP)\n- Griego (WIP)\n- Japonés (Hiragana & Katakana) (WIP)\n- Hebreo (WIP)\n- Volver'
+        elif int(type) == 15:
+            return '\nCambio: Hace una letra más larga la letra que le sigue.'
+        elif int(type) == 16:
+            return '\nCambio: Alarga una letra la letra que la antecede. (Sólo si es la misma vocal)'
+        elif int(type) == 17:
+            return '\nCambio: Hace el sonido "sh".'
+        elif int(type) == 18:
+            return '\nCambio: La única letra que se usa con esto es la Üü. Si hay una "g" o una "q" antes de una "u" no se pronuncia, pero no si es una "ü".'
+        elif int(type) == 19:
+            return '\nCambio: Añade acento/estrés a la letra.'
+        elif int(type) == 20:
+            return 'Variaciones:'
+        elif int(type) == 21:
+            return '\nRECORDATORIO: Todavía no he añadido los "Geresh" y los "Puntos vocálicos".\n'
+lang(False)
