@@ -43,7 +43,7 @@ hDN = ['', 'בֵּית', 'גִּימֵל', 'דָּלֶת', '', '', '', '', '', '
 hSHN = ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'שִׁין', '']
 hSN = ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'שִׂין', '']
 globLang = 'no-language'
-ver = 'v0.4'
+ver = 'v0.4.1'
 
 def eM(i, e):
     print(msg(9, globLang) + e)
@@ -931,18 +931,31 @@ def start():
         os.system('cls')
         print(msg(4, globLang))
         start()
-    elif iToF('set.seti', check):
+    elif iToF('set.extr', check):
         os.system('cls')
-        settings()
-    elif iToF('set.cred', check):
-        os.system('cls')
-        credits()
+        extra()
     elif iToF('exit', check):
         exit()
     else:
         os.system('cls')
         print(msg(1, globLang))
     start()
+def extra():
+    print(msg(22, globLang))
+    check = input('>> ')
+    if iToF('set.seti', check):
+        os.system('cls')
+        settings()
+    elif iToF('set.cred', check):
+        os.system('cls')
+        credits()
+    elif iToF('back', check):
+        os.system('cls')
+        start()
+    else:
+        os.system('cls')
+        print(msg(1, globLang))
+    settings()
 def settings():
     print(msg(3, globLang))
     check = input('>> ')
@@ -951,7 +964,7 @@ def settings():
         lang(True)
     elif iToF('back', check):
         os.system('cls')
-        start()
+        extra()
     else:
         os.system('cls')
         print(msg(1, globLang))
@@ -996,7 +1009,11 @@ def credits():
     check = input('>> ')
     if iToF('back', check):
         os.system('cls')
-        start()
+        extra()
+    else:
+        os.system('cls')
+        print(msg(1, globLang))
+    credits()
 def iToF(type, chk):
     if type == 'back':
         if chk.lower() == 'back' or chk.lower() == 'volver' or chk.lower() == 'назад':
@@ -1022,6 +1039,9 @@ def iToF(type, chk):
     elif type == 'set.chek':
         if chk.lower() == 'check' or chk.lower() == 'comprobar' or chk.lower() == 'проверка':
             return True
+    elif type == 'set.extr':
+        if chk.lower() == 'extra' or chk.lower() == 'дополнительно':
+            return True
     elif type == 'lan.engl':
         if chk.lower() == 'english' or chk.lower() == 'inglés' or chk.lower() == 'ingles' or chk.lower() == 'английский':
             return True
@@ -1043,11 +1063,11 @@ def iToF(type, chk):
 def msg(type, lang):
     if lang == 'en':
         if int(type) == 0:
-            return '\n### Welcome to HMLP ' + ver + '! ###'
+            return '\n### Welcome to HAP ' + ver + '! ###'
         elif int(type) == 1:
             return '\nSorry, that is not an option. Did you spell it correctly?'
         elif int(type) == 2:
-            return '\nWhat would you like to do?\n- Check\n- Practice (WIP)\n- Lesson (WIP)\n- Settings\n- Credits\n- Exit'
+            return '\nWhat would you like to do?\n- Check\n- Practice (WIP)\n- Lesson (WIP)\n- Extra\n- Exit'
         elif int(type) == 3:
             return '\nWhat would you like to do?\n- Language\n- Back'
         elif int(type) == 4:
@@ -1086,15 +1106,17 @@ def msg(type, lang):
             return 'Variations:'
         elif int(type) == 21:
             return '\nCredits:\n- Code: Luke\n- Translations:\n-- English: Luke\n-- Spanish: Luke\n-- Russian: DeepL Translate\n- Ideas: Luke'
+        elif int(type) == 22:
+            return '\nWhat  would you like to do?\n- Settings\n- Credits\n- Back'
         elif int(type) == 99:
             return '\nREMINDER: I still havent added the "Geresh" and the "Vowel points".\n'
     elif lang == 'es':
         if int(type) == 0:
-            return '\n### Bienvenido a HMLP ' + ver + '! ###'
+            return '\n### Bienvenido a HAP ' + ver + '! ###'
         elif int(type) == 1:
             return '\nLo siento, eso no es una opción. ¿Lo has escrito correctamente?'
         elif int(type) == 2:
-            return '\n¿Qué te gustaría hacer?\n- Comprobar\n- Practicar (WIP)\n- Lección (WIP)\n- Ajustes\n- Créditos\n- Salir'
+            return '\n¿Qué te gustaría hacer?\n- Comprobar\n- Practicar (WIP)\n- Lección (WIP)\n- Extra\n- Salir'
         elif int(type) == 3:
             return '\n¿Qué te gustaría hacer?\n- Idioma\n- Volver'
         elif int(type) == 4:
@@ -1133,17 +1155,19 @@ def msg(type, lang):
             return 'Variaciones:'
         elif int(type) == 21:
             return '\nCréditos:\n- Código: Luke\n- Traducciones:\n-- Inglés: Luke\n-- Español: Luke\n-- Ruso: DeepL Traductor\n- Ideas: Luke'
+        elif int(type) == 22:
+            return '\n¿Qué te gustaría hacer?\n- Ajustes\n- Créditos\n- Volver'
         elif int(type) == 99:
             return '\nRECORDATORIO: Todavía no he añadido los "Geresh" y los "Puntos vocálicos".\n'
     elif lang == 'ru':
         if int(type) == 0:
-            return '\n### Добро пожаловать в HMLP ' + ver + '! ###'
+            return '\n### Добро пожаловать в HAP ' + ver + '! ###'
         elif int(type) == 1:
             return '\nИзвините, это не вариант. Вы правильно написали?'
         elif int(type) == 2:
-            return '\nЧто бы вы хотели сделать? \n- Проверка\n- Практика (WIP)\n- Урок (WIP)\n- Настройки\n- Кредиты\n- Выход'
+            return '\nЧто бы вы хотели сделать?\n- Проверка\n- Практика (WIP)\n- Урок (WIP)\n- Дополнительно\n- Выход'
         elif int(type) == 3:
-            return '\nЧто бы вы хотели сделать? \n- Язык\n- Назад'
+            return '\nЧто бы вы хотели сделать?\n- Язык\n- Назад'
         elif int(type) == 4:
             return '\nЭта функция до сих пор не добавлена.'
         elif int(type) == 5:
@@ -1180,6 +1204,8 @@ def msg(type, lang):
             return 'Вариации:'
         elif int(type) == 21:
             return '\nКредиты:\n- Код: Luke\n- Переводы:\n-- Английский: Luke\n-- Испанский: Luke\n-- Русский: DeepL Translate\n- Идеи: Luke'
+        elif int(type) == 22:
+            return '\nЧто бы вы хотели сделать?\n- Настройки\n- Кредиты\n- Назад'
         elif int(type) == 99:
             return '\nПОМНИТЕ: Я все еще не добавил "Гереш" и "Гласные точки".\n'
 lang(False)
