@@ -1,6 +1,6 @@
 # HAP
 
-HAP (formerly known as HMLP) is the biggest project I made for now that its name stands for Help Alphabet Pronounciation. This is supposed to be a program for me but idc if other people use it. Feel free to tell me a suggestion for the program.
+HAP (formerly known as HMLP) is the biggest project I made for now and its name stands for Help Alphabet Pronounciation. This is supposed to be a program for me but idc if other people use it. Feel free to tell me a suggestion for the program.
 
 For now the lanugages which you can check its alphabets are:
 * Spanish
