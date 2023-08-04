@@ -6,6 +6,8 @@ For now the lanugages which you can check its alphabets are:
 * Spanish
 * Russian
 * Greek
-* Japanese (not Kanji, only its phonetic alphabets aka Hiragana and Katakana)
+* Japanese (no Kanji, only its phonetic alphabets a.k.a. Hiragana and Katakana)
 * Hebrew (no "Geresh" and "Vowel points")
 * Toki Pona (And a dictionary!)
+* Korean
+* Arab (no vocals)
