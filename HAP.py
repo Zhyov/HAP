@@ -1,6 +1,6 @@
 import random, os
 eL = ['Aa', 'Bb', 'Cc', 'Dd', 'Ee', 'Ff', 'Gg', 'Hh', 'Ii', 'Jj', 'Kk', 'Ll', 'Mm', 'Nn', 'Oo', 'Pp', 'Qq', 'Rr', 'Ss', 'Tt', 'Uu', 'Vv', 'Ww', 'Xx', 'Yy', 'Zz']
-eP = ['eɪ (ei)', 'biː (bii)', 'siː (sii)', 'diː (dii)', 'iː (ii)', 'ɛf (ef)', 'dʒiː (ji)', 'eɪtʃ (eich), heɪtʃ (heich)', 'aɪ (ai)', 'dʒeɪ (jei)', 'keɪ (kei)', 'ɛl (el)', 'ɛm (em)', 'ɛn (en)', 'oʊ (ou)', 'piː (pi)', 'kjuː (kyu)', 'ɑːr (aar)', 'ɛs (es)', 'tiː (tii)', 'juː (yuu)', 'viː (vii)', 'dʌbəl.juː (dabel yu)', 'ɛks (eks)', 'waɪ (wai)', 'zɛd (zed)']
+eP = ['eɪ (ei)', 'biː (bii)', 'siː (sii)', 'diː (dii)', 'iː (ii)', 'ɛf (ef)', 'dʒiː (ji)', 'eɪtʃ (eich), heɪtʃ (heich)', 'aɪ (ai)', 'dʒeɪ (jei)', 'keɪ (kei)', 'ɛl (el)', 'ɛm (em)', 'ɛn (en)', 'oʊ (ou)', 'piː (pi)', 'kjuː (kyu)', 'ɑːɹ (aar)', 'ɛs (es)', 'tiː (tii)', 'juː (yuu)', 'viː (vii)', 'dʌbəl.juː (dabel yu)', 'ɛks (eks)', 'waɪ (wai)', 'zɛd (zed)']
 eN = ['a', 'bee', 'cee', 'dee', 'e', 'ef', 'jee', 'aitch, haitch', 'i', 'jay', 'kay', 'el', 'em', 'en', 'o', 'pee', 'cue, kew, kue, que', 'ar', 'ess', 'tee', 'u', 'vee', 'double-u', 'ex', 'wy, wye, why', 'zed']
 sL = ['Aa', 'Bb', 'Cc', 'Dd', 'Ee', 'Ff', 'Gg', 'Hh', 'Ii', 'Jj', 'Kk', 'Ll', 'Mm', 'Nn', 'Ññ', 'Oo', 'Pp', 'Qq', 'Rr', 'Ss', 'Tt', 'Uu', 'Vv', 'Ww', 'Xx', 'Yy', 'Zz']
 sP = ['æ (a)', 'b', 'k, s', 'd', 'ɛ (e)', 'f', 'g', '(silent)', 'i', 'x (kh, h)', 'k', 'l', 'm', 'n', 'ɲ (ñ, ny)', 'o', 'p', 'k', 'ɾ (r), r (rr)', 's', 't', 'u', 'v', 'u, w', 'ks (x)', 'i (short), ʂ (sh)', 'θ (th no vibration), s (depends on accent)']
@@ -34,7 +34,7 @@ hL = ['א', 'ב', 'ג', 'ד', 'ה', 'ו', 'ז', 'ח', 'ט', 'י', 'ך/כ', 'ל',
 hDL = ['', 'בּ', 'גּ', 'דּ', '', '', '', '', '', '', 'ךּ/כּ', '', '', '', '', '', 'ףּ/פּ', '', '', '', '', 'תּ']
 hSHL = ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'שׁ', '']
 hSL = ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'שׂ', '']
-hP = ['ʔ (a)', 'v', 'ɣ (gh)', 'ð (th vibration)', 'h', 'v', 'z', 'χ (ch, kh, h)', 't', 'j (y)', 'χ (ch, kh, h)', 'l', 'm', 'n', 's', 'ɑ̯/ʕ (weird a | For more info, search: Voiced pharyngeal fricative)', 'f', 'ts', 'k', 'ʁ (french r)', 'ʃ (sh), s (For more info, check the "Shin" and "Sin" bellow)', 'θ (th no vibration)']
+hP = ['ʔ (glottal stop)', 'v', 'ɣ (gh)', 'ð (th vibration)', 'h', 'v', 'z', 'χ (ch, kh, h)', 't', 'j (y)', 'χ (ch, kh, h)', 'l', 'm', 'n', 's', 'ɑ̯/ʕ (weird a | For more info, search: Voiced pharyngeal fricative)', 'f', 'ts', 'k', 'ʁ (french r)', 'ʃ (sh), s (For more info, check the "Shin" and "Sin" bellow)', 'θ (th no vibration)']
 hDP = ['', 'b', 'g', 'd', '', '', '', '', '', '', 'k', '', '', '', '', '', 'p', '', '', '', '', 't']
 hSHP = ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'ʃ (sh)', '']
 hSP = ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 's', '']
@@ -51,8 +51,28 @@ kP = ['g, k', 'n', 'd, t', 'ɭ (l), ɾ (r)', 'm', 'b, p', 's, t', '(silent), ŋ 
 aL = ['ا', 'ب', 'ت', 'ث', 'ج', 'ح', 'خ', 'د', 'ذ', 'ر', 'ز', 'س', 'ش', 'ص', 'ض', 'ط', 'ظ', 'ع', 'غ', 'ف', 'ڧ', 'ک/ك', 'ل', 'م', 'ن', 'ه', 'و', 'ے/ي']
 aP = ['a', 'b', 't', 'θ (th no vibration)', 'dʒ (j)', 'ħ (h)', 'x (kh)', 'd', 'ð (th vibration)', 'r', 'z', 's', 'ʃ (sh)', 'sˤ (s throat constricted)', 'dˤ (d throat constricted)', 'tˤ (t throat constricted)', 'ðˤ (th vibration throat constricted)', 'ɑ̯/ʕ (weird a | For more info, search: Voiced pharyngeal fricative)', 'ɣ (g)', 'f', 'q', 'k', 'l', 'm', 'n', 'h', 'w, ū, ∅', 'y, ī']
 aN = ['أَلِف', 'بَاء/بَه', 'تَاء/تَه', 'ثَاء/ثَه', 'جِيم', 'حَاء/حَه', 'خَاء/خَه', 'دَال/دَاء/دَه', 'ذَال/ذَاء/ذَه', 'رَاء/رَه', 'زَاي/زَين/زَاء/زَه', 'سِين', 'شِين', 'صَاد', 'ضَاد/ضَاء/ضَه', 'طَاء/طَه', 'ظَاء/ظَه', 'عَيْن', 'غَيْن', 'فَاء/فَه', 'قَاف', 'كَاف/كَاء/كَه', 'لاَم', 'مِيم', 'نُون', 'هَاء/هَه', 'وَاو', 'يَاء/يَه']
+amL = ['Աա', 'Բբ', 'Գգ', 'Դդ', 'Եե', 'Զզ', 'Էէ', 'Ըը', 'Թթ', 'Ժժ', 'Իի', 'Լլ', 'Խխ', 'Ծծ', 'Կկ', 'Հհ', 'Ձձ', 'Ղղ', 'Ճճ', 'Մմ', 'Յյ', 'Նն', 'Շշ', 'Ոո', 'Չչ', 'Պպ', 'Ջջ', 'Ռռ', 'Սս', 'Վվ', 'Տտ', 'Րր', 'Ցց', 'Ււ', 'Փփ', 'Քք', 'Օօ', 'Ֆֆ']
+amP = ['ɑ (a)', 'b', 'g', 'd', 'ɛ (e)', 'z', 'e', 'ə (eo)', 'tʰ (t aspirated)', 'ʒ (zh)', 'i', 'l', 'χ (strong x (kh))', 'ts', 'k', 'h', 'dz', 'ɫ (l)', 'tʃ (ch)', 'm', 'j (y)', 'ɔ (o)', 'tʃʰ (ch aspirated)', 'p', 'dʒ (j)', 'r', 's', 'w', 't', 'ɹ (english r)', 'tsʰ (ts aspirated)', 'w', 'pʰ (p aspirated)', 'kʰ (k aspirated)', 'o', 'f', '', '']
+amN = ['այբ', 'բեն', 'գիմ', 'դա', 'եչ', 'զա', 'է', 'ըթ', 'թո', 'ժե', 'ինի', 'լյուն', 'խե', 'ծա', 'կեն', 'հո', 'ձա', 'ղադ', 'ճե', 'մեն', 'հի', 'նու', 'շա', 'ո', 'չա', 'պե', 'ջե', 'ռա', 'սե', 'վեվ', 'տյուն', 'րե', 'ցո', 'հյուն', 'փյուր', 'քե', 'օ', 'ֆե']
+tL = ['Aa', 'Bb', 'Cc', 'Çç', 'Dd', 'Ee', 'Ff', 'Gg', 'Ğğ', 'Hh', 'Iı', 'İi', 'Jj', 'Kk', 'Ll', 'Mm', 'Nn', 'Oo', 'Öö', 'Pp', 'Rr', 'Ss', 'Şş', 'Tt', 'Uu', 'Üü', 'Vv', 'Yy', 'Zz']
+tP = ['a', 'b', 'dʒ (j)', 'tʃ (ch)', 'd', 'e', 'f', 'ɡ, ɟ (If adjacent to the e, i, œ or y sound)', 'ɰ (For more info, search: Voiced velar approximant)', 'h', 'ɯ (eu)', 'i', 'ʒ (sh)', 'k, c (If adjacent to the e, i, œ or y sound)', 'ɫ (l), l (If adjacent to the a, ɯ, o or u sound)', 'm', 'n', 'o', 'œ (For more info, search: Open-mid front rounded vowel)', 'p', 'ɾ (r)', 's', 'ʃ (sh)', 't', 'u', 'y', 'v', 'j (y)', 'z']
+tN = ['a', 'be', 'ce', 'çe', 'de', 'e', 'fe', 'ge', 'yumuşak ge', 'he, ha, haş', 'ı', '	i', 'je', 'ke, ka', 'le', 'me', 'ne', 'o', 'ö', 'pe', 're', 'se', 'şe', 'te', 'u', 'ü', 've', 'ye', 'ze']
+iL = ['ᐁ', 'ᑉ', 'ᑦ', 'ᒃ', 'ᕻ', 'ᒡ', 'ᒻ', 'ᓐ', 'ᔅ', 'ᓪ', 'ᔾ', 'ᑦᔾ', 'ᖮ', 'ᕝ', 'ᕐ', 'ᖅ', 'ᖅᒃ', 'ᖕ', 'ᖖ', 'ᖦ', 'ᖯ', 'ᕼ', 'ᑊ']
+iIL = ['ᐃ', 'ᐱ', 'ᑎ', 'ᑭ', 'ᕵ', 'ᒋ', 'ᒥ', 'ᓂ', 'ᓯ', 'ᓕ', 'ᔨ', 'ᑦᔨ', 'ᖨ', 'ᕕ', 'ᕆ', 'ᕿ', 'ᖅᑭ', 'ᖏ', 'ᙱ', 'ᖠ', '', '', '']
+iUL = ['ᐅ', 'ᐳ', 'ᑐ', 'ᑯ', 'ᕷ', 'ᒍ', 'ᒧ', 'ᓄ', 'ᓱ', 'ᓗ', 'ᔪ', 'ᑦᔪ', 'ᖪ', 'ᕗ', 'ᕈ', 'ᖁ', 'ᖅᑯ', 'ᖑ', 'ᙳ', 'ᖢ', '', '', '']
+iAL = ['ᐊ', 'ᐸ', 'ᑕ', 'ᑲ', 'ᕹ', 'ᒐ', 'ᒪ', 'ᓇ', 'ᓴ', 'ᓚ', 'ᔭ', 'ᑦᔭ', 'ᖬ', 'ᕙ', 'ᕋ', 'ᖃ', 'ᖅᑲ', 'ᖓ', 'ᙵ', 'ᖤ', '', '', '']
+iLIL = ['ᐄ', 'ᐲ', 'ᑏ', 'ᑮ', 'ᕶ', 'ᒌ', 'ᒦ', 'ᓃ', 'ᓰ', 'ᓖ', 'ᔩ', 'ᑦᔩ', 'ᖩ', 'ᕖ', 'ᕇ', 'ᖀ', 'ᖅᑮ', 'ᖐ', 'ᙲ', 'ᖡ', '', '', '']
+iLUL = ['ᐆ', 'ᐴ', 'ᑑ', 'ᑰ', 'ᕸ', 'ᒎ', 'ᒨ', 'ᓅ', 'ᓲ', 'ᓘ', 'ᔫ', 'ᑦᔫ', 'ᖫ', 'ᕘ', 'ᕉ', 'ᖂ', 'ᖅᑰ', 'ᖒ', 'ᙴ', 'ᖣ', '', '', '']
+iLAL = ['ᐋ', 'ᐹ', 'ᑖ', 'ᑳ', 'ᕺ', 'ᒑ', 'ᒫ', 'ᓈ', 'ᓵ', 'ᓛ', 'ᔮ', 'ᑦᔮ', 'ᖭ', 'ᕚ', 'ᕌ', 'ᖄ', 'ᖅᑳ', 'ᖔ', 'ᙶ', 'ᖥ', '', '', '']
+iP = ['ai', 'p', 't', 'k', 'h', 'g', 'm', 'n', 's', 'l', 'j (y)', 'j: (yy)', 'ɟ (dy)', 'v', 'ʁ (french r)', 'q', 'q: (qq)', 'ŋ (ng)', 'ŋ: (nng)', 'ɬ (For more info, search: Voiceless dental and alveolar lateral fricatives)', 'b', 'h', 'ʔ (glottal stop)']
+iIP = ['i', 'pi', 'ti', 'ki', 'hi', 'gi', 'mi', 'ni', 'si', 'li', 'ji (yi)', 'j:i (yyi)', 'ɟi (dyi)', 'vi', 'ʁi (ri)', 'qi', 'q:i (qqi)', 'ŋi (ngi)', 'ŋ:i (nngi)', 'ɬi (?i)', '', '', '']
+iUP = ['u', 'pu', 'tu', 'ku', 'hu', 'gu', 'mu', 'nu', 'su', 'lu', 'ju (yu)', 'j:u (yyu)', 'ɟu (dyu)', 'vu', 'ʁu (ru)', 'qu', 'q:u (qqu)', 'ŋu (ngu)', 'ŋ:u (nngu)', 'ɬu (?u)', '', '', '']
+iAP = ['a', 'pa', 'ta', 'ka', 'ha', 'ga', 'ma', 'na', 'sa', 'la', 'ja (ya)', 'j:a (yya)', 'ɟa (dya)', 'va', 'ʁa (ra)', 'qa', 'q:a (qqa)', 'ŋa (nga)', 'ŋ:a (nnga)', 'ɬa (?a)', '', '', '']
+thL = []
+thP = []
+thN = []
 globLang = 'no-language'
-ver = 'v0.6'
+ver = 'v0.6.1'
 
 def eM(i, e):
     print(msg(9, globLang) + e)
@@ -953,6 +973,182 @@ def aE():
             if int(check) == int(i) + 1:
                 os.system('cls')
                 aM(i, e)
+def amM(i, e):
+    print(msg(9, globLang) + e)
+    print(msg(10, globLang) + amN[i])
+    print(msg(11, globLang) + str((i + 1)))
+    print(msg(12, globLang) + amP[i])
+    print(msg(7, globLang))
+    check = input('>> ')
+    if iToF('back', check):
+        os.system('cls')
+        amE()   
+def amE():
+    for i, e in enumerate(amL):
+        print(str((i + 1)) + ' - ' + e)
+    print(msg(6, globLang))
+    check = input('>> ')
+    if iToF('back', check):
+        os.system('cls')
+        c()
+    else:
+        for i, e in enumerate(amL):
+            if int(check) == int(i) + 1:
+                os.system('cls')
+                amM(i, e)
+def tM(i, e):
+    print(msg(9, globLang) + e)
+    print(msg(10, globLang) + tN[i])
+    print(msg(11, globLang) + str((i + 1)))
+    print(msg(12, globLang) + tP[i])
+    print(msg(7, globLang))
+    check = input('>> ')
+    if iToF('back', check):
+        os.system('cls')
+        tE()   
+def tE():
+    for i, e in enumerate(tL):
+        print(str((i + 1)) + ' - ' + e)
+    print(msg(6, globLang))
+    check = input('>> ')
+    if iToF('back', check):
+        os.system('cls')
+        c()
+    else:
+        for i, e in enumerate(tL):
+            if int(check) == int(i) + 1:
+                os.system('cls')
+                tM(i, e)
+def iM(i, e, c):
+    print(msg(9, globLang) + e)
+    print(msg(11, globLang) + str((i + 1)))
+    print(msg(12, globLang) + iP[i])
+    if not e == 'ᖯ':
+        print(msg(25, globLang) + '\n1 - "i"\n2- "u"\n3- "a"')
+        print(msg(8, globLang))
+        check = input('>> ')
+        if iToF('back', check):
+            os.system('cls')
+            iE()
+        elif int(check) == 1:
+            os.system('cls')
+            for i2, e2 in enumerate(iIL):
+                if int(c) == int(i2) + 1:
+                    os.system('cls')
+                    iM2(i2, e2, i, e, c, 1)
+        elif int(check) == 2:
+            os.system('cls')
+            for i2, e2 in enumerate(iUL):
+                if int(c) == int(i2) + 1:
+                    os.system('cls')
+                    iM2(i2, e2, i, e, c, 2)
+        elif int(check) == 3:
+            os.system('cls')
+            for i2, e2 in enumerate(iAL):
+                if int(c) == int(i2) + 1:
+                    os.system('cls')
+                    iM2(i2, e2, i, e, c, 3)
+    elif not e == 'ᕼ':
+        print(msg(25, globLang) + '\n1 - "i"\n2- "u"\n3- "a"')
+        print(msg(8, globLang))
+        check = input('>> ')
+        if iToF('back', check):
+            os.system('cls')
+            iE()
+        elif int(check) == 1:
+            os.system('cls')
+            for i2, e2 in enumerate(iIL):
+                if int(c) == int(i2) + 1:
+                    os.system('cls')
+                    iM2(i2, e2, i, e, c, 1)
+        elif int(check) == 2:
+            os.system('cls')
+            for i2, e2 in enumerate(iUL):
+                if int(c) == int(i2) + 1:
+                    os.system('cls')
+                    iM2(i2, e2, i, e, c, 2)
+        elif int(check) == 3:
+            os.system('cls')
+            for i2, e2 in enumerate(iAL):
+                if int(c) == int(i2) + 1:
+                    os.system('cls')
+                    iM2(i2, e2, i, e, c, 3)
+    elif not e == 'ᑊ':
+        print(msg(25, globLang) + '\n1 - "i"\n2- "u"\n3- "a"')
+        print(msg(8, globLang))
+        check = input('>> ')
+        if iToF('back', check):
+            os.system('cls')
+            iE()
+        elif int(check) == 1:
+            os.system('cls')
+            for i2, e2 in enumerate(iIL):
+                if int(c) == int(i2) + 1:
+                    os.system('cls')
+                    iM2(i2, e2, i, e, c, 1)
+        elif int(check) == 2:
+            os.system('cls')
+            for i2, e2 in enumerate(iUL):
+                if int(c) == int(i2) + 1:
+                    os.system('cls')
+                    iM2(i2, e2, i, e, c, 2)
+        elif int(check) == 3:
+            os.system('cls')
+            for i2, e2 in enumerate(iAL):
+                if int(c) == int(i2) + 1:
+                    os.system('cls')
+                    iM2(i2, e2, i, e, c, 3)
+    else:
+        print(msg(7, globLang))
+        check = input('>> ')
+        if iToF('back', check):
+            os.system('cls')
+            iE()
+def iM2(i, e, i2, e2, c, w):
+    print(msg(9, globLang) + e)
+    if w == 1:
+        print(msg(12, globLang) + iIP[i])
+        print(msg(26, globLang) + '\n1- ' +  iLIL[i])
+    elif w == 2:
+        print(msg(12, globLang) + iUP[i])
+        print(msg(26, globLang) + '\n1- ' +  iLUL[i])
+    elif w == 3:
+        print(msg(12, globLang) + iAP[i])
+        print(msg(26, globLang) + '\n1- ' +  iLAL[i])
+    print(msg(8, globLang))
+    check = input('>> ')
+    if iToF('back', check):
+            os.system('cls')
+            iM(i2, e2, c)
+    elif int(check) == 1:
+        if w == 1:
+            iM3(i2, e2, i, e, c, iLIL[i])
+        elif w == 2:
+            iM3(i2, e2, i, e, c, iLUL[i])
+        elif w == 3:
+            iM3(i2, e2, i, e, c, iLAL[i])
+def iM3(i, e, i2, e2, c, n):
+    os.system('cls')
+    print(msg(9, globLang) + n)
+    print(msg(27, globLang))
+    print(msg(7, globLang))
+    check = input('>> ')
+    if iToF('back', check):
+            os.system('cls')
+            iM(i2, e2, c)
+def iE():
+    for i, e in enumerate(iL):
+        print(str((i + 1)) + ' - ' + e)
+    print(msg(6, globLang))
+    check = input('>> ')
+    if iToF('back', check):
+        os.system('cls')
+        c()
+    else:
+        for i, e in enumerate(iL):
+            if int(check) == int(i) + 1:
+                os.system('cls')
+                iM(i, e, check)
 def c():
     print(msg(5, globLang))
     check = input('>> ')
@@ -983,6 +1179,15 @@ def c():
     elif iToF('lan.arab', check):
         os.system('cls')
         aE()
+    elif iToF('lan.arme', check):
+        os.system('cls')
+        amE()
+    elif iToF('lan.turk', check):
+        os.system('cls')
+        tE()
+    elif iToF('lan.inuk', check):
+        os.system('cls')
+        iE()
     elif iToF('back', check):
         os.system('cls')
         start()
@@ -1022,6 +1227,18 @@ def p():
         print(msg(4, globLang))
         start()
     elif iToF('lan.arab', check):
+        os.system('cls')
+        print(msg(4, globLang))
+        start()
+    elif iToF('lan.arme', check):
+        os.system('cls')
+        print(msg(4, globLang))
+        start()
+    elif iToF('lan.turk', check):
+        os.system('cls')
+        print(msg(4, globLang))
+        start()
+    elif iToF('lan.inuk', check):
         os.system('cls')
         print(msg(4, globLang))
         start()
@@ -1193,6 +1410,15 @@ def iToF(type, chk):
     elif type == 'lan.arab':
         if chk.lower() == 'arabic' or chk.lower() == 'arabe' or chk.lower() == 'арабский':
             return True
+    elif type == 'lan.arme':
+        if chk.lower() == 'armenian' or chk.lower() == 'armenio' or chk.lower() == 'армянский':
+            return True
+    elif type == 'lan.turk':
+        if chk.lower() == 'turkish' or chk.lower() == 'turco' or chk.lower() == 'турецкий':
+            return True
+    elif type == 'lan.inuk':
+        if chk.lower() == 'inuktitut' or chk.lower() == 'инуктитут':
+            return True
     elif type == 'set.dict':
         if chk.lower() == 'dictionary' or chk.lower() == 'diccionario' or chk.lower() == 'словарь':
             return True
@@ -1209,7 +1435,7 @@ def msg(type, lang):
         elif int(type) == 4:
             return '\nThis feature has still not been added.'
         elif int(type) == 5:
-            return '\nWhat language would you like to check?\n- English\n- Spanish\n- Russian (Cyrillic)\n- Greek\n- Japanese (Hiragana & Katakana)\n- Hebrew\n- Toki Pona\n- Korean (Hangul)\n- Arabic\n- Back'
+            return '\nWhat language would you like to check?\n- English\n- Spanish\n- Russian (Cyrillic)\n- Greek\n- Japanese (Hiragana & Katakana)\n- Hebrew\n- Toki Pona\n- Korean (Hangul)\n- Arabic\n- Armenian\n- Turkish\n- Inuktitut\n- Back'
         elif int(type) == 6:
             return '\nIf you want to go back type "Back". If you want to check a letter, type the respective number.'
         elif int(type) == 7:
@@ -1227,7 +1453,7 @@ def msg(type, lang):
         elif int(type) == 13:
             return '\nWhat phonetic alphabet would you like to check?\n- Hiragana\n- Katakana\n- Back'
         elif int(type) == 14:
-            return '\nWhat language would you like to practice?\n- English (WIP)\n- Spanish (WIP)\n- Russian (Cyrillic) (WIP)\n- Greek (WIP)\n- Japanese (Hiragana & Katakana) (WIP)\n- Hebrew (WIP)\n- Toki Pona (WIP)\n- Korean (Hangul) (WIP)\n- Arabic (WIP)\n- Back'
+            return '\nWhat language would you like to practice?\n- English (WIP)\n- Spanish (WIP)\n- Russian (Cyrillic) (WIP)\n- Greek (WIP)\n- Japanese (Hiragana & Katakana) (WIP)\n- Hebrew (WIP)\n- Toki Pona (WIP)\n- Korean (Hangul) (WIP)\n- Arabic (WIP)\n- Armenian (WIP)\n- Turkish (WIP)\n- Inuktitut (WIP)\n- Back'
         elif int(type) == 15:
             return '\nChange: Makes one letter longer the letter after it.'
         elif int(type) == 16:
@@ -1248,6 +1474,12 @@ def msg(type, lang):
             return '\nIf you want to go back type "Back". If you want to check a word, type the respective number.'
         elif int(type) == 24:
             return 'Definition: '
+        elif int(type) == 25:
+            return 'With vowels: '
+        elif int(type) == 26:
+            return 'With long vowels: '
+        elif int(type) == 27:
+            return 'Change: Makes the vowel longer'
         elif int(type) == 98:
             return '\nREMINDER: Make sure to have the keyboards of the languages downloaded, if not, you may see boxes instead of the letters.'
         elif int(type) == 99:
@@ -1264,7 +1496,7 @@ def msg(type, lang):
         elif int(type) == 4:
             return '\nEsta función aún no se ha añadido.'
         elif int(type) == 5:
-            return '\n¿Qué idioma desea comprobar?\n- Inglés\n- Español\n- Ruso (Cirílico)\n- Griego\n- Japonés (Hiragana & Katakana)\n- Hebreo\n- Toki Pona\n- Coreano (Hangul)\n- Arabe\n- Volver'
+            return '\n¿Qué idioma desea comprobar?\n- Inglés\n- Español\n- Ruso (Cirílico)\n- Griego\n- Japonés (Hiragana & Katakana)\n- Hebreo\n- Toki Pona\n- Coreano (Hangul)\n- Arabe\n- Armenio\n- Turco\n- Inuktitut\n- Volver'
         elif int(type) == 6:
             return '\nSi desea volver atrás, escriba "Volver". Si desea comprobar una letra, escriba el número correspondiente.'
         elif int(type) == 7:
@@ -1282,7 +1514,7 @@ def msg(type, lang):
         elif int(type) == 13:
             return '\n¿Qué alfabeto fonético desea consultar?\n- Hiragana\n- Katakana\n- Volver'
         elif int(type) == 14:
-            return '\n¿Qué idioma te gustaría practicar?\n- Inglés (WIP)\n- Español (WIP)\n- Ruso (Cirílico) (WIP)\n- Griego (WIP)\n- Japonés (Hiragana & Katakana) (WIP)\n- Hebreo (WIP)\n- Toki Pona (WIP)\n- Coreano (Hangul) (WIP)\n- Arabe (WIP)\n- Volver'
+            return '\n¿Qué idioma te gustaría practicar?\n- Inglés (WIP)\n- Español (WIP)\n- Ruso (Cirílico) (WIP)\n- Griego (WIP)\n- Japonés (Hiragana & Katakana) (WIP)\n- Hebreo (WIP)\n- Toki Pona (WIP)\n- Coreano (Hangul) (WIP)\n- Arabe (WIP)\n- Armenio (WIP)\n- Turco (WIP)\n- Inuktitut (WIP)\n- Volver'
         elif int(type) == 15:
             return '\nCambio: Hace una letra más larga la letra que le sigue.'
         elif int(type) == 16:
@@ -1303,6 +1535,12 @@ def msg(type, lang):
             return '\nSi desea volver atrás, escriba "Volver". Si desea comprobar una palabra, escriba el número correspondiente.'
         elif int(type) == 24:
             return 'Definición: '
+        elif int(type) == 25:
+            return 'Con vocales: '
+        elif int(type) == 26:
+            return 'Con vocales largas: '
+        elif int(type) == 27:
+            return 'Cambio: Hace la vocal mas larga'
         elif int(type) == 98:
             return '\nRECORDATORIO: Asegúrese de tener descargados los teclados de los idiomas, si no, es posible que vea cuadrados en lugar de las letras.'
         elif int(type) == 99:
@@ -1319,7 +1557,7 @@ def msg(type, lang):
         elif int(type) == 4:
             return '\nЭта функция до сих пор не добавлена.'
         elif int(type) == 5:
-            return '\nКакой язык вы хотите проверить?\n- Английский\n- Испанский\n- Русский (Кириллица)\n- Греческий\n- Японский (Хирагана и Катакана)\n- Иврит\n- Токи Пона\n- Корейский (Хангыль)\n- Арабский\n- Назад'
+            return '\nКакой язык вы хотите проверить?\n- Английский\n- Испанский\n- Русский (Кириллица)\n- Греческий\n- Японский (Хирагана и Катакана)\n- Иврит\n- Токи Пона\n- Корейский (Хангыль)\n- Арабский\n- Армянский\n- Турецкий\n- Инуктитут\n- Назад'
         elif int(type) == 6:
             return '\nЕсли вы хотите вернуться назад, введите "Назад". Если вы хотите проверить букву, введите соответствующий номер.'
         elif int(type) == 7:
@@ -1337,7 +1575,7 @@ def msg(type, lang):
         elif int(type) == 13:
             return '\nКакой фонетический алфавит вы хотите проверить?\n- Хирагана\n- Катакана\n- Назад'
         elif int(type) == 14:
-            return '\nКакой язык вы хотели бы практиковать?\n- Английский (WIP)\n- Испанский (WIP)\n- Русский (Кириллица) (WIP)\n- Греческий (WIP)\n- Японский (Хирагана и Катакана) (WIP)\n- Иврит (WIP)\n- Токи Пона (WIP)\n- Корейский (Хангыль) (WIP)\n- - Арабский (WIP)\n- Назад'
+            return '\nКакой язык вы хотели бы практиковать?\n- Английский (WIP)\n- Испанский (WIP)\n- Русский (Кириллица) (WIP)\n- Греческий (WIP)\n- Японский (Хирагана и Катакана) (WIP)\n- Иврит (WIP)\n- Токи Пона (WIP)\n- Корейский (Хангыль) (WIP)\n- - Арабский (WIP)\n- Армянский (WIP)\n- Турецкий (WIP)\n- Инуктитут (WIP)\n- Назад'
         elif int(type) == 15:
             return '\nИзменение: Делает одну букву длиннее следующей за ней буквы.'
         elif int(type) == 16:
@@ -1358,6 +1596,12 @@ def msg(type, lang):
             return '\nЕсли вы хотите вернуться назад, введите "Назад". Если вы хотите проверить слово, введите соответствующий номер.'
         elif int(type) == 24:
             return 'Определение: '
+        elif int(type) == 25:
+            return 'С гласными: '
+        elif int(type) == 26:
+            return 'С долгими гласными: '
+        elif int(type) == 27:
+            return 'Изменение: Делает гласный более долгим'
         elif int(type) == 98:
             return '\nПОМНИТЕ: Убедитесь, что загружены клавиатуры соответствующих языков, если нет, то вместо букв вы можете увидеть квадратики.'
         elif int(type) == 99:
