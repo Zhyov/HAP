@@ -1023,57 +1023,7 @@ def iM(i, e, c):
     print(msg(9, globLang) + e)
     print(msg(11, globLang) + str((i + 1)))
     print(msg(12, globLang) + iP[i])
-    if not e == 'ᖯ':
-        print(msg(25, globLang) + '\n1 - "i"\n2- "u"\n3- "a"')
-        print(msg(8, globLang))
-        check = input('>> ')
-        if iToF('back', check):
-            os.system('cls')
-            iE()
-        elif int(check) == 1:
-            os.system('cls')
-            for i2, e2 in enumerate(iIL):
-                if int(c) == int(i2) + 1:
-                    os.system('cls')
-                    iM2(i2, e2, i, e, c, 1)
-        elif int(check) == 2:
-            os.system('cls')
-            for i2, e2 in enumerate(iUL):
-                if int(c) == int(i2) + 1:
-                    os.system('cls')
-                    iM2(i2, e2, i, e, c, 2)
-        elif int(check) == 3:
-            os.system('cls')
-            for i2, e2 in enumerate(iAL):
-                if int(c) == int(i2) + 1:
-                    os.system('cls')
-                    iM2(i2, e2, i, e, c, 3)
-    elif not e == 'ᕼ':
-        print(msg(25, globLang) + '\n1 - "i"\n2- "u"\n3- "a"')
-        print(msg(8, globLang))
-        check = input('>> ')
-        if iToF('back', check):
-            os.system('cls')
-            iE()
-        elif int(check) == 1:
-            os.system('cls')
-            for i2, e2 in enumerate(iIL):
-                if int(c) == int(i2) + 1:
-                    os.system('cls')
-                    iM2(i2, e2, i, e, c, 1)
-        elif int(check) == 2:
-            os.system('cls')
-            for i2, e2 in enumerate(iUL):
-                if int(c) == int(i2) + 1:
-                    os.system('cls')
-                    iM2(i2, e2, i, e, c, 2)
-        elif int(check) == 3:
-            os.system('cls')
-            for i2, e2 in enumerate(iAL):
-                if int(c) == int(i2) + 1:
-                    os.system('cls')
-                    iM2(i2, e2, i, e, c, 3)
-    elif not e == 'ᑊ':
+    if e == 'ᐁ' or e == 'ᑉ' or e == 'ᑦ' or e == 'ᒃ' or e == 'ᕻ' or e == 'ᒡ' or e == 'ᒻ' or e == 'ᓐ' or e == 'ᔅ' or e == 'ᓪ' or e == 'ᔾ' or e == 'ᑦᔾ' or e == 'ᖮ' or e == 'ᕝ' or e == 'ᕐ' or e == 'ᖅ' or e == 'ᖅᒃ' or e == 'ᖕ' or e == 'ᖖ' or e == 'ᖦ':
         print(msg(25, globLang) + '\n1 - "i"\n2- "u"\n3- "a"')
         print(msg(8, globLang))
         check = input('>> ')
