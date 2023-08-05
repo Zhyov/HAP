@@ -11,3 +11,6 @@ For now the lanugages which you can check its alphabets are:
 * Toki Pona (And a dictionary!)
 * Korean
 * Arab (no vocals)
+* Armenian
+* Turkish
+* Inuktitut
