@@ -14,3 +14,4 @@ For now the lanugages which you can check its alphabets are:
 * Armenian
 * Turkish
 * Inuktitut
+* Futhark
