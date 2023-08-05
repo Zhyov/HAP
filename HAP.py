@@ -68,11 +68,13 @@ iP = ['ai', 'p', 't', 'k', 'h', 'g', 'm', 'n', 's', 'l', 'j (y)', 'j: (yy)', 'ɟ
 iIP = ['i', 'pi', 'ti', 'ki', 'hi', 'gi', 'mi', 'ni', 'si', 'li', 'ji (yi)', 'j:i (yyi)', 'ɟi (dyi)', 'vi', 'ʁi (ri)', 'qi', 'q:i (qqi)', 'ŋi (ngi)', 'ŋ:i (nngi)', 'ɬi (?i)', '', '', '']
 iUP = ['u', 'pu', 'tu', 'ku', 'hu', 'gu', 'mu', 'nu', 'su', 'lu', 'ju (yu)', 'j:u (yyu)', 'ɟu (dyu)', 'vu', 'ʁu (ru)', 'qu', 'q:u (qqu)', 'ŋu (ngu)', 'ŋ:u (nngu)', 'ɬu (?u)', '', '', '']
 iAP = ['a', 'pa', 'ta', 'ka', 'ha', 'ga', 'ma', 'na', 'sa', 'la', 'ja (ya)', 'j:a (yya)', 'ɟa (dya)', 'va', 'ʁa (ra)', 'qa', 'q:a (qqa)', 'ŋa (nga)', 'ŋ:a (nnga)', 'ɬa (?a)', '', '', '']
+fL = ['ᚠ', 'ᚢ', 'ᚦ', 'ᚨ', 'ᚱ', 'ᚲ', 'ᚷ', 'ᚹ', 'ᚺ/ᚻ', 'ᚾ', 'ᛁ', 'ᛃ', 'ᛇ', 'ᛈ', 'ᛉ', 'ᛊ/ᛋ', 'ᛏ', 'ᛒ', 'ᛖ', 'ᛗ', 'ᛚ', 'ᛜ', 'ᛞ', 'ᛟ']
+fP = ['f', 'u', 'θ (th no vibration)', 'a', 'r (spanish r)', 'k', 'g', 'w', 'h', 'n', 'i', 'j (y)', 'æ (a)', 'p', 'z', 's', 't', 'b', 'e', 'm', 'l', 'ŋ (ng)', 'd', 'o']
 thL = []
 thP = []
 thN = []
 globLang = 'no-language'
-ver = 'v0.6.1'
+ver = 'v0.6.2'
 
 def eM(i, e):
     print(msg(9, globLang) + e)
@@ -1099,6 +1101,28 @@ def iE():
             if int(check) == int(i) + 1:
                 os.system('cls')
                 iM(i, e, check)
+def fM(i, e):
+    print(msg(9, globLang) + e)
+    print(msg(11, globLang) + str((i + 1)))
+    print(msg(12, globLang) + fP[i])
+    print(msg(7, globLang))
+    check = input('>> ')
+    if iToF('back', check):
+        os.system('cls')
+        fE()   
+def fE():
+    for i, e in enumerate(fL):
+        print(str((i + 1)) + ' - ' + e)
+    print(msg(6, globLang))
+    check = input('>> ')
+    if iToF('back', check):
+        os.system('cls')
+        c()
+    else:
+        for i, e in enumerate(fL):
+            if int(check) == int(i) + 1:
+                os.system('cls')
+                fM(i, e)
 def c():
     print(msg(5, globLang))
     check = input('>> ')
@@ -1138,6 +1162,9 @@ def c():
     elif iToF('lan.inuk', check):
         os.system('cls')
         iE()
+    elif iToF('lan.futh', check):
+        os.system('cls')
+        fE()
     elif iToF('back', check):
         os.system('cls')
         start()
@@ -1189,6 +1216,10 @@ def p():
         print(msg(4, globLang))
         start()
     elif iToF('lan.inuk', check):
+        os.system('cls')
+        print(msg(4, globLang))
+        start()
+    elif iToF('lan.futh', check):
         os.system('cls')
         print(msg(4, globLang))
         start()
@@ -1369,6 +1400,9 @@ def iToF(type, chk):
     elif type == 'lan.inuk':
         if chk.lower() == 'inuktitut' or chk.lower() == 'инуктитут':
             return True
+    elif type == 'lan.futh':
+        if chk.lower() == 'futhark' or chk.lower() == 'футарк':
+            return True
     elif type == 'set.dict':
         if chk.lower() == 'dictionary' or chk.lower() == 'diccionario' or chk.lower() == 'словарь':
             return True
@@ -1385,7 +1419,7 @@ def msg(type, lang):
         elif int(type) == 4:
             return '\nThis feature has still not been added.'
         elif int(type) == 5:
-            return '\nWhat language would you like to check?\n- English\n- Spanish\n- Russian (Cyrillic)\n- Greek\n- Japanese (Hiragana & Katakana)\n- Hebrew\n- Toki Pona\n- Korean (Hangul)\n- Arabic\n- Armenian\n- Turkish\n- Inuktitut\n- Back'
+            return '\nWhat language would you like to check?\n- English\n- Spanish\n- Russian (Cyrillic)\n- Greek\n- Japanese (Hiragana & Katakana)\n- Hebrew\n- Toki Pona\n- Korean (Hangul)\n- Arabic\n- Armenian\n- Turkish\n- Inuktitut\n- Futhark\n- Back'
         elif int(type) == 6:
             return '\nIf you want to go back type "Back". If you want to check a letter, type the respective number.'
         elif int(type) == 7:
@@ -1403,7 +1437,7 @@ def msg(type, lang):
         elif int(type) == 13:
             return '\nWhat phonetic alphabet would you like to check?\n- Hiragana\n- Katakana\n- Back'
         elif int(type) == 14:
-            return '\nWhat language would you like to practice?\n- English (WIP)\n- Spanish (WIP)\n- Russian (Cyrillic) (WIP)\n- Greek (WIP)\n- Japanese (Hiragana & Katakana) (WIP)\n- Hebrew (WIP)\n- Toki Pona (WIP)\n- Korean (Hangul) (WIP)\n- Arabic (WIP)\n- Armenian (WIP)\n- Turkish (WIP)\n- Inuktitut (WIP)\n- Back'
+            return '\nWhat language would you like to practice?\n- English (WIP)\n- Spanish (WIP)\n- Russian (Cyrillic) (WIP)\n- Greek (WIP)\n- Japanese (Hiragana & Katakana) (WIP)\n- Hebrew (WIP)\n- Toki Pona (WIP)\n- Korean (Hangul) (WIP)\n- Arabic (WIP)\n- Armenian (WIP)\n- Turkish (WIP)\n- Inuktitut (WIP)\n- Futhark (WIP)\n- Back'
         elif int(type) == 15:
             return '\nChange: Makes one letter longer the letter after it.'
         elif int(type) == 16:
@@ -1417,7 +1451,7 @@ def msg(type, lang):
         elif int(type) == 20:
             return 'Variations:'
         elif int(type) == 21:
-            return '\nCredits:\n- Code: Luke\n- Translations:\n-- English: Luke\n-- Spanish: Luke\n-- Russian: DeepL Translate\n- Ideas: Luke'
+            return '\nCredits:\n- Code: Luke\n- Translations:\n-- English: Luke\n-- Spanish: Luke\n-- Russian: DeepL Translate\n- Ideas: Luke and Friends'
         elif int(type) == 22:
             return '\nWhat  would you like to do?\n- Settings\n- Credits\n- Back'
         elif int(type) == 23:
@@ -1446,7 +1480,7 @@ def msg(type, lang):
         elif int(type) == 4:
             return '\nEsta función aún no se ha añadido.'
         elif int(type) == 5:
-            return '\n¿Qué idioma desea comprobar?\n- Inglés\n- Español\n- Ruso (Cirílico)\n- Griego\n- Japonés (Hiragana & Katakana)\n- Hebreo\n- Toki Pona\n- Coreano (Hangul)\n- Arabe\n- Armenio\n- Turco\n- Inuktitut\n- Volver'
+            return '\n¿Qué idioma desea comprobar?\n- Inglés\n- Español\n- Ruso (Cirílico)\n- Griego\n- Japonés (Hiragana & Katakana)\n- Hebreo\n- Toki Pona\n- Coreano (Hangul)\n- Arabe\n- Armenio\n- Turco\n- Inuktitut\n- Futhark\n- Volver'
         elif int(type) == 6:
             return '\nSi desea volver atrás, escriba "Volver". Si desea comprobar una letra, escriba el número correspondiente.'
         elif int(type) == 7:
@@ -1464,7 +1498,7 @@ def msg(type, lang):
         elif int(type) == 13:
             return '\n¿Qué alfabeto fonético desea consultar?\n- Hiragana\n- Katakana\n- Volver'
         elif int(type) == 14:
-            return '\n¿Qué idioma te gustaría practicar?\n- Inglés (WIP)\n- Español (WIP)\n- Ruso (Cirílico) (WIP)\n- Griego (WIP)\n- Japonés (Hiragana & Katakana) (WIP)\n- Hebreo (WIP)\n- Toki Pona (WIP)\n- Coreano (Hangul) (WIP)\n- Arabe (WIP)\n- Armenio (WIP)\n- Turco (WIP)\n- Inuktitut (WIP)\n- Volver'
+            return '\n¿Qué idioma te gustaría practicar?\n- Inglés (WIP)\n- Español (WIP)\n- Ruso (Cirílico) (WIP)\n- Griego (WIP)\n- Japonés (Hiragana & Katakana) (WIP)\n- Hebreo (WIP)\n- Toki Pona (WIP)\n- Coreano (Hangul) (WIP)\n- Arabe (WIP)\n- Armenio (WIP)\n- Turco (WIP)\n- Inuktitut (WIP)\n- Futhark (WIP)\n- Volver'
         elif int(type) == 15:
             return '\nCambio: Hace una letra más larga la letra que le sigue.'
         elif int(type) == 16:
@@ -1478,7 +1512,7 @@ def msg(type, lang):
         elif int(type) == 20:
             return 'Variaciones:'
         elif int(type) == 21:
-            return '\nCréditos:\n- Código: Luke\n- Traducciones:\n-- Inglés: Luke\n-- Español: Luke\n-- Ruso: DeepL Traductor\n- Ideas: Luke'
+            return '\nCréditos:\n- Código: Luke\n- Traducciones:\n-- Inglés: Luke\n-- Español: Luke\n-- Ruso: DeepL Traductor\n- Ideas: Luke y Amigos'
         elif int(type) == 22:
             return '\n¿Qué te gustaría hacer?\n- Ajustes\n- Créditos\n- Volver'
         elif int(type) == 23:
@@ -1507,7 +1541,7 @@ def msg(type, lang):
         elif int(type) == 4:
             return '\nЭта функция до сих пор не добавлена.'
         elif int(type) == 5:
-            return '\nКакой язык вы хотите проверить?\n- Английский\n- Испанский\n- Русский (Кириллица)\n- Греческий\n- Японский (Хирагана и Катакана)\n- Иврит\n- Токи Пона\n- Корейский (Хангыль)\n- Арабский\n- Армянский\n- Турецкий\n- Инуктитут\n- Назад'
+            return '\nКакой язык вы хотите проверить?\n- Английский\n- Испанский\n- Русский (Кириллица)\n- Греческий\n- Японский (Хирагана и Катакана)\n- Иврит\n- Токи Пона\n- Корейский (Хангыль)\n- Арабский\n- Армянский\n- Турецкий\n- Инуктитут\n- Футарк\n- Назад'
         elif int(type) == 6:
             return '\nЕсли вы хотите вернуться назад, введите "Назад". Если вы хотите проверить букву, введите соответствующий номер.'
         elif int(type) == 7:
@@ -1525,7 +1559,7 @@ def msg(type, lang):
         elif int(type) == 13:
             return '\nКакой фонетический алфавит вы хотите проверить?\n- Хирагана\n- Катакана\n- Назад'
         elif int(type) == 14:
-            return '\nКакой язык вы хотели бы практиковать?\n- Английский (WIP)\n- Испанский (WIP)\n- Русский (Кириллица) (WIP)\n- Греческий (WIP)\n- Японский (Хирагана и Катакана) (WIP)\n- Иврит (WIP)\n- Токи Пона (WIP)\n- Корейский (Хангыль) (WIP)\n- - Арабский (WIP)\n- Армянский (WIP)\n- Турецкий (WIP)\n- Инуктитут (WIP)\n- Назад'
+            return '\nКакой язык вы хотели бы практиковать?\n- Английский (WIP)\n- Испанский (WIP)\n- Русский (Кириллица) (WIP)\n- Греческий (WIP)\n- Японский (Хирагана и Катакана) (WIP)\n- Иврит (WIP)\n- Токи Пона (WIP)\n- Корейский (Хангыль) (WIP)\n- - Арабский (WIP)\n- Армянский (WIP)\n- Турецкий (WIP)\n- Инуктитут (WIP)\n- Футарк (WIP)\n- Назад'
         elif int(type) == 15:
             return '\nИзменение: Делает одну букву длиннее следующей за ней буквы.'
         elif int(type) == 16:
@@ -1539,7 +1573,7 @@ def msg(type, lang):
         elif int(type) == 20:
             return 'Вариации:'
         elif int(type) == 21:
-            return '\nКредиты:\n- Код: Luke\n- Переводы:\n-- Английский: Luke\n-- Испанский: Luke\n-- Русский: DeepL Translate\n- Идеи: Luke'
+            return '\nКредиты:\n- Код: Luke\n- Переводы:\n-- Английский: Luke\n-- Испанский: Luke\n-- Русский: DeepL Translate\n- Идеи: Luke и Друзья'
         elif int(type) == 22:
             return '\nЧто бы вы хотели сделать?\n- Настройки\n- Кредиты\n- Назад'
         elif int(type) == 23:
