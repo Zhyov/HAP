@@ -3,13 +3,13 @@ eL = ['Aa', 'Bb', 'Cc', 'Dd', 'Ee', 'Ff', 'Gg', 'Hh', 'Ii', 'Jj', 'Kk', 'Ll', 'M
 eP = ['eɪ (ei)', 'biː (bii)', 'siː (sii)', 'diː (dii)', 'iː (ii)', 'ɛf (ef)', 'dʒiː (ji)', 'eɪtʃ (eich), heɪtʃ (heich)', 'aɪ (ai)', 'dʒeɪ (jei)', 'keɪ (kei)', 'ɛl (el)', 'ɛm (em)', 'ɛn (en)', 'oʊ (ou)', 'piː (pi)', 'kjuː (kyu)', 'ɑːɹ (aar)', 'ɛs (es)', 'tiː (tii)', 'juː (yuu)', 'viː (vii)', 'dʌbəl.juː (dabel yu)', 'ɛks (eks)', 'waɪ (wai)', 'zɛd (zed)']
 eN = ['a', 'bee', 'cee', 'dee', 'e', 'ef', 'jee', 'aitch, haitch', 'i', 'jay', 'kay', 'el', 'em', 'en', 'o', 'pee', 'cue, kew, kue, que', 'ar', 'ess', 'tee', 'u', 'vee', 'double-u', 'ex', 'wy, wye, why', 'zed']
 sL = ['Aa', 'Bb', 'Cc', 'Dd', 'Ee', 'Ff', 'Gg', 'Hh', 'Ii', 'Jj', 'Kk', 'Ll', 'Mm', 'Nn', 'Ññ', 'Oo', 'Pp', 'Qq', 'Rr', 'Ss', 'Tt', 'Uu', 'Vv', 'Ww', 'Xx', 'Yy', 'Zz']
-sP = ['æ (a)', 'b', 'k, s', 'd', 'ɛ (e)', 'f', 'g', '(silent)', 'i', 'x (kh, h)', 'k', 'l', 'm', 'n', 'ɲ (ñ, ny)', 'o', 'p', 'k', 'ɾ (r), r (rr)', 's', 't', 'u', 'v', 'u, w', 'ks (x)', 'i (short), ʂ (sh)', 'θ (th no vibration), s (depends on accent)']
+sP = ['æ (a)', 'b, β (lenition)', 'k, s', 'd, ð (th vibration, lenition)', 'ɛ (e)', 'f', 'g, ɣ (gh, lenition)', '(silent)', 'i', 'x (kh)', 'k', 'l', 'm', 'n', 'ɲ (ñ, ny)', 'o', 'p', 'k', 'ɾ (r), r (rr)', 's', 't', 'u', 'v', 'u, w', 'ks (x)', 'i (short), ʂ (sh)', 'θ (th no vibration), s (depends on accent)']
 sN = ['a', 'be, be larga', 'ce', 'de', 'e', 'efe', 'ge', 'hache', 'i', 'jota', 'ka', 'ele', 'eme', 'ene', 'eñe', 'o', 'pe', 'qü or cu', 'erre', 'ese', 'te', 'u', 've, uve, ve corta', 'doble v' , 'equis', 'i griega', 'zeta, seta (depends on accent)']
 rL = ['Аа', 'Бб', 'Вв', 'Гг', 'Дд', 'Ее', 'Ёё', 'Жж', 'Зз', 'Ии', 'Йй', 'Кк', 'Лл', 'Мм', 'Нн', 'Oo', 'Пп', 'Рр', 'Сс', 'Тт', 'Уу', 'Фф', 'Хх', 'Цц', 'Чч', 'Шш', 'Щщ', 'Ъъ', 'Ыы', 'Ьь', 'Ээ', 'Юю', 'Яя']
 rP = ['æ (a)', 'b', 'v', 'g', 'd', 'jɛ (ye), ɛ (e)', 'jo (yo)', 'ʐ (zh)', 'z', 'i', 'i (short)', 'k', 'ɫ (l)', 'm', 'n', 'o', 'p', 'r', 's', 't', 'u', 'f', 'x (kh, h)', 'ts', 'tɕ (ch)', 'ʂ (sh)', 'ɕ (sch)', '"', 'ɨ (y)', "'", 'e', 'ju (yu)', 'ja (ya)']
 rN = ['а', 'бэ', 'вэ', 'гэ', 'дэ', 'е', 'ё', 'жэ', 'зэ', 'и', 'и краткое', 'ка', 'эль, эл', 'эм', 'эн', 'о', 'пэ', 'эр', 'эс', 'тэ', 'у', 'эф', 'ха', 'цэ', 'че', 'ша', 'ща', 'твёрдый знак', 'ы', 'мягкий знак', 'э', 'ю', 'я']
 gL = ['Αα', 'Ββ', 'Γγ', 'Δδ', 'Εε', 'Ζζ', 'Ηη', 'Θθ', 'Ιι', 'Κκ', 'Λλ', 'Μμ', 'Νν', 'Ξξ', 'Οο', 'Ππ', 'Ρρ', 'Σσς', 'Ττ', 'Υυ', 'Φφ', 'Χχ', 'Ψψ', 'Ωω']
-gP = ['ɐ (a)', 'v', 'ɣ (g)', 'ð (th vibration)', 'e', 'z', 'i (short)', 'θ (th no vibration)', 'i', 'k', 'l', 'm', 'n', 'ks (x)', 'o', 'p', 'r', 's, z (before β, γ, or μ)', 't', 'i (short)', 'f', 'ç (h)', 'ps', 'o̞ (o)']
+gP = ['ɐ (a)', 'v', 'ɣ (gh)', 'ð (th vibration)', 'e', 'z', 'i (short)', 'θ (th no vibration)', 'i', 'k', 'l', 'm', 'n', 'ks (x)', 'o', 'p', 'r', 's, z (before β, γ, or μ)', 't', 'i (short)', 'f', 'ç (h)', 'ps', 'o̞ (o)']
 gN = ['άλφα', 'βήτα', 'γάμμα', 'δέλτα', 'έψιλον', 'ζήτα', 'ήτα', 'θήτα', 'ιώτα', 'κάππα	', 'λά(μ)βδα', 'μυ', 'νυ', 'ξι', 'όμικρον', 'πι', 'ρώ', 'σίγμα', 'ταυ', 'ύψιλον', 'φι', 'χι', 'ψι', 'ωμέγα']
 jHL = ['あ', 'い', 'う', 'え', 'お', 'か', 'き', 'く', 'け', 'こ', 'さ', 'し', 'す', 'せ', 'そ', 'た', 'ち', 'つ', 'て', 'と', 'な', 'に', 'ぬ', 'ね', 'の', 'は', 'ひ', 'ふ', 'へ', 'ほ', 'ま', 'み', 'む', 'め', 'も', 'や', 'ゆ', 'よ', 'ら', 'り', 'る', 'れ', 'ろ', 'わ', 'を', 'ん']
 jKL = ['ア', 'イ', 'ウ', 'エ', 'オ', 'カ', 'キ', 'ク', 'ケ', 'コ', 'サ', 'シ', 'ス', 'セ', 'ソ', 'タ', 'チ', 'ツ', 'テ', 'ト', 'ナ', 'ニ', 'ヌ', 'ネ', 'ノ', 'ハ', 'ヒ', 'フ', 'ヘ', 'ホ', 'マ', 'ミ', 'ム', 'メ', 'モ', 'ヤ', 'ユ', 'ヨ', 'ラ', 'リ', 'ル', 'レ', 'ロ', 'ワ', 'ヲ', 'ン']
@@ -45,7 +45,7 @@ hSN = ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '
 tkL = ['a', 'e', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 's', 't', 'u', 'w']
 tkP = ['a', 'e', 'i', 'j (y)', 'k', 'l', 'm', 'n', 'o', 'p', 's', 't', 'u', 'w']
 tkW = ['a', 'akesi', 'ala', 'alasa', 'ale', 'anpa', 'ante', 'anu', 'awen', 'e', 'en', 'esun', 'ijo', 'ike', 'ilo', 'insa', 'jaki', 'jan', 'jelo', 'jo', 'kala', 'kalama', 'kama', 'kasi', 'ken', 'kepeken', 'kili', 'kiwen', 'ko', 'kon', 'kule', 'kulupu', 'kute', 'la', 'lape', 'laso', 'lawa', 'len', 'lete', 'li', 'lili', 'linja', 'lipu', 'loje', 'lon', 'luka', 'lukin', 'lupa', 'ma', 'mama', 'mani', 'meli', 'mi', 'mije', 'moku', 'moli', 'monsi', 'mu', 'mun', 'musi', 'mute', 'nanpa', 'nasa', 'nasin', 'nena', 'ni', 'nimi', 'noka', 'o', 'olin', 'ona', 'open', 'pakala', 'pali', 'palisa', 'pan', 'pana', 'pi', 'pilin', 'pimeja', 'pini', 'pipi', 'poka', 'poki', 'pona', 'pu', 'sama', 'seli', 'selo', 'seme', 'sewi', 'sijelo', 'sike', 'sin', 'sina', 'sinpin', 'sitelen', 'sona', 'soweli', 'suli', 'suno', 'supa', 'suwi', 'tan', 'taso', 'tawa', 'telo', 'tenpo', 'toki', 'tomo', 'tu', 'unpa', 'uta', 'utala', 'walo', 'wan', 'waso', 'wawa', 'weka', 'wile']
-tkDefinitions = []
+tkD = []
 kL = ['ㄱ', 'ㄴ', 'ㄷ', 'ㄹ', 'ㅁ', 'ㅂ', 'ㅅ', 'ㅇ', 'ㅈ', 'ㅊ', 'ㅋ', 'ㅌ', 'ㅍ', 'ㅎ', 'ㅏ', 'ㅑ', 'ㅓ', 'ㅕ', 'ㅗ', 'ㅛ', 'ㅜ', 'ㅠ', 'ㅡ', 'ㅣ']
 kP = ['g, k', 'n', 'd, t', 'ɭ (l), ɾ (r)', 'm', 'b, p', 's, t', '(silent), ŋ (ng)', 'dz (j)', 'tɕ (ch)', 'k', 't', 'p', 'h', 'a', 'ja (ya)', 'ʌ (eo)', 'jʌ (yeo)', 'o', 'jo (yo)', 'u', 'ju (yu)', 'ɯ (eu)', 'i']
 aL = ['ا', 'ب', 'ت', 'ث', 'ج', 'ح', 'خ', 'د', 'ذ', 'ر', 'ز', 'س', 'ش', 'ص', 'ض', 'ط', 'ظ', 'ع', 'غ', 'ف', 'ڧ', 'ک/ك', 'ل', 'م', 'ن', 'ه', 'و', 'ے/ي']
@@ -70,11 +70,11 @@ iUP = ['u', 'pu', 'tu', 'ku', 'hu', 'gu', 'mu', 'nu', 'su', 'lu', 'ju (yu)', 'j:
 iAP = ['a', 'pa', 'ta', 'ka', 'ha', 'ga', 'ma', 'na', 'sa', 'la', 'ja (ya)', 'j:a (yya)', 'ɟa (dya)', 'va', 'ʁa (ra)', 'qa', 'q:a (qqa)', 'ŋa (nga)', 'ŋ:a (nnga)', 'ɬa (?a)', '', '', '']
 fL = ['ᚠ', 'ᚢ', 'ᚦ', 'ᚨ', 'ᚱ', 'ᚲ', 'ᚷ', 'ᚹ', 'ᚺ/ᚻ', 'ᚾ', 'ᛁ', 'ᛃ', 'ᛇ', 'ᛈ', 'ᛉ', 'ᛊ/ᛋ', 'ᛏ', 'ᛒ', 'ᛖ', 'ᛗ', 'ᛚ', 'ᛜ', 'ᛞ', 'ᛟ']
 fP = ['f', 'u', 'θ (th no vibration)', 'a', 'r (spanish r)', 'k', 'g', 'w', 'h', 'n', 'i', 'j (y)', 'æ (a)', 'p', 'z', 's', 't', 'b', 'e', 'm', 'l', 'ŋ (ng)', 'd', 'o']
-thL = []
-thP = []
-thN = []
+esL = ['Aa', 'Bb', 'Cc', 'Ĉĉ', 'Dd', 'Ee', 'Ff', 'Gg', 'Ĝĝ', 'Hh', 'Ĥĥ', 'Ii', 'Jj', 'Ĵĵ', 'Kk', 'Ll', 'Mm', 'Nn', 'Oo', 'Pp', 'Rr', 'Ss', 'Ŝŝ', 'Tt', 'Uu', 'Ŭŭ', 'Vv', 'Zz']
+esP = ['a', 'b', 'ts', 'tʃ (ch)', 'd', 'e', 'f', 'g', 'dʒ (j)', 'h', 'x (kh)', 'i', 'j (y)', 'ʒ (zh)', 'k', 'l', 'm', 'n', 'o', 'p', 'r (rr)', 's', 'ʃ (sh)', 't', 'u', 'w', 'v', 'z']
+esN = ['a', 'bo', 'co', 'ĉo', 'do', 'e', 'fo', 'go', 'ĝo', 'ho', 'ĥo', 'i', 'jo', 'ĵo', 'ko', 'lo', 'mo', 'no', 'o', 'po', 'ro', 'so', 'ŝo', 'to', 'u', 'ŭo', 'vo', 'zo']
 globLang = 'no-language'
-ver = 'v0.6.2'
+ver = 'v0.6.3'
 
 def eM(i, e):
     print(msg(9, globLang) + e)
@@ -95,7 +95,7 @@ def eE():
         os.system('cls')
         c()
     else:
-        for i, e in enumerate(sL):
+        for i, e in enumerate(eL):
             if int(check) == int(i) + 1:
                 os.system('cls')
                 eM(i, e)
@@ -786,10 +786,10 @@ def jKE():
 def j():
     print(msg(13, globLang))
     check = input('>> ')
-    if check.lower() == 'hiragana':
+    if check.lower() == 'hiragana' or check.lower() == 'хирагана' or check.lower() == 'sitelen ilagana':
         os.system('cls')
         jHE()
-    elif check.lower() == 'katakana':
+    elif check.lower() == 'katakana' or check.lower() == 'катакана' or check.lower() == 'sitelen katakana':
         os.system('cls')
         jKE()
     elif iToF('back', check):
@@ -911,7 +911,7 @@ def tkE():
                 tkM(i, e)
 def DtkM(i, e):
     print(msg(9, globLang) + e)
-    print(msg(24, globLang) + tkDefinitions[i])
+    print(msg(24, globLang) + tkD[i])
     print(msg(7, globLang))
     check = input('>> ')
     if iToF('back', check):
@@ -963,6 +963,7 @@ def aM(i, e):
         os.system('cls')
         aE()   
 def aE():
+    print(msg(97, globLang))
     for i, e in enumerate(aL):
         print(str((i + 1)) + ' - ' + e)
     print(msg(6, globLang))
@@ -1123,6 +1124,29 @@ def fE():
             if int(check) == int(i) + 1:
                 os.system('cls')
                 fM(i, e)
+def esM(i, e):
+    print(msg(9, globLang) + e)
+    print(msg(10, globLang) + esN[i])
+    print(msg(11, globLang) + str((i + 1)))
+    print(msg(12, globLang) + esP[i])
+    print(msg(7, globLang))
+    check = input('>> ')
+    if iToF('back', check):
+        os.system('cls')
+        esE()
+def esE():
+    for i, e in enumerate(esL):
+        print(str((i + 1)) + ' - ' + e)
+    print(msg(6, globLang))
+    check = input('>> ')
+    if iToF('back', check):
+        os.system('cls')
+        c()
+    else:
+        for i, e in enumerate(esL):
+            if int(check) == int(i) + 1:
+                os.system('cls')
+                esM(i, e)
 def c():
     print(msg(5, globLang))
     check = input('>> ')
@@ -1165,6 +1189,9 @@ def c():
     elif iToF('lan.futh', check):
         os.system('cls')
         fE()
+    elif iToF('lan.espe', check):
+        os.system('cls')
+        esE()
     elif iToF('back', check):
         os.system('cls')
         start()
@@ -1220,6 +1247,10 @@ def p():
         print(msg(4, globLang))
         start()
     elif iToF('lan.futh', check):
+        os.system('cls')
+        print(msg(4, globLang))
+        start()
+    elif iToF('lan.espe', check):
         os.system('cls')
         print(msg(4, globLang))
         start()
@@ -1285,35 +1316,41 @@ def settings():
         print(msg(1, globLang))
     settings()
 def lang(sm):
-    global globLang, tkDefinitions
+    global globLang, tkD
     if sm == False:
-        print('\nSelect a language:\n1 - en (English)\n2 - es (Español)\n3 - ru (Русский)')
+        print('\nSelect a language:\n1 - en/eng (English)\n2 - es/spa (Español)\n3 - ru/rus (Русский)\n4 - tok (toki pona)\n- Back')
         check = input('>> ')
-        if check == '1' or check.lower() == 'english' or check.lower() == 'en':
+        if check == '1' or check.lower() == 'english' or check.lower() == 'en' or check.lower() == 'eng':
             globLang = 'en'
-            tkDefinitions = ['[emphasis]', 'reptile', 'no', 'hunt', 'everything, all', 'below', 'different', 'or', 'keep, save', '[object]', 'and', 'trade, commerce', 'thing', 'bad, evil, unnecessary', 'tool', 'interior', 'dirty, unclean', 'person', 'yellow', 'to have', 'fish', 'sound', 'to come', 'plant', 'can', 'to use', 'fruit, vegetable', 'stone, gem', 'stain, gum', 'air', 'colour / color', 'group', 'to hear', '[context]', 'to sleep', 'green', 'head', 'clothing', 'cold', '[predicate]', 'small', 'line', 'paper', 'red', 'on, in', 'hand, five (complex number system)', 'to see, to look', 'hole', 'land, earth', 'parent', 'money', 'woman', 'me, my, I', 'man', 'to eat', 'dead', 'behind, back', '[meow]', 'moon', 'to play', 'many, three or more (simple number system)', 'number', 'crazy, drunk', 'path', 'mountain', 'this, that', 'name, word', 'leg', '[command / mandate]', 'love', 'he, she, they, it', 'to open', 'break, destroy', 'to do, to make', 'stick', 'food, grain', 'to give', 'of', 'to feel', 'black', 'end', 'insect', 'near', 'container, box', 'good', '[interact with the book]', 'same', 'fire, hot', 'skin', 'what', 'tall', 'body', 'circle, ball', 'new', 'you', 'in front', 'image, drawing', 'to know', 'animal', 'big, important', 'sun', 'surface', 'sweet', 'because of, from', 'but', 'to, movement to', 'water', 'time', 'talk, hello, language', 'house, room', 'two', 'sex', 'mouth', 'to fight', 'white', 'one', 'bird', 'strong', 'outside', 'to want, to need']
-        elif check == '2' or check.lower() == 'español' or check.lower() == 'espanol' or check.lower() == 'es':
+            tkD = ['[emphasis]', 'reptile', 'no', 'hunt', 'everything, all', 'below', 'different', 'or', 'keep, save', '[object]', 'and', 'trade, commerce', 'thing', 'bad, evil, unnecessary', 'tool', 'interior', 'dirty, unclean', 'person', 'yellow', 'to have', 'fish', 'sound', 'to come', 'plant', 'can', 'to use', 'fruit, vegetable', 'stone, gem', 'stain, gum', 'air', 'colour / color', 'group', 'to hear', '[context]', 'to sleep', 'green', 'head', 'clothing', 'cold', '[predicate]', 'small', 'line', 'paper', 'red', 'on, in', 'hand, five (complex number system)', 'to see, to look', 'hole', 'land, earth', 'parent', 'money', 'woman', 'me, my, I', 'man', 'to eat', 'dead', 'behind, back', '[meow]', 'moon', 'to play', 'many, three or more (simple number system)', 'number', 'crazy, drunk', 'path', 'mountain', 'this, that', 'name, word', 'leg', '[command / mandate]', 'love', 'he, she, they, it', 'to open', 'break, destroy', 'to do, to make', 'stick', 'food, grain', 'to give', 'of', 'to feel', 'black', 'end', 'insect', 'near', 'container, box', 'good', '[interact with the book]', 'same', 'fire, hot', 'skin', 'what', 'tall', 'body', 'circle, ball', 'new', 'you', 'in front', 'image, drawing', 'to know', 'animal', 'big, important', 'sun', 'surface', 'sweet', 'because of, from', 'but', 'to, movement to', 'water', 'time', 'talk, hello, language', 'house, room', 'two', 'sex', 'mouth', 'to fight', 'white', 'one', 'bird', 'strong', 'outside', 'to want, to need']
+        elif check == '2' or check.lower() == 'español' or check.lower() == 'es' or check.lower() == 'spa':
             globLang = 'es'
-            tkDefinitions = ['[enfasis]', 'reptil', 'no', 'cazar', 'todo', 'abajo', 'diferente', 'o', 'guardar', '[objeto]', 'y', 'comercio', 'cosa', 'malo, innecesario', 'herramienta', 'interior', 'sucio', 'persona', 'amarillo', 'tener', 'pez', 'sonido', 'venir', 'planta', 'poder (hacer)', 'usar', 'fruta, verdura', 'piedra, gema', 'mancha, pasta', 'aire', 'color', 'grupo', 'escuchar, oir', '[contexto]', 'dormir', 'verde', 'cabeza', 'ropa', 'frio', '[predicado]', 'pequeño', 'linea', 'papel', 'rojo', 'en', 'mano, cinco (sistema complejo de numeros)', 'ver, mirar', 'agujero', 'terreno, tierra', 'padre', 'dinero', 'mujer', 'mi, yo', 'hombre', 'comer', 'muerto', 'atras', '[miau]', 'luna', 'jugar', 'mucho, tres o mas (sistema simple de numeros)', 'numero', 'loco, borracho', 'camino', 'montaña', 'esto, este, eso', 'nombre, palabra', 'pie', '[mandato]', 'amor', 'el, ella, ellos, eso', 'abrir', 'romper, destruir', 'hacer', 'palo', 'comida, miga', 'dar', 'de', 'sentir', 'negro', 'fin', 'insecto', 'cerca', 'contenedor, caja', 'bueno', '[interactuar con el libro]', 'igual', 'fuego, caliente', 'piel', 'que', 'alto', 'cuerpo', 'circulo, bola', 'nuevo', 'vos', 'adelante', 'imagen, dibujo', 'saber', 'animal', 'grande, importante', 'sol', 'superficie', 'dulce', 'a causa de, por', 'pero', 'a, movimiento a', 'agua', 'tiempo', 'hablar, hola, idioma', 'casa, cuarto', 'dos', 'sexo', 'boca', 'luchar', 'blanco', 'uno', 'pajaro', 'fuerte', 'afuera', 'necesitar']
-        elif check == '3' or check.lower() == 'русский' or check.lower() == 'ru':
+            tkD = ['[enfasis]', 'reptil', 'no', 'cazar', 'todo', 'abajo', 'diferente', 'o', 'guardar', '[objeto]', 'y', 'comercio', 'cosa', 'malo, innecesario', 'herramienta', 'interior', 'sucio', 'persona', 'amarillo', 'tener', 'pez', 'sonido', 'venir', 'planta', 'poder (hacer)', 'usar', 'fruta, verdura', 'piedra, gema', 'mancha, pasta', 'aire', 'color', 'grupo', 'escuchar, oir', '[contexto]', 'dormir', 'verde', 'cabeza', 'ropa', 'frio', '[predicado]', 'pequeño', 'linea', 'papel', 'rojo', 'en', 'mano, cinco (sistema complejo de numeros)', 'ver, mirar', 'agujero', 'terreno, tierra', 'padre', 'dinero', 'mujer', 'mi, yo', 'hombre', 'comer', 'muerto', 'atras', '[miau]', 'luna', 'jugar', 'mucho, tres o mas (sistema simple de numeros)', 'numero', 'loco, borracho', 'camino', 'montaña', 'esto, este, eso', 'nombre, palabra', 'pie', '[mandato]', 'amor', 'el, ella, ellos, eso', 'abrir', 'romper, destruir', 'hacer', 'palo', 'comida, miga', 'dar', 'de', 'sentir', 'negro', 'fin', 'insecto', 'cerca', 'contenedor, caja', 'bueno', '[interactuar con el libro]', 'igual', 'fuego, caliente', 'piel', 'que', 'alto', 'cuerpo', 'circulo, bola', 'nuevo', 'vos', 'adelante', 'imagen, dibujo', 'saber', 'animal', 'grande, importante', 'sol', 'superficie', 'dulce', 'a causa de, por', 'pero', 'a, movimiento a', 'agua', 'tiempo', 'hablar, hola, idioma', 'casa, cuarto', 'dos', 'sexo', 'boca', 'luchar', 'blanco', 'uno', 'pajaro', 'fuerte', 'afuera', 'necesitar']
+        elif check == '3' or check.lower() == 'русский' or check.lower() == 'ru' or check.lower() == 'rus':
             globLang = 'ru'
-            tkDefinitions = ['[ударение]', 'рептилия', 'нет', 'охота', 'все', 'ниже', 'разное', 'или', 'сохранить, сберечь', '[предмет]', 'и', 'торговля, коммерция', 'вещь', 'плохой, злой, ненужный', 'инструмент', 'интерьер', 'грязный, нечистый', 'человек', 'желтый', 'иметь', 'рыба', 'звук', 'приходить', 'растение', 'может', 'использовать', 'фрукт, овощ', 'камень, самоцвет', 'пятно, камедь', 'воздух', 'цвет', 'группа', 'слышать', '[контекст]', 'спать', 'зеленый', 'голова', 'одежда', 'холод', '[сказуемое]', 'маленький', 'линия', 'бумага', 'красный', 'на, в', 'рука, пять (сложная система счисления)', 'видеть, смотреть', 'дыра', 'земля', 'родитель', 'деньги', 'женщина', 'я, мой', 'мужчина', 'есть', 'мертвый', 'сзади', '[мяу]', 'луна', 'играть', 'много, три или больше (простая система счисления)', 'число', 'сумасшедший, пьяный', 'путь', 'гора', 'это, то', 'имя, слово', 'нога', '[команда / мандат]', 'любовь', 'он, она, они, оно', 'открыть', 'сломать, уничтожить', 'сделать', 'палка', 'еда, зерно', 'дать', 'из', 'чувствовать', 'черный', 'конец', 'насекомое', 'рядом', 'контейнер, коробка', 'хорошо', '[взаимодействовать с книгой]', 'то же', 'огонь, горячий', 'кожа', 'что', 'высокий', 'тело', 'круг, шар', 'новый', 'ты', 'перед', 'изображение, рисунок', 'знать', 'животное', 'большой, важный', 'солнце', 'поверхность', 'сладкий', 'из-за, от', 'но', 'к, движение к', 'вода', 'время', 'говорить, привет, язык', 'дом, комната', 'два', 'секс', 'рот', 'бороться', 'белый', 'один', 'птица', 'сильный', 'снаружи', 'хотеть, нуждаться']
+            tkD = ['[ударение]', 'рептилия', 'нет', 'охота', 'все', 'ниже', 'разное', 'или', 'сохранить, сберечь', '[предмет]', 'и', 'торговля, коммерция', 'вещь', 'плохой, злой, ненужный', 'инструмент', 'интерьер', 'грязный, нечистый', 'человек', 'желтый', 'иметь', 'рыба', 'звук', 'приходить', 'растение', 'может', 'использовать', 'фрукт, овощ', 'камень, самоцвет', 'пятно, камедь', 'воздух', 'цвет', 'группа', 'слышать', '[контекст]', 'спать', 'зеленый', 'голова', 'одежда', 'холод', '[сказуемое]', 'маленький', 'линия', 'бумага', 'красный', 'на, в', 'рука, пять (сложная система счисления)', 'видеть, смотреть', 'дыра', 'земля', 'родитель', 'деньги', 'женщина', 'я, мой', 'мужчина', 'есть', 'мертвый', 'сзади', '[мяу]', 'луна', 'играть', 'много, три или больше (простая система счисления)', 'число', 'сумасшедший, пьяный', 'путь', 'гора', 'это, то', 'имя, слово', 'нога', '[команда / мандат]', 'любовь', 'он, она, они, оно', 'открыть', 'сломать, уничтожить', 'сделать', 'палка', 'еда, зерно', 'дать', 'из', 'чувствовать', 'черный', 'конец', 'насекомое', 'рядом', 'контейнер, коробка', 'хорошо', '[взаимодействовать с книгой]', 'то же', 'огонь, горячий', 'кожа', 'что', 'высокий', 'тело', 'круг, шар', 'новый', 'ты', 'перед', 'изображение, рисунок', 'знать', 'животное', 'большой, важный', 'солнце', 'поверхность', 'сладкий', 'из-за, от', 'но', 'к, движение к', 'вода', 'время', 'говорить, привет, язык', 'дом, комната', 'два', 'секс', 'рот', 'бороться', 'белый', 'один', 'птица', 'сильный', 'снаружи', 'хотеть, нуждаться']
+        elif check == '4' or check.lower() == 'toki pona' or check.lower() == 'tok':
+            tkD = tkW
+            globLang = 'tok'
         else:
             os.system('cls')
             print('\nSorry, that is not an option. Did you spell it correctly?')
             lang(False)
     elif sm == True:
-        print('\nSelect a language:\n1 - en (English)\n2 - es (Español)\n3 - ru (Русский)\n- Back')
+        print('\nSelect a language:\n1 - en/eng (English)\n2 - es/spa (Español)\n3 - ru/rus (Русский)\n4 - tok (toki pona)\n- Back')
         check = input('>> ')
-        if check == '1' or check.lower() == 'english' or check.lower() == 'en':
+        if check == '1' or check.lower() == 'english' or check.lower() == 'en' or check.lower() == 'eng':
             globLang = 'en'
-            tkDefinitions = ['[emphasis]', 'reptile', 'no', 'hunt', 'everything, all', 'below', 'different', 'or', 'keep, save', '[object]', 'and', 'trade, commerce', 'thing', 'bad, evil, unnecessary', 'tool', 'interior', 'dirty, unclean', 'person', 'yellow', 'to have', 'fish', 'sound', 'to come', 'plant', 'can', 'to use', 'fruit, vegetable', 'stone, gem', 'stain, gum', 'air', 'colour / color', 'group', 'to hear', '[context]', 'to sleep', 'green', 'head', 'clothing', 'cold', '[predicate]', 'small', 'line', 'paper', 'red', 'on, in', 'hand, five (complex number system)', 'to see, to look', 'hole', 'land, earth', 'parent', 'money', 'woman', 'me, my, I', 'man', 'to eat', 'dead', 'behind, back', '[meow]', 'moon', 'to play', 'many, three or more (simple number system)', 'number', 'crazy, drunk', 'path', 'mountain', 'this, that', 'name, word', 'leg', '[command / mandate]', 'love', 'he, she, they, it', 'to open', 'break, destroy', 'to do, to make', 'stick', 'food, grain', 'to give', 'of', 'to feel', 'black', 'end', 'insect', 'near', 'container, box', 'good', '[interact with the book]', 'same', 'fire, hot', 'skin', 'what', 'tall', 'body', 'circle, ball', 'new', 'you', 'in front', 'image, drawing', 'to know', 'animal', 'big, important', 'sun', 'surface', 'sweet', 'because of, from', 'but', 'to, movement to', 'water', 'time', 'talk, hello, language', 'house, room', 'two', 'sex', 'mouth', 'to fight', 'white', 'one', 'bird', 'strong', 'outside', 'to want, to need']
-        elif check == '2' or check.lower() == 'español' or check.lower() == 'es':
+            tkD = ['[emphasis]', 'reptile', 'no', 'hunt', 'everything, all', 'below', 'different', 'or', 'keep, save', '[object]', 'and', 'trade, commerce', 'thing', 'bad, evil, unnecessary', 'tool', 'interior', 'dirty, unclean', 'person', 'yellow', 'to have', 'fish', 'sound', 'to come', 'plant', 'can', 'to use', 'fruit, vegetable', 'stone, gem', 'stain, gum', 'air', 'colour / color', 'group', 'to hear', '[context]', 'to sleep', 'green', 'head', 'clothing', 'cold', '[predicate]', 'small', 'line', 'paper', 'red', 'on, in', 'hand, five (complex number system)', 'to see, to look', 'hole', 'land, earth', 'parent', 'money', 'woman', 'me, my, I', 'man', 'to eat', 'dead', 'behind, back', '[meow]', 'moon', 'to play', 'many, three or more (simple number system)', 'number', 'crazy, drunk', 'path', 'mountain', 'this, that', 'name, word', 'leg', '[command / mandate]', 'love', 'he, she, they, it', 'to open', 'break, destroy', 'to do, to make', 'stick', 'food, grain', 'to give', 'of', 'to feel', 'black', 'end', 'insect', 'near', 'container, box', 'good', '[interact with the book]', 'same', 'fire, hot', 'skin', 'what', 'tall', 'body', 'circle, ball', 'new', 'you', 'in front', 'image, drawing', 'to know', 'animal', 'big, important', 'sun', 'surface', 'sweet', 'because of, from', 'but', 'to, movement to', 'water', 'time', 'talk, hello, language', 'house, room', 'two', 'sex', 'mouth', 'to fight', 'white', 'one', 'bird', 'strong', 'outside', 'to want, to need']
+        elif check == '2' or check.lower() == 'español' or check.lower() == 'es' or check.lower() == 'spa':
             globLang = 'es'
-            tkDefinitions = ['[enfasis]', 'reptil', 'no', 'cazar', 'todo', 'abajo', 'diferente', 'o', 'guardar', '[objeto]', 'y', 'comercio', 'cosa', 'malo, innecesario', 'herramienta', 'interior', 'sucio', 'persona', 'amarillo', 'tener', 'pez', 'sonido', 'venir', 'planta', 'poder (hacer)', 'usar', 'fruta, verdura', 'piedra, gema', 'mancha, pasta', 'aire', 'color', 'grupo', 'escuchar, oir', '[contexto]', 'dormir', 'verde', 'cabeza', 'ropa', 'frio', '[predicado]', 'pequeño', 'linea', 'papel', 'rojo', 'en', 'mano, cinco (sistema complejo de numeros)', 'ver, mirar', 'agujero', 'terreno, tierra', 'padre', 'dinero', 'mujer', 'mi, yo', 'hombre', 'comer', 'muerto', 'atras', '[miau]', 'luna', 'jugar', 'mucho, tres o mas (sistema simple de numeros)', 'numero', 'loco, borracho', 'camino', 'montaña', 'esto, este, eso', 'nombre, palabra', 'pie', '[mandato]', 'amor', 'el, ella, ellos, eso', 'abrir', 'romper, destruir', 'hacer', 'palo', 'comida, miga', 'dar', 'de', 'sentir', 'negro', 'fin', 'insecto', 'cerca', 'contenedor, caja', 'bueno', '[interactuar con el libro]', 'igual', 'fuego, caliente', 'piel', 'que', 'alto', 'cuerpo', 'circulo, bola', 'nuevo', 'vos', 'adelante', 'imagen, dibujo', 'saber', 'animal', 'grande, importante', 'sol', 'superficie', 'dulce', 'a causa de, por', 'pero', 'a, movimiento a', 'agua', 'tiempo', 'hablar, hola, idioma', 'casa, cuarto', 'dos', 'sexo', 'boca', 'luchar', 'blanco', 'uno', 'pajaro', 'fuerte', 'afuera', 'necesitar']
-        elif check == '3' or check.lower() == 'русский' or check.lower() == 'ru':
+            tkD = ['[enfasis]', 'reptil', 'no', 'cazar', 'todo', 'abajo', 'diferente', 'o', 'guardar', '[objeto]', 'y', 'comercio', 'cosa', 'malo, innecesario', 'herramienta', 'interior', 'sucio', 'persona', 'amarillo', 'tener', 'pez', 'sonido', 'venir', 'planta', 'poder (hacer)', 'usar', 'fruta, verdura', 'piedra, gema', 'mancha, pasta', 'aire', 'color', 'grupo', 'escuchar, oir', '[contexto]', 'dormir', 'verde', 'cabeza', 'ropa', 'frio', '[predicado]', 'pequeño', 'linea', 'papel', 'rojo', 'en', 'mano, cinco (sistema complejo de numeros)', 'ver, mirar', 'agujero', 'terreno, tierra', 'padre', 'dinero', 'mujer', 'mi, yo', 'hombre', 'comer', 'muerto', 'atras', '[miau]', 'luna', 'jugar', 'mucho, tres o mas (sistema simple de numeros)', 'numero', 'loco, borracho', 'camino', 'montaña', 'esto, este, eso', 'nombre, palabra', 'pie', '[mandato]', 'amor', 'el, ella, ellos, eso', 'abrir', 'romper, destruir', 'hacer', 'palo', 'comida, miga', 'dar', 'de', 'sentir', 'negro', 'fin', 'insecto', 'cerca', 'contenedor, caja', 'bueno', '[interactuar con el libro]', 'igual', 'fuego, caliente', 'piel', 'que', 'alto', 'cuerpo', 'circulo, bola', 'nuevo', 'vos', 'adelante', 'imagen, dibujo', 'saber', 'animal', 'grande, importante', 'sol', 'superficie', 'dulce', 'a causa de, por', 'pero', 'a, movimiento a', 'agua', 'tiempo', 'hablar, hola, idioma', 'casa, cuarto', 'dos', 'sexo', 'boca', 'luchar', 'blanco', 'uno', 'pajaro', 'fuerte', 'afuera', 'necesitar']
+        elif check == '3' or check.lower() == 'русский' or check.lower() == 'ru' or check.lower() == 'rus':
             globLang = 'ru'
-            tkDefinitions = ['[ударение]', 'рептилия', 'нет', 'охота', 'все', 'ниже', 'разное', 'или', 'сохранить, сберечь', '[предмет]', 'и', 'торговля, коммерция', 'вещь', 'плохой, злой, ненужный', 'инструмент', 'интерьер', 'грязный, нечистый', 'человек', 'желтый', 'иметь', 'рыба', 'звук', 'приходить', 'растение', 'может', 'использовать', 'фрукт, овощ', 'камень, самоцвет', 'пятно, камедь', 'воздух', 'цвет', 'группа', 'слышать', '[контекст]', 'спать', 'зеленый', 'голова', 'одежда', 'холод', '[сказуемое]', 'маленький', 'линия', 'бумага', 'красный', 'на, в', 'рука, пять (сложная система счисления)', 'видеть, смотреть', 'дыра', 'земля', 'родитель', 'деньги', 'женщина', 'я, мой', 'мужчина', 'есть', 'мертвый', 'сзади', '[мяу]', 'луна', 'играть', 'много, три или больше (простая система счисления)', 'число', 'сумасшедший, пьяный', 'путь', 'гора', 'это, то', 'имя, слово', 'нога', '[команда / мандат]', 'любовь', 'он, она, они, оно', 'открыть', 'сломать, уничтожить', 'сделать', 'палка', 'еда, зерно', 'дать', 'из', 'чувствовать', 'черный', 'конец', 'насекомое', 'рядом', 'контейнер, коробка', 'хорошо', '[взаимодействовать с книгой]', 'то же', 'огонь, горячий', 'кожа', 'что', 'высокий', 'тело', 'круг, шар', 'новый', 'ты', 'перед', 'изображение, рисунок', 'знать', 'животное', 'большой, важный', 'солнце', 'поверхность', 'сладкий', 'из-за, от', 'но', 'к, движение к', 'вода', 'время', 'говорить, привет, язык', 'дом, комната', 'два', 'секс', 'рот', 'бороться', 'белый', 'один', 'птица', 'сильный', 'снаружи', 'хотеть, нуждаться']
+            tkD = ['[ударение]', 'рептилия', 'нет', 'охота', 'все', 'ниже', 'разное', 'или', 'сохранить, сберечь', '[предмет]', 'и', 'торговля, коммерция', 'вещь', 'плохой, злой, ненужный', 'инструмент', 'интерьер', 'грязный, нечистый', 'человек', 'желтый', 'иметь', 'рыба', 'звук', 'приходить', 'растение', 'может', 'использовать', 'фрукт, овощ', 'камень, самоцвет', 'пятно, камедь', 'воздух', 'цвет', 'группа', 'слышать', '[контекст]', 'спать', 'зеленый', 'голова', 'одежда', 'холод', '[сказуемое]', 'маленький', 'линия', 'бумага', 'красный', 'на, в', 'рука, пять (сложная система счисления)', 'видеть, смотреть', 'дыра', 'земля', 'родитель', 'деньги', 'женщина', 'я, мой', 'мужчина', 'есть', 'мертвый', 'сзади', '[мяу]', 'луна', 'играть', 'много, три или больше (простая система счисления)', 'число', 'сумасшедший, пьяный', 'путь', 'гора', 'это, то', 'имя, слово', 'нога', '[команда / мандат]', 'любовь', 'он, она, они, оно', 'открыть', 'сломать, уничтожить', 'сделать', 'палка', 'еда, зерно', 'дать', 'из', 'чувствовать', 'черный', 'конец', 'насекомое', 'рядом', 'контейнер, коробка', 'хорошо', '[взаимодействовать с книгой]', 'то же', 'огонь, горячий', 'кожа', 'что', 'высокий', 'тело', 'круг, шар', 'новый', 'ты', 'перед', 'изображение, рисунок', 'знать', 'животное', 'большой, важный', 'солнце', 'поверхность', 'сладкий', 'из-за, от', 'но', 'к, движение к', 'вода', 'время', 'говорить, привет, язык', 'дом, комната', 'два', 'секс', 'рот', 'бороться', 'белый', 'один', 'птица', 'сильный', 'снаружи', 'хотеть, нуждаться']
+        elif check == '4' or check.lower() == 'toki pona' or check.lower() == 'tok':
+            tkD = tkW
+            globLang = 'tok'
         elif check.lower() == 'back':
             os.system('cls')
             settings()
@@ -1338,73 +1375,76 @@ def credits():
     credits()
 def iToF(type, chk):
     if type == 'back':
-        if chk.lower() == 'back' or chk.lower() == 'volver' or chk.lower() == 'назад':
+        if chk.lower() == 'back' or chk.lower() == 'volver' or chk.lower() == 'назад' or chk.lower() == 'pini':
             return True
     elif type == 'exit':
-        if chk.lower() == 'exit' or chk.lower() == 'salir' or chk.lower() == 'выход':
+        if chk.lower() == 'exit' or chk.lower() == 'salir' or chk.lower() == 'выход' or chk.lower() == 'weka':
             return True
     elif type == 'set.lang':
-        if chk.lower() == 'language' or chk.lower() == 'idioma' or chk.lower() == 'язык':
+        if chk.lower() == 'language' or chk.lower() == 'idioma' or chk.lower() == 'язык' or chk.lower() == 'toki':
             return True
     elif type == 'set.cred':
-        if chk.lower() == 'credits' or chk.lower() == 'créditos' or chk.lower() == 'creditos' or chk.lower() == 'кредиты':
+        if chk.lower() == 'credits' or chk.lower() == 'créditos' or chk.lower() == 'creditos' or chk.lower() == 'кредиты' or chk.lower() == 'pona e ni':
             return True
     elif type == 'set.seti':
-        if chk.lower() == 'settings' or chk.lower() == 'ajustes' or chk.lower() == 'настройки':
+        if chk.lower() == 'settings' or chk.lower() == 'ajustes' or chk.lower() == 'настройки' or chk.lower() == 'lipu ante':
             return True
     elif type == 'set.leso':
-        if chk.lower() == 'lesson' or chk.lower() == 'lección' or chk.lower() == 'leccion' or chk.lower() == 'урок':
+        if chk.lower() == 'lesson' or chk.lower() == 'lección' or chk.lower() == 'leccion' or chk.lower() == 'урок' or chk.lower() == 'pana sina e sona':
             return True
     elif type == 'set.prac':
-        if chk.lower() == 'practice' or chk.lower() == 'practicar' or chk.lower() == 'практика':
+        if chk.lower() == 'practice' or chk.lower() == 'practicar' or chk.lower() == 'практика' or chk.lower() == 'lipu sona':
             return True
     elif type == 'set.chek':
-        if chk.lower() == 'check' or chk.lower() == 'comprobar' or chk.lower() == 'проверка':
+        if chk.lower() == 'check' or chk.lower() == 'comprobar' or chk.lower() == 'проверка' or chk.lower() == 'lukin':
             return True
     elif type == 'set.extr':
-        if chk.lower() == 'extra' or chk.lower() == 'дополнительно':
+        if chk.lower() == 'extra' or chk.lower() == 'дополнительно' or chk.lower() == 'namako':
             return True
     elif type == 'lan.engl':
-        if chk.lower() == 'english' or chk.lower() == 'inglés' or chk.lower() == 'ingles' or chk.lower() == 'английский':
+        if chk.lower() == 'english' or chk.lower() == 'inglés' or chk.lower() == 'ingles' or chk.lower() == 'английский' or chk.lower() == 'toki inli':
             return True
     elif type == 'lan.span':
-        if chk.lower() == 'spanish' or chk.lower() == 'español' or chk.lower() == 'espanol' or chk.lower() == 'испанский':
+        if chk.lower() == 'spanish' or chk.lower() == 'español' or chk.lower() == 'espanol' or chk.lower() == 'испанский' or chk.lower() == 'toki epanja':
             return True
     elif type == 'lan.rusi':
-        if chk.lower() == 'russian' or chk.lower() == 'ruso' or chk.lower() == 'русский':
+        if chk.lower() == 'russian' or chk.lower() == 'ruso' or chk.lower() == 'русский'  or chk.lower() == 'toki losi':
             return True
     elif type == 'lan.grek':
-        if chk.lower() == 'greek' or chk.lower() == 'griego' or chk.lower() == 'греческий':
+        if chk.lower() == 'greek' or chk.lower() == 'griego' or chk.lower() == 'греческий'  or chk.lower() == 'toki elina':
             return True
     elif type == 'lan.japa':
-        if chk.lower() == 'japanese' or chk.lower() == 'japonés' or chk.lower() == 'japones' or chk.lower() == 'японский':
+        if chk.lower() == 'japanese' or chk.lower() == 'japonés' or chk.lower() == 'japones' or chk.lower() == 'японский'  or chk.lower() == 'toki nijon':
             return True
     elif type == 'lan.hebr':
-        if chk.lower() == 'hebrew' or chk.lower() == 'hebreo' or chk.lower() == 'иврит':
+        if chk.lower() == 'hebrew' or chk.lower() == 'hebreo' or chk.lower() == 'иврит'  or chk.lower() == 'toki anku':
             return True
     elif type == 'lan.tkpn':
-        if chk.lower() == 'toki pona' or chk.lower() == 'токи пона':
+        if chk.lower() == 'toki pona' or chk.lower() == 'токи пона'  or chk.lower() == 'toki pona':
             return True
     elif type == 'lan.kore':
-        if chk.lower() == 'korean' or chk.lower() == 'coreano' or chk.lower() == 'корейский':
+        if chk.lower() == 'korean' or chk.lower() == 'coreano' or chk.lower() == 'корейский'  or chk.lower() == 'toki anku':
             return True
     elif type == 'lan.arab':
-        if chk.lower() == 'arabic' or chk.lower() == 'arabe' or chk.lower() == 'арабский':
+        if chk.lower() == 'arabic' or chk.lower() == 'arabe' or chk.lower() == 'арабский'  or chk.lower() == 'toki alapi':
             return True
     elif type == 'lan.arme':
-        if chk.lower() == 'armenian' or chk.lower() == 'armenio' or chk.lower() == 'армянский':
+        if chk.lower() == 'armenian' or chk.lower() == 'armenio' or chk.lower() == 'армянский'  or chk.lower() == 'toki armenian':
             return True
     elif type == 'lan.turk':
-        if chk.lower() == 'turkish' or chk.lower() == 'turco' or chk.lower() == 'турецкий':
+        if chk.lower() == 'turkish' or chk.lower() == 'turco' or chk.lower() == 'турецкий'  or chk.lower() == 'toki tuki':
             return True
     elif type == 'lan.inuk':
-        if chk.lower() == 'inuktitut' or chk.lower() == 'инуктитут':
+        if chk.lower() == 'inuktitut' or chk.lower() == 'инуктитут'  or chk.lower() == 'toki inuktitut':
             return True
     elif type == 'lan.futh':
-        if chk.lower() == 'futhark' or chk.lower() == 'футарк':
+        if chk.lower() == 'futhark' or chk.lower() == 'футарк'  or chk.lower() == 'toki futhark':
+            return True
+    elif type == 'lan.espe':
+        if chk.lower() == 'esperanto' or chk.lower() == 'эсперанто'  or chk.lower() == 'toki epelanto':
             return True
     elif type == 'set.dict':
-        if chk.lower() == 'dictionary' or chk.lower() == 'diccionario' or chk.lower() == 'словарь':
+        if chk.lower() == 'dictionary' or chk.lower() == 'diccionario' or chk.lower() == 'словарь'  or chk.lower() == 'lipu nimi':
             return True
 def msg(type, lang):
     if lang == 'en':
@@ -1419,7 +1459,7 @@ def msg(type, lang):
         elif int(type) == 4:
             return '\nThis feature has still not been added.'
         elif int(type) == 5:
-            return '\nWhat language would you like to check?\n- English\n- Spanish\n- Russian (Cyrillic)\n- Greek\n- Japanese (Hiragana & Katakana)\n- Hebrew\n- Toki Pona\n- Korean (Hangul)\n- Arabic\n- Armenian\n- Turkish\n- Inuktitut\n- Futhark\n- Back'
+            return '\nWhat language would you like to check?\n- English\n- Spanish\n- Russian (Cyrillic)\n- Greek\n- Japanese (Hiragana & Katakana)\n- Hebrew\n- Toki Pona\n- Korean (Hangul)\n- Arabic\n- Armenian\n- Turkish\n- Inuktitut\n- Futhark\n- Esperanto\n- Back'
         elif int(type) == 6:
             return '\nIf you want to go back type "Back". If you want to check a letter, type the respective number.'
         elif int(type) == 7:
@@ -1437,7 +1477,7 @@ def msg(type, lang):
         elif int(type) == 13:
             return '\nWhat phonetic alphabet would you like to check?\n- Hiragana\n- Katakana\n- Back'
         elif int(type) == 14:
-            return '\nWhat language would you like to practice?\n- English (WIP)\n- Spanish (WIP)\n- Russian (Cyrillic) (WIP)\n- Greek (WIP)\n- Japanese (Hiragana & Katakana) (WIP)\n- Hebrew (WIP)\n- Toki Pona (WIP)\n- Korean (Hangul) (WIP)\n- Arabic (WIP)\n- Armenian (WIP)\n- Turkish (WIP)\n- Inuktitut (WIP)\n- Futhark (WIP)\n- Back'
+            return '\nWhat language would you like to practice?\n- English (WIP)\n- Spanish (WIP)\n- Russian (Cyrillic) (WIP)\n- Greek (WIP)\n- Japanese (Hiragana & Katakana) (WIP)\n- Hebrew (WIP)\n- Toki Pona (WIP)\n- Korean (Hangul) (WIP)\n- Arabic (WIP)\n- Armenian (WIP)\n- Turkish (WIP)\n- Inuktitut (WIP)\n- Futhark (WIP)\n- Esperanto (WIP)\n- Back'
         elif int(type) == 15:
             return '\nChange: Makes one letter longer the letter after it.'
         elif int(type) == 16:
@@ -1451,7 +1491,7 @@ def msg(type, lang):
         elif int(type) == 20:
             return 'Variations:'
         elif int(type) == 21:
-            return '\nCredits:\n- Code: Luke\n- Translations:\n-- English: Luke\n-- Spanish: Luke\n-- Russian: DeepL Translate\n- Ideas: Luke and Friends'
+            return '\nCredits:\n- Code: Luke\n- Translations:\n-- English: Luke\n-- Spanish: Luke\n-- Russian: DeepL Translate\n-- Toki Pona: Luke\n- Ideas: Luke and friends'
         elif int(type) == 22:
             return '\nWhat  would you like to do?\n- Settings\n- Credits\n- Back'
         elif int(type) == 23:
@@ -1464,6 +1504,8 @@ def msg(type, lang):
             return 'With long vowels: '
         elif int(type) == 27:
             return 'Change: Makes the vowel longer'
+        elif int(type) == 97:
+            return '\nREMINDER: I still havent added the "Harakat".\n'
         elif int(type) == 98:
             return '\nREMINDER: Make sure to have the keyboards of the languages downloaded, if not, you may see boxes instead of the letters.'
         elif int(type) == 99:
@@ -1480,7 +1522,7 @@ def msg(type, lang):
         elif int(type) == 4:
             return '\nEsta función aún no se ha añadido.'
         elif int(type) == 5:
-            return '\n¿Qué idioma desea comprobar?\n- Inglés\n- Español\n- Ruso (Cirílico)\n- Griego\n- Japonés (Hiragana & Katakana)\n- Hebreo\n- Toki Pona\n- Coreano (Hangul)\n- Arabe\n- Armenio\n- Turco\n- Inuktitut\n- Futhark\n- Volver'
+            return '\n¿Qué idioma desea comprobar?\n- Inglés\n- Español\n- Ruso (Cirílico)\n- Griego\n- Japonés (Hiragana & Katakana)\n- Hebreo\n- Toki Pona\n- Coreano (Hangul)\n- Arabe\n- Armenio\n- Turco\n- Inuktitut\n- Futhark\n- Esperanto\n- Volver'
         elif int(type) == 6:
             return '\nSi desea volver atrás, escriba "Volver". Si desea comprobar una letra, escriba el número correspondiente.'
         elif int(type) == 7:
@@ -1498,7 +1540,7 @@ def msg(type, lang):
         elif int(type) == 13:
             return '\n¿Qué alfabeto fonético desea consultar?\n- Hiragana\n- Katakana\n- Volver'
         elif int(type) == 14:
-            return '\n¿Qué idioma te gustaría practicar?\n- Inglés (WIP)\n- Español (WIP)\n- Ruso (Cirílico) (WIP)\n- Griego (WIP)\n- Japonés (Hiragana & Katakana) (WIP)\n- Hebreo (WIP)\n- Toki Pona (WIP)\n- Coreano (Hangul) (WIP)\n- Arabe (WIP)\n- Armenio (WIP)\n- Turco (WIP)\n- Inuktitut (WIP)\n- Futhark (WIP)\n- Volver'
+            return '\n¿Qué idioma te gustaría practicar?\n- Inglés (WIP)\n- Español (WIP)\n- Ruso (Cirílico) (WIP)\n- Griego (WIP)\n- Japonés (Hiragana & Katakana) (WIP)\n- Hebreo (WIP)\n- Toki Pona (WIP)\n- Coreano (Hangul) (WIP)\n- Arabe (WIP)\n- Armenio (WIP)\n- Turco (WIP)\n- Inuktitut (WIP)\n- Futhark (WIP)\n- Esperanto (WIP)\n- Volver'
         elif int(type) == 15:
             return '\nCambio: Hace una letra más larga la letra que le sigue.'
         elif int(type) == 16:
@@ -1512,7 +1554,7 @@ def msg(type, lang):
         elif int(type) == 20:
             return 'Variaciones:'
         elif int(type) == 21:
-            return '\nCréditos:\n- Código: Luke\n- Traducciones:\n-- Inglés: Luke\n-- Español: Luke\n-- Ruso: DeepL Traductor\n- Ideas: Luke y Amigos'
+            return '\nCréditos:\n- Código: Luke\n- Traducciones:\n-- Inglés: Luke\n-- Español: Luke\n-- Ruso: Traductor DeepL\n-- Toki Pona: Luke\n- Ideas: Luke y amigos'
         elif int(type) == 22:
             return '\n¿Qué te gustaría hacer?\n- Ajustes\n- Créditos\n- Volver'
         elif int(type) == 23:
@@ -1525,6 +1567,8 @@ def msg(type, lang):
             return 'Con vocales largas: '
         elif int(type) == 27:
             return 'Cambio: Hace la vocal mas larga'
+        elif int(type) == 97:
+            return '\nRECORDATORIO: Todavía no he añadido los "Harakat".\n'
         elif int(type) == 98:
             return '\nRECORDATORIO: Asegúrese de tener descargados los teclados de los idiomas, si no, es posible que vea cuadrados en lugar de las letras.'
         elif int(type) == 99:
@@ -1541,7 +1585,7 @@ def msg(type, lang):
         elif int(type) == 4:
             return '\nЭта функция до сих пор не добавлена.'
         elif int(type) == 5:
-            return '\nКакой язык вы хотите проверить?\n- Английский\n- Испанский\n- Русский (Кириллица)\n- Греческий\n- Японский (Хирагана и Катакана)\n- Иврит\n- Токи Пона\n- Корейский (Хангыль)\n- Арабский\n- Армянский\n- Турецкий\n- Инуктитут\n- Футарк\n- Назад'
+            return '\nКакой язык вы хотите проверить?\n- Английский\n- Испанский\n- Русский (Кириллица)\n- Греческий\n- Японский (Хирагана и Катакана)\n- Иврит\n- Токи Пона\n- Корейский (Хангыль)\n- Арабский\n- Армянский\n- Турецкий\n- Инуктитут\n- Футарк\n- Эсперанто\n- Назад'
         elif int(type) == 6:
             return '\nЕсли вы хотите вернуться назад, введите "Назад". Если вы хотите проверить букву, введите соответствующий номер.'
         elif int(type) == 7:
@@ -1559,7 +1603,7 @@ def msg(type, lang):
         elif int(type) == 13:
             return '\nКакой фонетический алфавит вы хотите проверить?\n- Хирагана\n- Катакана\n- Назад'
         elif int(type) == 14:
-            return '\nКакой язык вы хотели бы практиковать?\n- Английский (WIP)\n- Испанский (WIP)\n- Русский (Кириллица) (WIP)\n- Греческий (WIP)\n- Японский (Хирагана и Катакана) (WIP)\n- Иврит (WIP)\n- Токи Пона (WIP)\n- Корейский (Хангыль) (WIP)\n- - Арабский (WIP)\n- Армянский (WIP)\n- Турецкий (WIP)\n- Инуктитут (WIP)\n- Футарк (WIP)\n- Назад'
+            return '\nКакой язык вы хотели бы практиковать?\n- Английский (WIP)\n- Испанский (WIP)\n- Русский (Кириллица) (WIP)\n- Греческий (WIP)\n- Японский (Хирагана и Катакана) (WIP)\n- Иврит (WIP)\n- Токи Пона (WIP)\n- Корейский (Хангыль) (WIP)\n- - Арабский (WIP)\n- Армянский (WIP)\n- Турецкий (WIP)\n- Инуктитут (WIP)\n- Футарк (WIP)\n- Эсперанто (WIP)\n- Назад'
         elif int(type) == 15:
             return '\nИзменение: Делает одну букву длиннее следующей за ней буквы.'
         elif int(type) == 16:
@@ -1573,7 +1617,7 @@ def msg(type, lang):
         elif int(type) == 20:
             return 'Вариации:'
         elif int(type) == 21:
-            return '\nКредиты:\n- Код: Luke\n- Переводы:\n-- Английский: Luke\n-- Испанский: Luke\n-- Русский: DeepL Translate\n- Идеи: Luke и Друзья'
+            return '\nКредиты:\n- Код: Luke\n- Переводы:\n-- Английский: Luke\n-- Испанский: Luke\n-- Русский: DeepL Translate\n- Токи Пона: Luke\n- Идеи: Luke и друзья'
         elif int(type) == 22:
             return '\nЧто бы вы хотели сделать?\n- Настройки\n- Кредиты\n- Назад'
         elif int(type) == 23:
@@ -1586,8 +1630,75 @@ def msg(type, lang):
             return 'С долгими гласными: '
         elif int(type) == 27:
             return 'Изменение: Делает гласный более долгим'
+        elif int(type) == 97:
+            return '\nПОМНИТЕ: Я все еще не добавил "Харакат".\n'
         elif int(type) == 98:
             return '\nПОМНИТЕ: Убедитесь, что загружены клавиатуры соответствующих языков, если нет, то вместо букв вы можете увидеть квадратики.'
         elif int(type) == 99:
             return '\nПОМНИТЕ: Я все еще не добавил "Гереш" и "Гласные точки".\n'
+    elif lang == "tok":
+        if int(type) == 0:
+            return '\n### o kama pona lon HAP ' + ver + '! ###'
+        elif int(type) == 1:
+            return '\nmi pakala · ni li lon ala. sina sitelen pona e ni anu seme'
+        elif int(type) == 2:
+            return '\nsina wile pali e seme\n- lukin\n- pana sina e sona (WIP)\n- lipu sona (WIP)\n- lipu nimi (toki pona)\n- namako\n- weka'
+        elif int(type) == 3:
+            return '\nsina wile pali e seme\n- toki\n- pini'
+        elif int(type) == 4:
+            return '\ntenpo ni la ijo ni li lon ala' 
+        elif int(type) == 5:
+            return '\nsina wile lukin e toki seme\n- toki Inli\n- toki Epanja\n- toki Losi (sitelen Losi)\n- toki Elina\n- toki Nijon (sitelen Ilakana & sitelen Katakana)\n- toki Hebrew\n- toki pona\n- toki Anku (sitelen Anku)\n- toki Alapi\n- toki Armenian\n- toki Tuki\n- toki Inuktitut\n- toki Futhark\n- toki Epelanto\n- pini'
+        elif int(type) == 6:
+            return '\nsina wile pini e ni la sina sitelen e "pini" · sina wile lukin e sitelen la sina sitelen e nanpa ona'
+        elif int(type) == 7:
+            return '\nsina wile pini e ni la sina sitelen e "pini"'
+        elif int(type) == 8:
+            return '\nsina wile pini e ni la sina sitelen e "pini" · sina wile lukin e ante sitelen la sina sitelen e nanpa ona'
+        elif int(type) == 9:
+            return 'sitelen: '
+        elif int(type) == 10:
+            return 'nimi: '
+        elif int(type) == 11:
+            return 'nanpa lon sitelen mute: '
+        elif int(type) == 12:
+            return 'kalama IPA: '
+        elif int(type) == 13:
+            return '\nsina wile lukin e sitelen kalama seme\n- sitelen Ilakana\n- sitelen Katakana\n- pini'
+        elif int(type) == 14:
+            return '\nsina wile sona e toki seme\n- toki Inli (WIP)\n- toki Epanja (WIP)\n- toki Losi (sitelen Losi) (WIP)\n- toki Elina (WIP)\n- toki Nijon (sitelen Ilakana & sitelen Katakana) (WIP)\n- toki Hebrew (WIP)\n- toki pona (WIP)\n- toki Anku (sitelen Anku) (WIP)\n- toki Alapi (WIP)\n- toki Armenian (WIP)\n- toki Tuki (WIP)\n- toki Inuktitut (WIP)\n- toki Futhark (WIP)\n- toki Epelanto (WIP)\n- pini'
+        elif int(type) == 15:
+            return '\nante: o sitelen sinpin li kama lon e suli wan'
+        elif int(type) == 16:
+            return '\nante: o sitelen monsi li kama lon e suli wan (ona li sitelen sama taso)'
+        elif int(type) == 17:
+            return '\nante: o kalama e "sh"'
+        elif int(type) == 18:
+            return '\nante: o "Üü" kepeken lon ni taso · "g" anu "q" li lon monsi e ni en "e" en "i" li lon sinpin e sitelen "u" la "u" li kalama ala · ona li sitelen "ü" la nimi mute monsi ni li lon ala'
+        elif int(type) == 19:
+            return '\nante: o namako sitelen e suli'
+        elif int(type) == 20:
+            return 'ante:'
+        elif int(type) == 21:
+            return '\npona e ni:\n- nanpa sona: jan Lan (Luke)\n- ante toki:\n-- toki Inli: jan Lan (Luke)\n-- toki Epanja: jan Lan (Luke)\n-- toki Losi: ante toki DeepL\n-- toki pona: jan Lan (Luke)\n- lawa sona: jan Lan (Luke) en jan pona'
+        elif int(type) == 22:
+            return '\nsina wile pali e seme\n- lipu ante\n- pona e ni\n- pini'
+        elif int(type) == 23:
+            return '\nsina wile pini e ni la sina sitelen e "pini" · sina wile lukin e nimi la sina sitelen e nanpa ona'
+        elif int(type) == 24:
+            return 'nimi lon: '
+        elif int(type) == 25:
+            return 'kepeken sitelen a: '
+        elif int(type) == 26:
+            return 'kepeken sitelen a suli: '
+        elif int(type) == 27:
+            return 'ante: o sitelen a li kama lon e suli'
+        elif int(type) == 97:
+            return '\nijo suli: tenpo ni la mi lon ala e "Harakat"'
+        elif int(type) == 98:
+            return '\nijo suli: o lukin e ni · sina jo e toki sitelen · nimi mute monsi ni li lon ala la sina ken lukin ala sitelen'
+        elif int(type) == 99:
+            return '\nijo suli: tenpo ni la mi lon ala e "Geresh" e "Vowel points"'
+    elif lang == 'no-language':
+        return 'Language Error'
 lang(False)
