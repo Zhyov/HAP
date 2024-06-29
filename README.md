@@ -15,3 +15,4 @@ For now the lanugages which you can check its alphabets are:
 * Turkish
 * Inuktitut
 * Futhark
+* Esperanto
