@@ -10,7 +10,7 @@ For now the lanugages which you can check its alphabets are:
 * Hebrew (no "Geresh" and "Vowel points")
 * Toki Pona (And a dictionary!)
 * Korean
-* Arab (no vocals)
+* Arab (no vowels)
 * Armenian
 * Turkish
 * Inuktitut
