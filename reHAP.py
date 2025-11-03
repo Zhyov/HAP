@@ -1,43 +1,37 @@
 from hap.language import LanguageManager, loadLanguages
 from hap.window import Window
-from hap.loader import loadCharacters
+from hap.loader import loadCharacters, loadAlphabetsManifest
 from hap.config import loadConfig, CONFIG_PATH
 
 def loadSetup(manager):
     # [Languages]
 
-    spanishCharacters = loadCharacters("spanish.json")
-    russianCharacters = loadCharacters("russian.json")
-
     from hap.window import Letter
-    spanish = Window(
-        [{"text": character["char"], "command": lambda char=character: Letter([], manager, char).load()} for character in spanishCharacters.values()],
-        [], manager, manager.getText("whatCharacter")
-    )
-
-    russian = Window(
-        [{"text": character["char"], "command": lambda char=character: Letter([], manager, char).load()} for character in russianCharacters.values()],
-        [], manager, manager.getText("whatCharacter")
-    )
+    manifest = loadAlphabetsManifest()
+    checkOptions = []
+    for alphabet in manifest:
+        characters =  loadCharacters(alphabet["file"])
+        languageWindow = Window(
+            [{"text": character["char"], "command": lambda char=character: Letter([], manager, char).load()} for character in characters.values()],
+            [], manager, "whatCharacter", autoTranslate=False
+        )
+        checkOptions.append({"text": alphabet["name"], "command": lambda window=languageWindow: window.load()})
 
     # [Main Windows]
 
-    check = Window([
-        {"text": manager.getText("spanish"), "command": lambda: spanish.load()},
-        {"text": manager.getText("russian"), "command": lambda: russian.load()}
-    ], [], manager, manager.getText("whatCheck"))
+    check = Window(checkOptions, [], manager, "whatCheck")
 
-    language = Window(manager.getLanguages(), [], manager, manager.getText("selectLanguage"))
+    language = Window(manager.getLanguages(), [], manager, "selectLanguage")
  
     settings = Window([
-        {"text": manager.getText("settingsLanguage"), "command": lambda: language.load()}
-    ], [], manager, manager.getText("whatDo"))
+        {"text": "settingsLanguage", "command": lambda: language.load()}
+    ], [], manager, "whatDo")
 
     menu = Window([
-        {"text": manager.getText("menuCheck"), "command": lambda: check.load()},
-        {"text": manager.getText("menuSettings"), "command": lambda: settings.load()},
-        {"text": manager.getText("exit"), "command": lambda: exit()}
-    ], [], manager, manager.getText("whatDo"), "", True)
+        {"text": "menuCheck", "command": lambda: check.load()},
+        {"text": "menuSettings", "command": lambda: settings.load()},
+        {"text": "exit", "command": lambda: exit()}
+    ], [], manager, "whatDo", welcome=True)
 
     return menu
 

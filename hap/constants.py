@@ -1,4 +1,4 @@
-VER = "v0.7.1a"
+VER = "v0.7.1b"
 SELECT = ">> "
 WELCOME_MSG = f"""
 

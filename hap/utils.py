@@ -1,4 +1,4 @@
-import os
+import os, time
 from hap.xsampa import IPA
 
 if os.name == "nt":
@@ -6,23 +6,25 @@ if os.name == "nt":
 else:
     def clearScreen(): os.system("clear")
 
-def handleInformation(pretext, information):
-    if pretext is not None: print(pretext)
+def handleInformation(pretext, information, manager):
+    if pretext is not None: print(manager.getText(pretext))
+    else: print()
 
     # Iterate and print all texts
     for text in information:
         print(text)
 
-def handleSelection(posttext, options):
+def handleSelection(posttext, options, translate, manager):
     print() # Blank line for spacing
 
     # Iterate and print all options
     for index, option in enumerate(options, start=1):
-        print(f"{index}) {option['text']}")
-    
-    if posttext is not None: print(posttext)
+        print(f"{index}) {manager.getText(option['text']) if translate or index == len(options) else option['text']}")
 
-def handleOption(selected, options):
+    if posttext is not None: print(manager.getText(posttext))
+    else: print()
+
+def handleOption(selected, options, manager):
     try:
         selected = int(selected) - 1
 
@@ -31,23 +33,25 @@ def handleOption(selected, options):
             # Run lambda function
             options[selected].get("command", lambda: None)()
     except ValueError:
-        pass
+        clearScreen()
+        print(manager.getText("invalidOption"))
+        input(manager.getText("pressEnter"))
 
-def separateXSAMPA(codes):
+def separateXSAMPA(codes) -> str:
     return "".join(IPA.get(code, "?") for code in codes.split("-"))
 
 def separateInfo(codes, manager):
     return " + ".join(manager.getText(code) for code in codes.split("+"))
 
-def loadIPA(IPACodes, manager):
+def loadIPA(IPACodes, manager) -> str:
     result = []
     for IPACode in IPACodes:
         IPAInfo = f" ({separateInfo(IPACode['info'], manager)})" if IPACode['info'] is not None else ""
         result.append(f"{separateXSAMPA(IPACode['xsampa'])}{IPAInfo}")
     return ", ".join(result)
 
-def loadChar(charInfo, manager, reduced: bool = False):
-    if reduced: print(f"{manager.getText('variationEffect')}: {charInfo['change']}")
+def loadChar(charInfo, manager, reduced):
+    if reduced: print(f"{manager.getText('variationEffect')}: {manager.getText(charInfo['change'])}")
     else:
         char = charInfo['char'].upper() if charInfo['upper'] else ""
         print(f"{manager.getText('charText')}: {char if not reduced else ''}{charInfo['char']}")

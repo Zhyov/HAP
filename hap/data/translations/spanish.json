@@ -35,6 +35,9 @@
     "changeDigraph": "Digrama con pronunciación diferente",
     "changeSpanishQU": "Indicación que la \"u\" se pronuncia después de una \"q\", solo cuando va seguida de una \"e\" o \"i\"",
 
+    "invalidOption": "Opción inválida. Por favor, ingrese un número correspondiente a las opciones.",
+    "pressEnter": "\nPresione Enter para continuar...",
+
     "exit": "Salir",
     "back": "Volver"
 }

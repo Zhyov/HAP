@@ -1,6 +1,6 @@
 # HAP
 
-HAP (formerly known as HMLP) is my best python project to this date. Its name stands for "Help me with my Alphabet Pronounciation." This is a program I intended for my personal use, but I felt like sharing it. Suggestions for new languages, alphabets or optimizations are always welcome.
+HAP (formerly known as HMLP) is my best python project to this date. Its name stands for "Help me with my Alphabet Pronunciation." This is a program I intended for my personal use, but I felt like sharing it. Suggestions for new languages, alphabets or optimizations are always welcome.
 
 The available alphabets are for the next languages:
 * Spanish (v0.1-.7.1a)
