@@ -1,0 +1,274 @@
+{
+  "a": {
+    "char": "a",
+    "native": "a",
+    "upper": true,
+    "ipa": [{ "xsampa": "a_\"", "info": null }],
+    "variations": [
+      {
+        "char": "á",
+        "change": "changeStress",
+        "ipa": [{ "xsampa": "a", "info": null }]
+      }
+    ]
+  },
+  "b": {
+    "char": "b",
+    "native": "be",
+    "upper": true,
+    "ipa": [
+      { "xsampa": "b", "info": null },
+      { "xsampa": "B", "info": "whenNotFirst" }
+    ],
+    "variations": []
+  },
+  "c": {
+    "char": "c",
+    "native": "ce",
+    "upper": true,
+    "ipa": [
+      { "xsampa": "k", "info": null },
+      { "xsampa": "s", "info": "whenSoftVowel" },
+      { "xsampa": "T", "info": "whenDialect+whenSoftVowel" }
+    ],
+    "variations": [
+      {
+        "char": "ch",
+        "change": "changeDigraph",
+        "ipa": [{ "xsampa": "t-S", "info": null }]
+      }
+    ]
+  },
+  "d": {
+    "char": "d",
+    "native": "de",
+    "upper": true,
+    "ipa": [
+      { "xsampa": "d", "info": null },
+      { "xsampa": "D", "info": "whenSoftVowel" }
+    ],
+    "variations": []
+  },
+  "e": {
+    "char": "e",
+    "native": "e",
+    "upper": true,
+    "ipa": [{ "xsampa": "e_o", "info": null }],
+    "variations": [
+      {
+        "char": "é",
+        "change": "changeStress",
+        "ipa": [{ "xsampa": "e_o", "info": null }]
+      }
+    ]
+  },
+  "f": {
+    "char": "f",
+    "native": "efe",
+    "upper": true,
+    "ipa": [{ "xsampa": "f", "info": null }],
+    "variations": []
+  },
+  "g": {
+    "char": "g",
+    "native": "ge",
+    "upper": true,
+    "ipa": [
+      { "xsampa": "g", "info": null },
+      { "xsampa": "G", "info": "whenNotFirst" },
+      { "xsampa": "x", "info": "whenSoftVowel" }
+    ],
+    "variations": []
+  },
+  "h": {
+    "char": "h",
+    "native": "hache",
+    "upper": true,
+    "ipa": [{ "xsampa": " ", "info": "whenSilent" }],
+    "variations": []
+  },
+  "i": {
+    "char": "i",
+    "native": "i",
+    "upper": true,
+    "ipa": [{ "xsampa": "i", "info": null }],
+    "variations": [
+      {
+        "char": "í",
+        "change": "changeStress",
+        "ipa": [{ "xsampa": "i", "info": null }]
+      }
+    ]
+  },
+  "j": {
+    "char": "j",
+    "native": "jota",
+    "upper": true,
+    "ipa": [{ "xsampa": "x", "info": null }],
+    "variations": []
+  },
+  "k": {
+    "char": "k",
+    "native": "ka",
+    "upper": true,
+    "ipa": [{ "xsampa": "k", "info": null }],
+    "variations": []
+  },
+  "l": {
+    "char": "l",
+    "native": "ele",
+    "upper": true,
+    "ipa": [{ "xsampa": "l", "info": null }],
+    "variations": [
+      {
+        "char": "ll",
+        "change": "changeDouble",
+        "ipa": [
+          { "xsampa": "L", "info": null },
+          { "xsampa": "S", "info": "whenDialect" }
+        ]
+      }
+    ]
+  },
+  "m": {
+    "char": "m",
+    "native": "eme",
+    "upper": true,
+    "ipa": [{ "xsampa": "m", "info": null }],
+    "variations": []
+  },
+  "n": {
+    "char": "n",
+    "native": "ene",
+    "upper": true,
+    "ipa": [{ "xsampa": "n", "info": null }],
+    "variations": []
+  },
+  "ñ": {
+    "char": "ñ",
+    "native": "eñe",
+    "upper": true,
+    "ipa": [{ "xsampa": "J", "info": null }],
+    "variations": []
+  },
+  "o": {
+    "char": "o",
+    "native": "o",
+    "upper": true,
+    "ipa": [{ "xsampa": "o", "info": null }],
+    "variations": [
+      {
+        "char": "ó",
+        "change": "changeStress",
+        "ipa": [{ "xsampa": "o", "info": null }]
+      }
+    ]
+  },
+  "p": {
+    "char": "p",
+    "native": "pe",
+    "upper": true,
+    "ipa": [{ "xsampa": "p", "info": null }],
+    "variations": []
+  },
+  "q": {
+    "char": "q",
+    "native": "qü",
+    "upper": true,
+    "ipa": [{ "xsampa": "k", "info": null }],
+    "variations": []
+  },
+  "r": {
+    "char": "r",
+    "native": "erre",
+    "upper": true,
+    "ipa": [
+      { "xsampa": "4", "info": null },
+      { "xsampa": "r", "info": "whenDouble" }
+    ],
+    "variations": []
+  },
+  "s": {
+    "char": "s",
+    "native": "ese",
+    "upper": true,
+    "ipa": [
+      { "xsampa": "s", "info": null },
+      { "xsampa": "T", "info": "whenDialect" }
+    ],
+    "variations": []
+  },
+  "t": {
+    "char": "t",
+    "native": "te",
+    "upper": true,
+    "ipa": [{ "xsampa": "t", "info": null }],
+    "variations": []
+  },
+  "u": {
+    "char": "u",
+    "native": "u",
+    "upper": true,
+    "ipa": [{ "xsampa": "u", "info": null }],
+    "variations": [
+      {
+        "char": "ú",
+        "change": "changeStress",
+        "ipa": [{ "xsampa": "u", "info": null }]
+      },
+      {
+        "char": "ü",
+        "change": "changeSpanishQU",
+        "ipa": [{ "xsampa": "u", "info": null }]
+      }
+    ]
+  },
+  "v": {
+    "char": "v",
+    "native": "ve",
+    "upper": true,
+    "ipa": [
+      { "xsampa": "v", "info": null },
+      { "xsampa": "b", "info": "whenReal" }
+    ],
+    "variations": []
+  },
+  "w": {
+    "char": "w",
+    "native": "doble ve",
+    "upper": true,
+    "ipa": [{ "xsampa": "u", "info": "whenLoanword" }],
+    "variations": []
+  },
+  "x": {
+    "char": "x",
+    "native": "equis",
+    "upper": true,
+    "ipa": [
+      { "xsampa": "k-s", "info": null },
+      { "xsampa": "s", "info": "whenFirst" }
+    ],
+    "variations": []
+  },
+  "y": {
+    "char": "y",
+    "native": "i griega",
+    "upper": true,
+    "ipa": [
+      { "xsampa": "j\\", "info": null },
+      { "xsampa": "Z", "info": "whenDialect" },
+      { "xsampa": "S", "info": "whenDialect" }
+    ],
+    "variations": []
+  },
+  "z": {
+    "char": "z",
+    "native": "zeta",
+    "upper": true,
+    "ipa": [
+      { "xsampa": "T", "info": null },
+      { "xsampa": "s", "info": "whenDialect" }
+    ],
+    "variations": []
+  }
+}

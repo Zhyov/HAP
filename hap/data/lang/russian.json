@@ -1,0 +1,254 @@
+{
+  "а": {
+    "char": "а",
+    "native": "а",
+    "upper": true,
+    "ipa": [{ "xsampa": "a", "info": null }],
+    "variations": []
+  },
+  "b": {
+    "char": "б",
+    "native": "бэ",
+    "upper": true,
+    "ipa": [{ "xsampa": "b", "info": null }],
+    "variations": []
+  },
+  "в": {
+    "char": "в",
+    "native": "вэ",
+    "upper": true,
+    "ipa": [{ "xsampa": "v", "info": null }],
+    "variations": []
+  },
+  "г": {
+    "char": "г",
+    "native": "гэ",
+    "upper": true,
+    "ipa": [{ "xsampa": "g", "info": null }],
+    "variations": []
+  },
+  "д": {
+    "char": "д",
+    "native": "дэ",
+    "upper": true,
+    "ipa": [{ "xsampa": "d", "info": null }],
+    "variations": []
+  },
+  "е": {
+    "char": "е",
+    "native": "е",
+    "upper": true,
+    "ipa": [
+      { "xsampa": "j-e", "info": null },
+      { "xsampa": "e", "info": null }
+    ],
+    "variations": []
+  },
+  "ё": {
+    "char": "ё",
+    "native": "ё",
+    "upper": true,
+    "ipa": [{ "xsampa": "j-o", "info": null }],
+    "variations": []
+  },
+  "ж": {
+    "char": "ж",
+    "native": "жэ",
+    "upper": true,
+    "ipa": [{ "xsampa": "z`", "info": null }],
+    "variations": []
+  },
+  "з": {
+    "char": "з",
+    "native": "зэ",
+    "upper": true,
+    "ipa": [{ "xsampa": "z", "info": null }],
+    "variations": []
+  },
+  "и": {
+    "char": "и",
+    "native": "и",
+    "upper": true,
+    "ipa": [{ "xsampa": "i", "info": null }],
+    "variations": []
+  },
+  "й": {
+    "char": "й",
+    "native": "и краткое",
+    "upper": true,
+    "ipa": [{ "xsampa": "j", "info": null }],
+    "variations": []
+  },
+  "к": {
+    "char": "к",
+    "native": "ка",
+    "upper": true,
+    "ipa": [{ "xsampa": "k", "info": null }],
+    "variations": []
+  },
+  "л": {
+    "char": "л",
+    "native": "эль",
+    "upper": true,
+    "ipa": [{ "xsampa": "5", "info": null }],
+    "variations": [
+      {
+        "char": "ль",
+        "change": "changeDigraph",
+        "ipa": [{ "xsampa": "l-_j", "info": null }]
+      }
+    ]
+  },
+  "м": {
+    "char": "м",
+    "native": "эм",
+    "upper": true,
+    "ipa": [{ "xsampa": "m", "info": null }],
+    "variations": []
+  },
+  "н": {
+    "char": "н",
+    "native": "эн",
+    "upper": true,
+    "ipa": [{ "xsampa": "n", "info": null }],
+    "variations": []
+  },
+  "о": {
+    "char": "о",
+    "native": "о",
+    "upper": true,
+    "ipa": [
+      { "xsampa": "o", "info": null },
+      { "xsampa": "@", "info": "whenUnstressed" }
+    ],
+    "variations": []
+  },
+  "п": {
+    "char": "п",
+    "native": "пэ",
+    "upper": true,
+    "ipa": [{ "xsampa": "p", "info": null }],
+    "variations": []
+  },
+  "р": {
+    "char": "р",
+    "native": "эр",
+    "upper": true,
+    "ipa": [{ "xsampa": "r", "info": null }],
+    "variations": []
+  },
+  "с": {
+    "char": "с",
+    "native": "эс",
+    "upper": true,
+    "ipa": [{ "xsampa": "s", "info": null }],
+    "variations": []
+  },
+  "т": {
+    "char": "т",
+    "native": "тэ",
+    "upper": true,
+    "ipa": [{ "xsampa": "t", "info": null }],
+    "variations": []
+  },
+  "у": {
+    "char": "у",
+    "native": "у",
+    "upper": true,
+    "ipa": [{ "xsampa": "u", "info": null }],
+    "variations": []
+  },
+  "ф": {
+    "char": "ф",
+    "native": "эф",
+    "upper": true,
+    "ipa": [{ "xsampa": "f", "info": null }],
+    "variations": []
+  },
+  "х": {
+    "char": "х",
+    "native": "ха",
+    "upper": true,
+    "ipa": [{ "xsampa": "x", "info": null }],
+    "variations": []
+  },
+  "ц": {
+    "char": "ц",
+    "native": "цэ",
+    "upper": true,
+    "ipa": [{ "xsampa": "t-s", "info": null }],
+    "variations": []
+  },
+  "ч": {
+    "char": "ч",
+    "native": "че",
+    "upper": true,
+    "ipa": [{ "xsampa": "t-s\\", "info": null }],
+    "variations": []
+  },
+  "ш": {
+    "char": "ш",
+    "native": "ша",
+    "upper": true,
+    "ipa": [{ "xsampa": "s`", "info": null }],
+    "variations": []
+  },
+  "щ": {
+    "char": "щ",
+    "native": "ща",
+    "upper": true,
+    "ipa": [{ "xsampa": "s\\-:", "info": null }],
+    "variations": []
+  },
+  "ъ": {
+    "char": "ъ",
+    "native": "твёрдый знак",
+    "upper": true,
+    "ipa": [{ "xsampa": " ", "info": "whenSilent" }],
+    "variations": []
+  },
+  "ы": {
+    "char": "ы",
+    "native": "ы",
+    "upper": true,
+    "ipa": [{ "xsampa": "1", "info": null }],
+    "variations": []
+  },
+  "ь": {
+    "char": "ь",
+    "native": "мягкий знак",
+    "upper": true,
+    "ipa": [{ "xsampa": "_j", "info": null }],
+    "variations": []
+  },
+  "э": {
+    "char": "э",
+    "native": "э",
+    "upper": true,
+    "ipa": [
+      { "xsampa": "E", "info": null },
+      { "xsampa": "e", "info": null }
+    ],
+    "variations": []
+  },
+  "ю": {
+    "char": "ю",
+    "native": "ю",
+    "upper": true,
+    "ipa": [
+      { "xsampa": "j-u", "info": null },
+      { "xsampa": "_j-u", "info": null }
+    ],
+    "variations": []
+  },
+  "я": {
+    "char": "я",
+    "native": "я",
+    "upper": true,
+    "ipa": [
+      { "xsampa": "j-a", "info": null },
+      { "xsampa": "_j-a", "info": null }
+    ],
+    "variations": []
+  }
+}

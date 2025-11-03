@@ -1,0 +1,40 @@
+{
+    "whatDo": "What do you want do?",
+    "whatCheck": "What language would you like to check?",
+    "whatCharacter": "What character would you like to check?",
+    
+    "menuCheck": "Check",
+    "menuSettings": "Settings",
+
+    "charText": "Character",
+    "charName": "Native Name",
+    "charIPA": "IPA Pronunciation",
+    "variations": "Variations",
+    "variationEffect": "Change or usage",
+
+    "settingsLanguage": "Language",
+    
+    "selectLanguage": "Select a language:",
+    "english": "English",
+    "spanish": "Spanish",
+    "russian": "Russian",
+
+    "whenSoftVowel": "when it is before an \"e\" or \"i\"",
+    "whenNotFirst": "when it is not the first letter in a word",
+    "whenFirst": "when it is the first letter in a word",
+    "whenSilent": "it is silent",
+    "whenDouble": "when it is doubled",
+    "whenReal": "in real speech",
+    "whenLoanword": "only used in loanwords, pronounced as in the original language",
+    "whenDialect": "in certain dialects",
+    "whenPalatized": "when it is palatized",
+    "whenUnstressed": "when it is unstressed",
+
+    "changeStress": "Stressed variant",
+    "changeDouble": "Different pronunciation when doubled",
+    "changeDigraph": "Digraph with different pronunciation",
+    "changeSpanishQU": "Indication that the \"u\" is pronounced after a \"q\", only when followed by an \"e\" or \"i\"",
+
+    "exit": "Exit",
+    "back": "Back"
+}
