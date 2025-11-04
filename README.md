@@ -1,8 +1,8 @@
 # HAP
 
-HAP (formerly known as HMLP) is my best python project to this date. Its name stands for "Help me with my Alphabet Pronunciation." This is a program I intended for my personal use, but I felt like sharing it. Suggestions for new languages, alphabets or optimizations are always welcome.
+HAP (formerly known as HMLP) is my best python project to this date. Its name stands for "Help me with my Alphabet Pronunciation." This is a program I intended for my personal use, but I felt like sharing it. Suggestions for new languages, alphabets or optimizations are always welcome. You can create an issue for a new translation/alphabet or create a pull request to add it yourself.
 
-The available alphabets are for the next languages:
+The available languages' alphabets supported by HAP are:
 * Spanish (v0.1-.7.1c)
 * Russian (v0.1-.7.1c)
 * Greek (v0.1-.7.1c)
