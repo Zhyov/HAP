@@ -12,7 +12,7 @@ def loadSetup(manager):
     for alphabet in manifest:
         characters =  loadCharacters(alphabet["file"])
         languageWindow = Window(
-            [{"text": character["char"], "command": lambda char=character: Letter([], manager, char).load()} for character in characters.values()],
+            [{"text": "".join([character["char"].upper(), character["char"]]) if character["upper"] else character["char"], "command": lambda char=character: Letter([], manager, char).load()} for character in characters.values()],
             [], manager, "whatCharacter", autoTranslate=False
         )
         checkOptions.append({"text": alphabet["name"], "command": lambda window=languageWindow: window.load()})

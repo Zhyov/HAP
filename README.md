@@ -3,9 +3,9 @@
 HAP (formerly known as HMLP) is my best python project to this date. Its name stands for "Help me with my Alphabet Pronunciation." This is a program I intended for my personal use, but I felt like sharing it. Suggestions for new languages, alphabets or optimizations are always welcome.
 
 The available alphabets are for the next languages:
-* Spanish (v0.1-.7.1a)
-* Russian (v0.1-.7.1a)
-* Greek (v0.1-.6.3)
+* Spanish (v0.1-.7.1c)
+* Russian (v0.1-.7.1c)
+* Greek (v0.1-.7.1c)
 * Japanese (v0.1-.6.3)
 * Hebrew (v0.2-.6.3)
 * Toki Pona (v0.5-.6.3)

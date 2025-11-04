@@ -8,7 +8,7 @@ class Language:
         self.translations = translations
 
     def getText(self, identifier: str):
-        return self.translations.get(identifier)
+        return self.translations.get(identifier, " ".join([self.translations.get("noTranslationText"), identifier]))
 
     def getCode(self): return self.code
 

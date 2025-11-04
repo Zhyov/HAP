@@ -8,7 +8,7 @@
       {
         "char": "á",
         "change": "changeStress",
-        "ipa": [{ "xsampa": "a", "info": null }]
+        "ipa": [{ "xsampa": "a_\\", "info": null }]
       }
     ]
   },

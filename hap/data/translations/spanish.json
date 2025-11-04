@@ -18,6 +18,7 @@
     "english": "Inglés",
     "spanish": "Español",
     "russian": "Ruso",
+    "greek": "Griego",
 
     "whenSoftVowel": "cuando esta antes de una \"e\" o \"i\"",
     "whenNotFirst": "cuando no es la primera letra de una palabra",
@@ -29,13 +30,16 @@
     "whenDialect": "en ciertos dialectos",
     "whenPalatized": "cuando está palatalizado",
     "whenUnstressed": "cuando no está acentuada",
+    "whenGreekVoiced": "cuando esta antes de una letra sonora, es decir β, γ, o μ",
 
     "changeStress": "Variante acentuada",
     "changeDouble": "Pronunciación diferente cuando se duplica",
     "changeDigraph": "Digrama con pronunciación diferente",
     "changeSpanishQU": "Indicación que la \"u\" se pronuncia después de una \"q\", solo cuando va seguida de una \"e\" o \"i\"",
+    "changeCharacterEnd": "Variante al final de una palabra",
 
     "invalidOption": "Opción inválida. Por favor, ingrese un número correspondiente a las opciones.",
+    "noTranslationText": "No se encontró traducción para el identificador: ",
     "pressEnter": "\nPresione Enter para continuar...",
 
     "exit": "Salir",

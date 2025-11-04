@@ -38,7 +38,7 @@ def handleOption(selected, options, manager):
         input(manager.getText("pressEnter"))
 
 def separateXSAMPA(codes) -> str:
-    return "".join(IPA.get(code, "?") for code in codes.split("-"))
+    return "".join(IPA.get(code, "�") for code in codes.split("-"))
 
 def separateInfo(codes, manager):
     return " + ".join(manager.getText(code) for code in codes.split("+"))
