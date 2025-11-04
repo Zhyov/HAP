@@ -1,5 +1,7 @@
 [
   { "name": "spanish", "file": "spanish.json" },
   { "name": "russian", "file": "russian.json" },
-  { "name": "greek", "file": "greek.json" }
+  { "name": "greek", "file": "greek.json" },
+  { "name": "hiragana", "file": "hiragana.json" },
+  { "name": "katakana", "file": "katakana.json" }
 ]

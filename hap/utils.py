@@ -1,10 +1,17 @@
-import os, time
+import sys, os, time
 from hap.xsampa import IPA
 
 if os.name == "nt":
     def clearScreen(): os.system("cls")
 else:
     def clearScreen(): os.system("clear")
+
+def resourcePath(relativePath):
+    if hasattr(sys, "_MEIPASS"):
+        path = sys._MEIPASS
+    else:
+        path = os.path.abspath(".")
+    return os.path.join(path, relativePath)
 
 def handleInformation(pretext, information, manager):
     if pretext is not None: print(manager.getText(pretext))
@@ -51,7 +58,7 @@ def loadIPA(IPACodes, manager) -> str:
     return ", ".join(result)
 
 def loadChar(charInfo, manager, reduced):
-    if reduced: print(f"{manager.getText('variationEffect')}: {manager.getText(charInfo['change'])}")
+    if reduced: print(f"{manager.getText('variationEffect')}: {separateInfo(charInfo['change'], manager)}")
     else:
         char = charInfo['char'].upper() if charInfo['upper'] else ""
         print(f"{manager.getText('charText')}: {char if not reduced else ''}{charInfo['char']}")

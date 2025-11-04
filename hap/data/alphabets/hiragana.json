@@ -1,0 +1,658 @@
+{
+  "あ": {
+    "char": "あ",
+    "native": null,
+    "upper": false,
+    "ipa": [{ "xsampa": "a", "info": null }],
+    "variations": []
+  },
+  "い": {
+    "char": "い",
+    "native": null,
+    "upper": false,
+    "ipa": [{ "xsampa": "i", "info": null }],
+    "variations": []
+  },
+  "う": {
+    "char": "う",
+    "native": null,
+    "upper": false,
+    "ipa": [{ "xsampa": "M", "info": null }],
+    "variations": []
+  },
+  "え": {
+    "char": "え",
+    "native": null,
+    "upper": false,
+    "ipa": [{ "xsampa": "e", "info": null }],
+    "variations": []
+  },
+  "お": {
+    "char": "お",
+    "native": null,
+    "upper": false,
+    "ipa": [{ "xsampa": "o", "info": null }],
+    "variations": []
+  },
+  "か": {
+    "char": "か",
+    "native": null,
+    "upper": false,
+    "ipa": [{ "xsampa": "k-a", "info": null }],
+    "variations": [
+      {
+        "char": "が",
+        "change": "changeDakuten",
+        "ipa": [{ "xsampa": "g-a", "info": null }]
+      }
+    ]
+  },
+  "き": {
+    "char": "き",
+    "native": null,
+    "upper": false,
+    "ipa": [{ "xsampa": "k-i", "info": null }],
+    "variations": [
+      {
+        "char": "きゃ",
+        "change": "changeYouon",
+        "ipa": [{ "xsampa": "k-_j-a", "info": null }]
+      },
+      {
+        "char": "きゅ",
+        "change": "changeYouon",
+        "ipa": [{ "xsampa": "k-_j-M", "info": null }]
+      },
+      {
+        "char": "きょ",
+        "change": "changeYouon",
+        "ipa": [{ "xsampa": "k-_j-o", "info": null }]
+      },
+      {
+        "char": "ぎ",
+        "change": "changeDakuten",
+        "ipa": [{ "xsampa": "g-i", "info": null }]
+      },
+      {
+        "char": "ぎゃ",
+        "change": "changeDakuten+changeYouon",
+        "ipa": [{ "xsampa": "g-_j-a", "info": null }]
+      },
+      {
+        "char": "ぎゅ",
+        "change": "changeDakuten+changeYouon",
+        "ipa": [{ "xsampa": "g-_j-M", "info": null }]
+      },
+      {
+        "char": "ぎょ",
+        "change": "changeDakuten+changeYouon",
+        "ipa": [{ "xsampa": "g-_j-o", "info": null }]
+      }
+    ]
+  },
+  "く": {
+    "char": "く",
+    "native": null,
+    "upper": false,
+    "ipa": [{ "xsampa": "k-M", "info": null }],
+    "variations": [
+      {
+        "char": "ぐ",
+        "change": "changeDakuten",
+        "ipa": [{ "xsampa": "g-M", "info": null }]
+      }
+    ]
+  },
+  "け": {
+    "char": "け",
+    "native": null,
+    "upper": false,
+    "ipa": [{ "xsampa": "k-e", "info": null }],
+    "variations": [
+      {
+        "char": "げ",
+        "change": "changeDakuten",
+        "ipa": [{ "xsampa": "g-e", "info": null }]
+      }
+    ]
+  },
+  "こ": {
+    "char": "こ",
+    "native": null,
+    "upper": false,
+    "ipa": [{ "xsampa": "k-o", "info": null }],
+    "variations": [
+      {
+        "char": "ご",
+        "change": "changeDakuten",
+        "ipa": [{ "xsampa": "g-o", "info": null }]
+      }
+    ]
+  },
+  "さ": {
+    "char": "さ",
+    "native": null,
+    "upper": false,
+    "ipa": [{ "xsampa": "s-a", "info": null }],
+    "variations": [
+      {
+        "char": "ざ",
+        "change": "changeDakuten",
+        "ipa": [{ "xsampa": "d-z-a", "info": null }]
+      }
+    ]
+  },
+  "し": {
+    "char": "し",
+    "native": null,
+    "upper": false,
+    "ipa": [{ "xsampa": "s\\-i", "info": null }],
+    "variations": [
+      {
+        "char": "しゃ",
+        "change": "changeYouon",
+        "ipa": [{ "xsampa": "s\\-a", "info": null }]
+      },
+      {
+        "char": "しゅ",
+        "change": "changeYouon",
+        "ipa": [{ "xsampa": "s\\-M", "info": null }]
+      },
+      {
+        "char": "しょ",
+        "change": "changeYouon",
+        "ipa": [{ "xsampa": "s\\-o", "info": null }]
+      },
+      {
+        "char": "じ",
+        "change": "changeDakuten",
+        "ipa": [{ "xsampa": "d-z\\-a", "info": null }]
+      },
+      {
+        "char": "じゃ",
+        "change": "changeYouon",
+        "ipa": [{ "xsampa": "d-z\\-a", "info": null }]
+      },
+      {
+        "char": "じゅ",
+        "change": "changeYouon",
+        "ipa": [{ "xsampa": "d-z\\-M", "info": null }]
+      },
+      {
+        "char": "じょ",
+        "change": "changeYouon",
+        "ipa": [{ "xsampa": "d-z\\-o", "info": null }]
+      }
+    ]
+  },
+  "す": {
+    "char": "す",
+    "native": null,
+    "upper": false,
+    "ipa": [{ "xsampa": "s-M", "info": null }],
+    "variations": [
+      {
+        "char": "ず",
+        "change": "changeDakuten",
+        "ipa": [{ "xsampa": "d-z-M", "info": null }]
+      }
+    ]
+  },
+  "せ": {
+    "char": "せ",
+    "native": null,
+    "upper": false,
+    "ipa": [{ "xsampa": "s-e", "info": null }],
+    "variations": [
+      {
+        "char": "ぜ",
+        "change": "changeDakuten",
+        "ipa": [{ "xsampa": "d-z-e", "info": null }]
+      }
+    ]
+  },
+  "そ": {
+    "char": "そ",
+    "native": null,
+    "upper": false,
+    "ipa": [{ "xsampa": "s-o", "info": null }],
+    "variations": [
+      {
+        "char": "ぞ",
+        "change": "changeDakuten",
+        "ipa": [{ "xsampa": "d-z-o", "info": null }]
+      }
+    ]
+  },
+  "た": {
+    "char": "た",
+    "native": null,
+    "upper": false,
+    "ipa": [{ "xsampa": "t-a", "info": null }],
+    "variations": [
+      {
+        "char": "だ",
+        "change": "changeDakuten",
+        "ipa": [{ "xsampa": "d-a", "info": null }]
+      }
+    ]
+  },
+  "ち": {
+    "char": "ち",
+    "native": null,
+    "upper": false,
+    "ipa": [{ "xsampa": "t-s\\-i", "info": null }],
+    "variations": [
+      {
+        "char": "ちゃ",
+        "change": "changeYouon",
+        "ipa": [{ "xsampa": "t-s\\-a", "info": null }]
+      },
+      {
+        "char": "ちゅ",
+        "change": "changeYouon",
+        "ipa": [{ "xsampa": "t-s\\-M", "info": null }]
+      },
+      {
+        "char": "ちょ",
+        "change": "changeYouon",
+        "ipa": [{ "xsampa": "t-s\\-o", "info": null }]
+      },
+      {
+        "char": "ぢ",
+        "change": "changeDakuten",
+        "ipa": [{ "xsampa": "d-z\\-i", "info": null }]
+      },
+      {
+        "char": "ぢゃ",
+        "change": "changeYouon",
+        "ipa": [{ "xsampa": "d-z\\-a", "info": null }]
+      },
+      {
+        "char": "ぢゅ",
+        "change": "changeYouon",
+        "ipa": [{ "xsampa": "d-z\\-M", "info": null }]
+      },
+      {
+        "char": "ぢょ",
+        "change": "changeYouon",
+        "ipa": [{ "xsampa": "d-z\\-o", "info": null }]
+      }
+    ]
+  },
+  "つ": {
+    "char": "つ",
+    "native": null,
+    "upper": false,
+    "ipa": [{ "xsampa": "t-s-M", "info": null }],
+    "variations": [
+      {
+        "char": "づ",
+        "change": "changeDakuten",
+        "ipa": [{ "xsampa": "d-z-M", "info": null }]
+      }
+    ]
+  },
+  "て": {
+    "char": "て",
+    "native": null,
+    "upper": false,
+    "ipa": [{ "xsampa": "t-e", "info": null }],
+    "variations": [
+      {
+        "char": "で",
+        "change": "changeDakuten",
+        "ipa": [{ "xsampa": "d-e", "info": null }]
+      }
+    ]
+  },
+  "と": {
+    "char": "と",
+    "native": null,
+    "upper": false,
+    "ipa": [{ "xsampa": "t-o", "info": null }],
+    "variations": [
+      {
+        "char": "ど",
+        "change": "changeDakuten",
+        "ipa": [{ "xsampa": "d-o", "info": null }]
+      }
+    ]
+  },
+  "な": {
+    "char": "な",
+    "native": null,
+    "upper": false,
+    "ipa": [{ "xsampa": "n-a", "info": null }],
+    "variations": []
+  },
+  "に": {
+    "char": "に",
+    "native": null,
+    "upper": false,
+    "ipa": [{ "xsampa": "J-i", "info": null }],
+    "variations": [
+      {
+        "char": "にゃ",
+        "change": "changeYouon",
+        "ipa": [{ "xsampa": "J-a", "info": null }]
+      },
+      {
+        "char": "にゅ",
+        "change": "changeYouon",
+        "ipa": [{ "xsampa": "J-M", "info": null }]
+      },
+      {
+        "char": "にょ",
+        "change": "changeYouon",
+        "ipa": [{ "xsampa": "J-o", "info": null }]
+      }
+    ]
+  },
+  "ぬ": {
+    "char": "ぬ",
+    "native": null,
+    "upper": false,
+    "ipa": [{ "xsampa": "n-M", "info": null }],
+    "variations": []
+  },
+  "ね": {
+    "char": "ね",
+    "native": null,
+    "upper": false,
+    "ipa": [{ "xsampa": "n-e", "info": null }],
+    "variations": []
+  },
+  "の": {
+    "char": "の",
+    "native": null,
+    "upper": false,
+    "ipa": [{ "xsampa": "n-o", "info": null }],
+    "variations": []
+  },
+  "は": {
+    "char": "は",
+    "native": null,
+    "upper": false,
+    "ipa": [
+      { "xsampa": "h-a", "info": null },
+      { "xsampa": "w-a", "info": "whenParticle" }
+    ],
+    "variations": [
+      {
+        "char": "ば",
+        "change": "changeDakuten",
+        "ipa": [{ "xsampa": "b-a", "info": null }]
+      },
+      {
+        "char": "ぱ",
+        "change": "changeHandakuten",
+        "ipa": [{ "xsampa": "p-a", "info": null }]
+      }
+    ]
+  },
+  "ひ": {
+    "char": "ひ",
+    "native": null,
+    "upper": false,
+    "ipa": [{ "xsampa": "C-i", "info": null }],
+    "variations": [
+      {
+        "char": "ひゃ",
+        "change": "changeYouon",
+        "ipa": [{ "xsampa": "C-a", "info": null }]
+      },
+      {
+        "char": "ひゅ",
+        "change": "changeYouon",
+        "ipa": [{ "xsampa": "C-M", "info": null }]
+      },
+      {
+        "char": "ひょ",
+        "change": "changeYouon",
+        "ipa": [{ "xsampa": "C-o", "info": null }]
+      },
+      {
+        "char": "び",
+        "change": "changeDakuten",
+        "ipa": [{ "xsampa": "b-i", "info": null }]
+      },
+      {
+        "char": "びゃ",
+        "change": "changeDakuten+changeYouon",
+        "ipa": [{ "xsampa": "b-_j-a", "info": null }]
+      },
+      {
+        "char": "びゅ",
+        "change": "changeDakuten+changeYouon",
+        "ipa": [{ "xsampa": "b-_j-M", "info": null }]
+      },
+      {
+        "char": "びょ",
+        "change": "changeDakuten+changeYouon",
+        "ipa": [{ "xsampa": "b-_j-o", "info": null }]
+      },
+      {
+        "char": "ぴ",
+        "change": "changeHandakuten",
+        "ipa": [{ "xsampa": "p-i", "info": null }]
+      },
+      {
+        "char": "ぴゃ",
+        "change": "changeHandakuten+changeYouon",
+        "ipa": [{ "xsampa": "p-_j-a", "info": null }]
+      },
+      {
+        "char": "ぴゅ",
+        "change": "changeHandakuten+changeYouon",
+        "ipa": [{ "xsampa": "p-_j-M", "info": null }]
+      },
+      {
+        "char": "ぴょ",
+        "change": "changeHandakuten+changeYouon",
+        "ipa": [{ "xsampa": "p-_j-o", "info": null }]
+      }
+    ]
+  },
+  "ふ": {
+    "char": "ふ",
+    "native": null,
+    "upper": false,
+    "ipa": [{ "xsampa": "p\\-M", "info": null }],
+    "variations": [
+      {
+        "char": "ぶ",
+        "change": "changeDakuten",
+        "ipa": [{ "xsampa": "b-M", "info": null }]
+      },
+      {
+        "char": "ぷ",
+        "change": "changeHandakuten",
+        "ipa": [{ "xsampa": "p-M", "info": null }]
+      }
+    ]
+  },
+  "へ": {
+    "char": "へ",
+    "native": null,
+    "upper": false,
+    "ipa": [
+      { "xsampa": "h-e", "info": null },
+      { "xsampa": "e", "info": "whenParticle" }
+    ],
+    "variations": [
+      {
+        "char": "べ",
+        "change": "changeDakuten",
+        "ipa": [{ "xsampa": "b-e", "info": null }]
+      },
+      {
+        "char": "ぺ",
+        "change": "changeHandakuten",
+        "ipa": [{ "xsampa": "p-e", "info": null }]
+      }
+    ]
+  },
+  "ほ": {
+    "char": "ほ",
+    "native": null,
+    "upper": false,
+    "ipa": [{ "xsampa": "h-o", "info": null }],
+    "variations": [
+      {
+        "char": "ぼ",
+        "change": "changeDakuten",
+        "ipa": [{ "xsampa": "b-o", "info": null }]
+      },
+      {
+        "char": "ぽ",
+        "change": "changeHandakuten",
+        "ipa": [{ "xsampa": "p-o", "info": null }]
+      }
+    ]
+  },
+  "ま": {
+    "char": "ま",
+    "native": null,
+    "upper": false,
+    "ipa": [{ "xsampa": "m-a", "info": null }],
+    "variations": []
+  },
+  "み": {
+    "char": "み",
+    "native": null,
+    "upper": false,
+    "ipa": [{ "xsampa": "m-i", "info": null }],
+    "variations": [
+      {
+        "char": "みゃ",
+        "change": "changeYouon",
+        "ipa": [{ "xsampa": "m-_j-a", "info": null }]
+      },
+      {
+        "char": "みゅ",
+        "change": "changeYouon",
+        "ipa": [{ "xsampa": "m-_j-M", "info": null }]
+      },
+      {
+        "char": "みょ",
+        "change": "changeYouon",
+        "ipa": [{ "xsampa": "m-_j-o", "info": null }]
+      }
+    ]
+  },
+  "む": {
+    "char": "む",
+    "native": null,
+    "upper": false,
+    "ipa": [{ "xsampa": "m-M", "info": null }],
+    "variations": []
+  },
+  "め": {
+    "char": "め",
+    "native": null,
+    "upper": false,
+    "ipa": [{ "xsampa": "m-e", "info": null }],
+    "variations": []
+  },
+  "も": {
+    "char": "も",
+    "native": null,
+    "upper": false,
+    "ipa": [{ "xsampa": "m-o", "info": null }],
+    "variations": []
+  },
+  "や": {
+    "char": "や",
+    "native": null,
+    "upper": false,
+    "ipa": [{ "xsampa": "j-a", "info": null }],
+    "variations": []
+  },
+  "ゆ": {
+    "char": "ゆ",
+    "native": null,
+    "upper": false,
+    "ipa": [{ "xsampa": "j-M", "info": null }],
+    "variations": []
+  },
+  "よ": {
+    "char": "よ",
+    "native": null,
+    "upper": false,
+    "ipa": [{ "xsampa": "j-o", "info": null }],
+    "variations": []
+  },
+  "ら": {
+    "char": "ら",
+    "native": null,
+    "upper": false,
+    "ipa": [{ "xsampa": "4-a", "info": null }],
+    "variations": []
+  },
+  "り": {
+    "char": "り",
+    "native": null,
+    "upper": false,
+    "ipa": [{ "xsampa": "4-i", "info": null }],
+    "variations": [
+      {
+        "char": "りゃ",
+        "change": "changeYouon",
+        "ipa": [{ "xsampa": "4-_j-a", "info": null }]
+      },
+      {
+        "char": "りゅ",
+        "change": "changeYouon",
+        "ipa": [{ "xsampa": "4-_j-M", "info": null }]
+      },
+      {
+        "char": "りょ",
+        "change": "changeYouon",
+        "ipa": [{ "xsampa": "4-_j-o", "info": null }]
+      }
+    ]
+  },
+  "る": {
+    "char": "る",
+    "native": null,
+    "upper": false,
+    "ipa": [{ "xsampa": "4-M", "info": null }],
+    "variations": []
+  },
+  "れ": {
+    "char": "れ",
+    "native": null,
+    "upper": false,
+    "ipa": [{ "xsampa": "4-e", "info": null }],
+    "variations": []
+  },
+  "ろ": {
+    "char": "ろ",
+    "native": null,
+    "upper": false,
+    "ipa": [{ "xsampa": "4-o", "info": null }],
+    "variations": []
+  },
+  "わ": {
+    "char": "わ",
+    "native": null,
+    "upper": false,
+    "ipa": [{ "xsampa": "w-a", "info": null }],
+    "variations": []
+  },
+  "を": {
+    "char": "を",
+    "native": null,
+    "upper": false,
+    "ipa": [{ "xsampa": "o", "info": "whenParticle" }],
+    "variations": []
+  },
+  "ん": {
+    "char": "ん",
+    "native": null,
+    "upper": false,
+    "ipa": [{ "xsampa": "n", "info": null }],
+    "variations": []
+  }
+}

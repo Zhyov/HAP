@@ -1,3 +1,4 @@
+import sys
 from hap.language import LanguageManager, loadLanguages
 from hap.window import Window
 from hap.loader import loadCharacters, loadAlphabetsManifest
@@ -30,7 +31,7 @@ def loadSetup(manager):
     menu = Window([
         {"text": "menuCheck", "command": lambda: check.load()},
         {"text": "menuSettings", "command": lambda: settings.load()},
-        {"text": "exit", "command": lambda: exit()}
+        {"text": "exit", "command": lambda: sys.exit()}
     ], [], manager, "whatDo", welcome=True)
 
     return menu

@@ -19,6 +19,8 @@
     "spanish": "Spanish",
     "russian": "Russian",
     "greek": "Greek",
+    "hiragana": "Hiragana (Japanese)",
+    "katakana": "Katakana (Japanese)",
 
     "whenSoftVowel": "when it is before an \"e\" or \"i\"",
     "whenNotFirst": "when it is not the first letter in a word",
@@ -31,12 +33,16 @@
     "whenPalatized": "when it is palatized",
     "whenUnstressed": "when it is unstressed",
     "whenGreekVoiced": "when it is before a voiced letter, i.e. β, γ, or μ",
+    "whenParticle": "when used as a grammatical particle",
 
     "changeStress": "Stressed variant",
     "changeDouble": "Different pronunciation when doubled",
     "changeDigraph": "Digraph with different pronunciation",
     "changeSpanishQU": "Indication that the \"u\" is pronounced after a \"q\", only when followed by an \"e\" or \"i\"",
     "changeCharacterEnd": "Variant at the end of a word",
+    "changeYouon": "\"Youon\" digraph with different pronunciation",
+    "changeDakuten": "\"Dakuten\" variant with voiced pronunciation",
+    "changeHandakuten": "\"Handakuten\" variant with plosive pronunciation",
 
     "invalidOption": "Invalid option. Please enter a number corresponding to the options.",
     "noTranslationText": "No translation found for identifier:",

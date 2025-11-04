@@ -1,6 +1,7 @@
 import json, os
+from hap.utils import resourcePath
 
-CONFIG_PATH = os.path.join(os.path.dirname(__file__), "data", "config.json")
+CONFIG_PATH = resourcePath(os.path.join("hap", "data", "config.json"))
 
 DEFAULT_CONFIG = {
     "language": "en"
