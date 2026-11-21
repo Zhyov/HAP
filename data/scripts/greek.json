@@ -1,0 +1,230 @@
+{
+  "α": {
+    "char": "α",
+    "native": "άλφα",
+    "upper": true,
+    "ipa": [{ "xsampa": "a", "info": null }],
+    "variations": [
+      {
+        "char": "ά",
+        "change": "changeStress",
+        "ipa": [{ "xsampa": "a", "info": null }]
+      }
+    ]
+  },
+  "β": {
+    "char": "β",
+    "native": "βήτα",
+    "upper": true,
+    "ipa": [{ "xsampa": "v", "info": null }],
+    "variations": []
+  },
+  "γ": {
+    "char": "γ",
+    "native": "γάμμα",
+    "upper": true,
+    "ipa": [
+      { "xsampa": "G", "info": null },
+      { "xsampa": "j\\", "info": "whenSoftVowel" }
+    ],
+    "variations": []
+  },
+  "δ": {
+    "char": "δ",
+    "native": "δέλτα",
+    "upper": true,
+    "ipa": [{ "xsampa": "D", "info": null }],
+    "variations": []
+  },
+  "ε": {
+    "char": "ε",
+    "native": "έψιλον",
+    "upper": true,
+    "ipa": [{ "xsampa": "e", "info": null }],
+    "variations": [
+      {
+        "char": "έ",
+        "change": "changeStress",
+        "ipa": [{ "xsampa": "e", "info": null }]
+      }
+    ]
+  },
+  "ζ": {
+    "char": "ζ",
+    "native": "ζήτα",
+    "upper": true,
+    "ipa": [{ "xsampa": "z", "info": null }],
+    "variations": []
+  },
+  "η": {
+    "char": "η",
+    "native": "ήτα",
+    "upper": true,
+    "ipa": [{ "xsampa": "i", "info": null }],
+    "variations": [
+      {
+        "char": "ή",
+        "change": "changeStress",
+        "ipa": [{ "xsampa": "i", "info": null }]
+      }
+    ]
+  },
+  "θ": {
+    "char": "θ",
+    "native": "θήτα",
+    "upper": true,
+    "ipa": [{ "xsampa": "T", "info": null }],
+    "variations": []
+  },
+  "ι": {
+    "char": "ι",
+    "native": "ιώτα",
+    "upper": true,
+    "ipa": [{ "xsampa": "i", "info": null }],
+    "variations": [
+      {
+        "char": "ί",
+        "change": "changeStress",
+        "ipa": [{ "xsampa": "i", "info": null }]
+      }
+    ]
+  },
+  "κ": {
+    "char": "κ",
+    "native": "κάππα",
+    "upper": true,
+    "ipa": [
+      { "xsampa": "k", "info": null },
+      { "xsampa": "c", "info": "whenSoftVowel" }
+    ],
+    "variations": []
+  },
+  "λ": {
+    "char": "λ",
+    "native": "λάμβδα",
+    "upper": true,
+    "ipa": [{ "xsampa": "l", "info": null }],
+    "variations": []
+  },
+  "μ": {
+    "char": "μ",
+    "native": "μυ",
+    "upper": true,
+    "ipa": [{ "xsampa": "m", "info": null }],
+    "variations": []
+  },
+  "ν": {
+    "char": "ν",
+    "native": "νυ",
+    "upper": true,
+    "ipa": [{ "xsampa": "n", "info": null }],
+    "variations": []
+  },
+  "ξ": {
+    "char": "ξ",
+    "native": "ξι",
+    "upper": true,
+    "ipa": [{ "xsampa": "k-s", "info": null }],
+    "variations": []
+  },
+  "ο": {
+    "char": "ο",
+    "native": "όμικρον",
+    "upper": true,
+    "ipa": [{ "xsampa": "o", "info": null }],
+    "variations": [
+      {
+        "char": "ό",
+        "change": "changeStress",
+        "ipa": [{ "xsampa": "o", "info": null }]
+      }
+    ]
+  },
+  "π": {
+    "char": "π",
+    "native": "πι",
+    "upper": true,
+    "ipa": [{ "xsampa": "p", "info": null }],
+    "variations": []
+  },
+  "ρ": {
+    "char": "ρ",
+    "native": "ρο",
+    "upper": true,
+    "ipa": [{ "xsampa": "r", "info": null }],
+    "variations": []
+  },
+  "σ": {
+    "char": "σ",
+    "native": "σίγμα",
+    "upper": true,
+    "ipa": [
+      { "xsampa": "s", "info": null },
+      { "xsampa": "z", "info": "whenGreekVoiced" }
+    ],
+    "variations": [
+      {
+        "char": "ς",
+        "change": "changeCharacterEnd",
+        "ipa": [{ "xsampa": "s", "info": null }]
+      }
+    ]
+  },
+  "τ": {
+    "char": "τ",
+    "native": "ταυ",
+    "upper": true,
+    "ipa": [{ "xsampa": "t", "info": null }],
+    "variations": []
+  },
+  "υ": {
+    "char": "υ",
+    "native": "ύψιλον",
+    "upper": true,
+    "ipa": [{ "xsampa": "i", "info": null }],
+    "variations": [
+      {
+        "char": "ύ",
+        "change": "changeStress",
+        "ipa": [{ "xsampa": "i", "info": null }]
+      }
+    ]
+  },
+  "φ": {
+    "char": "φ",
+    "native": "φι",
+    "upper": true,
+    "ipa": [{ "xsampa": "f", "info": null }],
+    "variations": []
+  },
+  "χ": {
+    "char": "χ",
+    "native": "χι",
+    "upper": true,
+    "ipa": [
+      { "xsampa": "x", "info": null },
+      { "xsampa": "C", "info": "whenSoftVowel" }
+    ],
+    "variations": []
+  },
+  "ψ": {
+    "char": "ψ",
+    "native": "ψι",
+    "upper": true,
+    "ipa": [{ "xsampa": "p-s", "info": null }],
+    "variations": []
+  },
+  "ω": {
+    "char": "ω",
+    "native": "ωμέγα",
+    "upper": true,
+    "ipa": [{ "xsampa": "o", "info": null }],
+    "variations": [
+      {
+        "char": "ώ",
+        "change": "changeStress",
+        "ipa": [{ "xsampa": "o", "info": null }]
+      }
+    ]
+  }
+}
