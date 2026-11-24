@@ -1,7 +1,11 @@
 {
     "version": "0.1.0",
+    "min_hap_version": "0.8.0",
     "scripts": {
-        "manifest": "scripts/manifest.json",
+        "manifest": {
+            "name": "scripts/manifest.json",
+            "sha256": "5880413cf6aac8663f7a59ad7735f53fc6b30adbc3863088aca3397a382b6990"
+        },
         "files": [
             {
                 "name": "spanish.json",
@@ -26,7 +30,10 @@
         ]
     },
     "translations": {
-        "manifest": "translations/manifest.json",
+        "manifest": {
+            "name": "translations/manifest.json",
+            "sha256": "6635f0234a4c49bf19365b6bdc191385ce2b9ea27489365231ebb159cbfdd6db"
+        },
         "files": [
             {
                 "name": "english.json",
