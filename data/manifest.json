@@ -1,0 +1,20 @@
+{
+    "version": "0.1.0",
+    "scripts": {
+        "manifest": "scripts/manifest.json",
+        "files": [
+            "spanish.json",
+            "russian.json",
+            "greek.json",
+            "hiragana.json",
+            "katakana.json"
+        ]
+    },
+    "translations": {
+        "manifest": "translations/manifest.json",
+        "files": [
+            "english.json",
+            "spanish.json"
+        ]
+    }
+}
