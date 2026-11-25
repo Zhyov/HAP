@@ -1,48 +1,49 @@
 {
-    "version": "0.1.0",
-    "min_hap_version": "0.8.0",
-    "scripts": {
-        "manifest": {
-            "name": "scripts/manifest.json",
-            "sha256": "5880413cf6aac8663f7a59ad7735f53fc6b30adbc3863088aca3397a382b6990"
-        },
-        "files": [
-            {
-                "name": "spanish.json",
-                "sha256": "68e9b6ec7dd452835fef74196d9e01939df9ec5dd01f16d1f208776c8febedff"
-            },
-            {
-                "name": "russian.json",
-                "sha256": "4c2993d4805b71d16c19e1418258c09be127c3ce3636cc9ff2db964d52770346"
-            },
-            {
-                "name": "greek.json",
-                "sha256": "49bf18a8c0734db480f64a043da3ade2c207dcec38510b94045e0816bfc82429"
-            },
-            {
-                "name": "hiragana.json",
-                "sha256": "4d53433b98511a44d37274df18ee171a43dc5273bef6c7f1c3ec7f883ee89340"
-            },
-            {
-                "name": "katakana.json",
-                "sha256": "ed9f1857d53bdb4ab12f2857336345df688961994f9a76d0c6efd549e6bd9691"
-            }
-        ]
+  "version": "0.1.0",
+  "min_hap_version": "0.8.0",
+  "latest_hap_version": "0.8.0",
+  "scripts": {
+    "manifest": {
+      "name": "scripts/manifest.json",
+      "sha256": "3694de299a503f8cf5d281ce59dbe00581fc3ac3fc037a29e8f902944cf47b25"
     },
-    "translations": {
-        "manifest": {
-            "name": "translations/manifest.json",
-            "sha256": "6635f0234a4c49bf19365b6bdc191385ce2b9ea27489365231ebb159cbfdd6db"
-        },
-        "files": [
-            {
-                "name": "english.json",
-                "sha256": "abd217786589d89d7bec0df8b4d066245a76dc992c20ddce591c38e72ff5d43e"
-            },
-            {
-                "name": "spanish.json",
-                "sha256": "14df906086f8d2a0f6063151667d637e37c55e4c5c296ffe5cdb7eb8f8f3365d"
-            }
-        ]
-    }
+    "files": [
+      {
+        "name": "russian.json",
+        "sha256": "4c2993d4805b71d16c19e1418258c09be127c3ce3636cc9ff2db964d52770346"
+      },
+      {
+        "name": "hiragana.json",
+        "sha256": "4d53433b98511a44d37274df18ee171a43dc5273bef6c7f1c3ec7f883ee89340"
+      },
+      {
+        "name": "greek.json",
+        "sha256": "49bf18a8c0734db480f64a043da3ade2c207dcec38510b94045e0816bfc82429"
+      },
+      {
+        "name": "katakana.json",
+        "sha256": "ed9f1857d53bdb4ab12f2857336345df688961994f9a76d0c6efd549e6bd9691"
+      },
+      {
+        "name": "spanish.json",
+        "sha256": "68e9b6ec7dd452835fef74196d9e01939df9ec5dd01f16d1f208776c8febedff"
+      }
+    ]
+  },
+  "translations": {
+    "manifest": {
+      "name": "translations/manifest.json",
+      "sha256": "908f6d9a5e73aa4ed3bc7c09466242ce9ab288665210dd0be408bcc8ba6cec26"
+    },
+    "files": [
+      {
+        "name": "english.json",
+        "sha256": "20ce0727457d4c91f670087050ddb21b723962e36ba83455797c867c083510e6"
+      },
+      {
+        "name": "spanish.json",
+        "sha256": "eb1dcb1353273079c06e693ab0de6fec0487bc22ac9a00cb8b9b0e832ee27950"
+      }
+    ]
+  }
 }
