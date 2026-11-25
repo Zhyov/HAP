@@ -47,6 +47,17 @@
     "noTranslationText": "No translation found for identifier:",
     "pressEnter": "\nPress Enter to continue...",
 
+    "warning": "WARNING",
+    "ioError": "A filesystem error occurred.",
+    "jsonError": "Failed to read data.",
+    "httpError": "Failed to download data.",
+    "semverError": "Invalid version information.",
+    "checksumError": "A downloaded file failed its integrity check.",
+    "incompatibleVersion": "This data release requires a newer version of HAP.",
+    "hapUpdateAvailable": "A newer version of HAP is available.",
+
+    "test": "You're in a testing environment.",
+
     "exit": "Exit",
     "back": "Back"
 }

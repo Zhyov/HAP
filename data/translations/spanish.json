@@ -46,6 +46,17 @@
     "invalidOption": "Opción inválida. Por favor, ingrese un número correspondiente a las opciones.",
     "noTranslationText": "No se encontró traducción para el identificador: ",
     "pressEnter": "\nPresione Enter para continuar...",
+    
+    "warning": "ADVERTENCIA",
+    "ioError": "Se ha producido un error en el sistema de archivos.",
+    "jsonError": "No se han podido leer los datos.",
+    "httpError": "No se han podido descargar los datos.",
+    "semverError": "Información de versión inválida.",
+    "checksumError": "Un archivo descargado no ha superado la comprobación de integridad.",
+    "incompatibleVersion": "Para acceder a estos datos es necesaria una versión más reciente de HAP.",
+    "hapUpdateAvailable": "Una nueva versión de HAP está disponible.",
+
+    "test": "Estás en un entorno de pruebas.",
 
     "exit": "Salir",
     "back": "Volver"

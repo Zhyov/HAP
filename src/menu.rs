@@ -2,7 +2,7 @@ use indexmap::IndexMap;
 use std::io::{self, Write};
 use crate::language::LanguageManager;
 use crate::constants::{WELCOME_MESSAGE, VERSION, SELECT};
-use crate::scripts::{Character,IPA};
+use crate::scripts::{Character, IPA};
 use crate::utils::clear_screen;
 use crate::scripts::{Variant, load_scripts};
 use crate::pages::create_page;
@@ -43,6 +43,7 @@ pub struct Window<'a> {
     pub manager: &'a LanguageManager,
     pub welcome: bool,
     pub auto_translate: bool,
+    pub warning: Vec<String>,
 }
 
 impl<'a> Window<'a> {
@@ -60,6 +61,7 @@ impl<'a> Window<'a> {
             manager,
             welcome,
             auto_translate,
+            warning: Vec::new(),
         }
     }
 
@@ -72,7 +74,13 @@ impl<'a> Window<'a> {
     }
 
     fn render_content(&self) {
-        if self.welcome { println!("{WELCOME_MESSAGE}{VERSION}\n"); }
+        if self.welcome {
+            println!("{WELCOME_MESSAGE}{VERSION}\n");
+
+            for warning in &self.warning {
+                println!("{}: {}\n", self.manager.get_translation("warning"), self.manager.get_translation(warning));
+            }
+        }
         if let Some(character) = &self.character { self.render_character(character) }
         if let Some(variation) = &self.variation { self.render_variation(variation) }
         for text in &self.content {

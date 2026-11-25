@@ -2,8 +2,7 @@ use serde::Deserialize;
 use serde_json;
 use std::fs::File;
 use indexmap::IndexMap;
-use std::path::Path;
-use crate::constants::SCRIPTS_PATH;
+use crate::paths::get_scripts_path;
 
 #[derive(Deserialize)]
 pub struct ScriptManifest {
@@ -42,7 +41,15 @@ pub enum ScriptError {
 }
 
 pub fn load_scripts_manifest() -> Result<Vec<ScriptManifest>, ScriptError> {
-    let file = match File::open(SCRIPTS_PATH) {
+    let scripts_path = match get_scripts_path() {
+        Ok(path) => path,
+        Err(e) => {
+            eprintln!("Failed to get scripts manifest path: {e}");
+            return Err(ScriptError::Io(e))
+        }
+    };
+
+    let file = match File::open(scripts_path) {
         Ok(file) => file,
         Err(e) => {
             eprintln!("Failed to open scripts manifest file: {e}");
@@ -62,7 +69,15 @@ pub fn load_scripts_manifest() -> Result<Vec<ScriptManifest>, ScriptError> {
 }
 
 pub fn load_scripts(filename: &str) -> Result<IndexMap<String, Character>, ScriptError> {
-    let path = Path::new(SCRIPTS_PATH).parent().expect("Manifest path has no parent directory");
+    let scripts_path = match get_scripts_path() {
+        Ok(path) => path,
+        Err(e) => {
+            eprintln!("Failed to get scripts manifest path: {e}");
+            return Err(ScriptError::Io(e))
+        }
+    };
+
+    let path = scripts_path.parent().expect("Manifest path has no parent directory");
 
     let file = match File::open(path.join(filename)) {
         Ok(file) => file,
