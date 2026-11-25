@@ -56,7 +56,7 @@ pub fn create_page<'a>(page: Page, manager: &'a LanguageManager, next_window_id:
                 .into_iter()
                 .map(|script| MenuOption {
                     text: script.name,
-                    action: MenuAction::OpenScript(script.file), // i don't understand
+                    action: MenuAction::OpenScript(script.file),
                 })
                 .collect();
 

@@ -1,12 +1,11 @@
 use std::collections::HashMap;
 use indexmap::IndexMap;
-use serde::{Serialize, Deserialize};
-use std::fs::{read_dir, File};
-use std::path::Path;
+use serde::Deserialize;
+use std::fs::File;
 use std::cell::RefCell;
 use crate::config::Config;
 use crate::config::save;
-use crate::constants::LANGUAGES_PATH;
+use crate::paths::get_languages_path;
 
 #[derive(Debug)]
 pub enum Error {
@@ -57,7 +56,7 @@ impl LanguageManager {
             languages,
         }
     }
-    
+
     pub fn get_translation(&self, key: &str) -> String {
         let current = self.current.borrow();
         let current_language = self.languages.get(&*current).expect("Current language not found");
@@ -104,7 +103,7 @@ impl LanguageManager {
     }
 }
 
-#[derive(Debug, Deserialize, Serialize)]
+#[derive(Debug, Deserialize)]
 struct LanguageManifest {
     name: String,
     key: String,
@@ -112,51 +111,16 @@ struct LanguageManifest {
     file: String,
 }
 
-pub fn create_languages_manifest() -> Result<Vec<LanguageManifest>, Error> {
-    let path = Path::new(LANGUAGES_PATH).parent().expect("Manifest path has no parent directory");
-    let languages_dir_content = match read_dir(path) {
-        Ok(content) => content,
+fn load_languages_manifest() -> Vec<LanguageManifest> {
+    let languages_path = match get_languages_path() {
+        Ok(path) => path,
         Err(e) => {
-            eprintln!("Failed to read languages directory: {e}");
-            return Err(Error::Io(e));
+            eprintln!("Failed to get languages manifest path: {e}");
+            return Vec::new();
         }
     };
 
-    let mut manifest: Vec<LanguageManifest> = Vec::new();
-
-    for entry in languages_dir_content {
-        let entry = entry?;
-        let path = entry.path();
-
-        let file_name = path.file_name().and_then(|name| name.to_str());
-        let extension = path.extension().and_then(|name| name.to_str());
-        let file_stem = path.file_stem().and_then(|name| name.to_str());
-
-        if path.is_file() && extension == Some("json") {
-            if let (Some(file_stem), Some(file_name)) = (file_stem, file_name) && file_stem != "manifest" {
-                let mut chars = file_stem.chars();
-
-                let name = match chars.next() {
-                    Some(first) => first.to_uppercase().to_string() + chars.as_str(),
-                    None => String::new(),
-                };
-                let code = file_stem.chars().take(2).collect::<String>();
-
-                manifest.push(LanguageManifest { name, key: file_stem.to_string(), code, file: file_name.to_string() });
-            }
-        }
-    }
-
-    manifest.sort_by(|a, b| a.name.cmp(&b.name));
-
-    let file = File::create(LANGUAGES_PATH)?;
-    serde_json::to_writer_pretty(file, &manifest)?;
-
-    Ok(manifest)
-}
-
-fn load_languages_manifest() -> Vec<LanguageManifest> {
-    let file = match File::open(LANGUAGES_PATH) {
+    let file = match File::open(languages_path) {
         Ok(file) => file,
         Err(e) => {
             eprintln!("Failed to open languages manifest file: {e}");
@@ -176,10 +140,18 @@ fn load_languages_manifest() -> Vec<LanguageManifest> {
 }
 
 pub fn load_languages() -> IndexMap<String, Language> {
+    let languages_path = match get_languages_path() {
+        Ok(path) => path,
+        Err(e) => {
+            eprintln!("Failed to get languages manifest path: {e}");
+            return IndexMap::new();
+        }
+    };
+
     let manifest = load_languages_manifest();
     let mut languages = IndexMap::new();
 
-    let path = Path::new(LANGUAGES_PATH).parent().expect("Manifest path has no parent directory");
+    let path = languages_path.parent().expect("Manifest path has no parent directory");
 
     for language in manifest {
 

@@ -1,9 +1,8 @@
 use std::fs::File;
 use std::fs::create_dir_all;
-use std::path::Path;
 use serde::{Deserialize, Serialize};
 use serde_json;
-use crate::constants::CONFIG_PATH;
+use crate::paths::get_config_path;
 
 #[derive(Debug)]
 pub enum Error {
@@ -26,7 +25,15 @@ impl Default for Config {
 }
 
 pub fn load() -> Config {
-    let file = match File::open(CONFIG_PATH) {
+    let config_path = match get_config_path() {
+        Ok(path) => path,
+        Err(e) => {
+            eprintln!("Failed to get config path: {e}");
+            return Config::default();
+        }
+    };
+
+    let file = match File::open(config_path) {
         Ok(file) => file,
         Err(e) => {
             eprintln!("Failed to open config file: {e}");
@@ -46,16 +53,22 @@ pub fn load() -> Config {
 }
 
 pub fn save(config: &Config) -> Result<(), Error> {
-    let path = Path::new(CONFIG_PATH);
+    let config_path = match get_config_path() {
+        Ok(path) => path,
+        Err(e) => {
+            eprintln!("Failed to get config path: {e}");
+            return Err(Error::Io(e));
+        }
+    };
 
-    if let Some(directory) = path.parent() {
+    if let Some(directory) = config_path.parent() {
         match create_dir_all(directory) {
             Ok(()) => {},
             Err(e) => return Err(Error::Io(e)),
         }
     }
 
-    let file = match File::create(CONFIG_PATH) {
+    let file = match File::create(config_path) {
         Ok(file) => file,
         Err(e) => return Err(Error::Io(e)),
     };
@@ -67,7 +80,3 @@ pub fn save(config: &Config) -> Result<(), Error> {
     Ok(())
 
 }
-
-// if let Err(e) = save(&config) {
-//    eprintln!("Failed to save config file: {e}");
-// }
